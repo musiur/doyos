@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -9,33 +9,33 @@
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
- 
+
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
- 
+
     --primary: 215 74% 13%;
     --primary-foreground: 210 40% 98%;
- 
+
     --secondary: 358 66% 46%;
     --secondary-foreground: 222.2 47.4% 11.2%;
- 
+
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
- 
+
     --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
- 
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
- 
+
     --radius: 0.5rem;
   }
 }
- 
+
 @layer base {
   * {
     @apply p-0 m-0 box-border text-primary text-[14px] md:text-[16px];
@@ -44,4 +44,13 @@
 
 .container {
   @apply max-w-[1437px] mx-auto px-2 md:px-5 2xl:px-0;
+}
+
+h1,
+.heading-span {
+  @apply text-[28px] md:text-[42px] xl:text-[64px] font-bold leading-[42px] md:leading-[58px] xl:leading-[80px];
+}
+
+.section {
+  @apply py-[80px];
 }

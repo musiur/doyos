@@ -34,7 +34,7 @@ import {
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { AlignRight, Menu } from "lucide-react";
-import BrandLogo from "../assets/brandlogo";
+import BrandLogo from "../assets/homepage/brandlogo";
 
 const components: { title: string; href: string; description: string }[] = [
   {
