@@ -5,6 +5,15 @@ import * as React from "react";
 
 import { Button } from "@/components/ui/button";
 import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+
+import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
@@ -24,6 +33,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { AlignRight, Menu } from "lucide-react";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -65,25 +75,28 @@ const components: { title: string; href: string; description: string }[] = [
 
 const Navbar = () => {
   return (
-    <header>
-      <section className="py-[9px] bg-primary">
-        <p className="container flex items-center justify-end text-white gap-[19px]">
+    <header className="sticky top-0 bg-white border-b z-50">
+      <section className="py-[4px] md:py-[9px] bg-primary text-[12px] md:text-[16px] hidden md:flex">
+        <p className="container flex flex-col md:flex-row flex-wrap items-center justify-center md:justify-end text-white gap-[5px] md:gap-[19px]">
           <span className="text-white">Subscribe to our newsletter</span>{" "}
-          <span className="text-white">|</span>
+          <span className="text-white hidden md:flex">|</span>
+          <span className="flex md:hidden border-b w-full" />
           <span className="text-white">Latest news and articles</span>
         </p>
       </section>
 
-      <section className="bg-white border-b">
-        <nav className="container flex items-center justify-between gap-10 py-2">
-          <Image
-            src="/images/logo.svg"
-            alt=""
-            height={500}
-            width={500}
-            className="h-[43.81px] w-[50px]"
-          />
-          <NavigationMenu>
+      <section>
+        <nav className="container flex items-center justify-between gap-10 py-[7px] sticky top-0">
+          <Link href="/">
+            <Image
+              src="/images/logo.svg"
+              alt=""
+              height={500}
+              width={500}
+              className="h-[43.81px] w-[50px]"
+            />
+          </Link>
+          <NavigationMenu className="hidden min-[1200px]:flex">
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Trading & tools</NavigationMenuTrigger>
@@ -162,7 +175,7 @@ const Navbar = () => {
           <div className="flex items-center justify-end gap-[13px]">
             <Button>Register</Button>
             <DropdownMenu>
-              <DropdownMenuTrigger className="px-[25px] py-[8px] rounded-[10px] text-[16px] font-bold bg-secondary hover:bg-secondary/90 text-white outline-none">
+              <DropdownMenuTrigger className="px-[15px] py-[6px] rounded-[5px] text-[14px] md:px-[25px] md:py-[8px] md:rounded-[10px] md:text-[16px] font-semibold md:font-bold bg-secondary hover:bg-secondary/90 text-white outline-none">
                 Login
               </DropdownMenuTrigger>
               <DropdownMenuContent>
@@ -174,6 +187,20 @@ const Navbar = () => {
                 <DropdownMenuItem>Islamic</DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
+            <Sheet>
+              <SheetTrigger className="flex min-[1200px]:hidden">
+                <AlignRight className="w-[24px] h-[24px] stroke-primary" />
+              </SheetTrigger>
+              <SheetContent>
+                <SheetHeader>
+                  <SheetTitle>Are you sure absolutely sure?</SheetTitle>
+                  <SheetDescription>
+                    This action cannot be undone. This will permanently delete
+                    your account and remove your data from our servers.
+                  </SheetDescription>
+                </SheetHeader>
+              </SheetContent>
+            </Sheet>
           </div>
         </nav>
       </section>
