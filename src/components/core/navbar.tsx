@@ -73,6 +73,7 @@ const Navbar = () => {
           <span className="text-white">Latest news and articles</span>
         </p>
       </section>
+
       <section className="bg-white border-b">
         <nav className="container flex items-center justify-between gap-10 py-2">
           <Image
