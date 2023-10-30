@@ -34,6 +34,7 @@ import {
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { AlignRight, Menu } from "lucide-react";
+import BrandLogo from "../assets/brandlogo";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -88,13 +89,7 @@ const Navbar = () => {
       <section>
         <nav className="container flex items-center justify-between gap-10 py-[7px] sticky top-0">
           <Link href="/">
-            <Image
-              src="/images/logo.svg"
-              alt=""
-              height={500}
-              width={500}
-              className="h-[43.81px] w-[50px]"
-            />
+            <BrandLogo />
           </Link>
           <NavigationMenu className="hidden min-[1200px]:flex">
             <NavigationMenuList>
