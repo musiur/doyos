@@ -209,12 +209,86 @@ const Navbar = () => {
               </SheetTrigger>
               <SheetContent>
                 <SheetHeader>
-                  <SheetTitle>Are you sure absolutely sure?</SheetTitle>
-                  <SheetDescription>
-                    This action cannot be undone. This will permanently delete
-                    your account and remove your data from our servers.
-                  </SheetDescription>
+                  <div className="mb-[30px]">
+                    <BrandLogo />
+                  </div>
                 </SheetHeader>
+                <div className="max-h-[80vh] overflow-auto">
+                  <div className="grid grid-cols-2 gap-[20px]">
+                    <div className="grid grid-cols-1 gap-[20px]">
+                      <h4 className="text-[16px] md:text-[20px] font-bold">
+                        Trading & tools
+                      </h4>
+                      <div className="flex flex-col gap-[6px]">
+                        <h6 className="font-semibold">Trading Platform</h6>
+                        <Link href="/">MetaTrader 5</Link>
+                        <Link href="/">MT5 Android</Link>
+                        <Link href="/">MT5 Mac/iOS</Link>
+                      </div>
+                      <div className="flex flex-col gap-[6px]">
+                        <h6 className="font-semibold">Market</h6>
+                        <Link href="/">Forex</Link>
+                        <Link href="/">Cryptos</Link>
+                        <Link href="/">Stock/Share</Link>
+                        <Link href="/">Indices/CFD</Link>
+                        <Link href="/">Commodities</Link>
+                      </div>
+                      <div className="flex flex-col gap-[6px]">
+                        <h6 className="font-semibold">Trading Conditions</h6>
+                        <Link href="/">Account Type</Link>
+                        <Link href="/">Funding & Withdrawal</Link>
+                        <Link href="/">Spread</Link>
+                        <Link href="/">Swap Free Account</Link>
+                        <Link href="/">Security of Fund</Link>
+                        <Link href="/">Trading Conditions </Link>
+                      </div>
+                      <div className="flex flex-col gap-[6px]">
+                        <h6 className="font-semibold">Trading Tools</h6>
+                        <Link href="/">Calculator</Link>
+                        <Link href="/">Free VPS</Link>
+                        <Link href="/">Economic Calendar</Link>
+                        <Link href="/">Market Holidays </Link>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-1 gap-[20px]">
+                      <div className="flex flex-col gap-[6px]">
+                        <h4 className="text-[16px] md:text-[20px] font-bold mb-[12px]">
+                          Market resouces
+                        </h4>
+                        <Link href="/">Forex Trading Educations</Link>
+                        <Link href="/">Technical Analysis</Link>
+                        <Link href="/">Fundamental Analysis</Link>
+                        <Link href="/">Trading Session</Link>
+                      </div>
+                      <div className="flex flex-col gap-[6px]">
+                        <h4 className="text-[16px] md:text-[20px] font-bold mb-[12px]">
+                          Accounts
+                        </h4>
+                        <Link href="/">Regular Account</Link>
+                        <Link href="/">PROP Funding</Link>
+                        <Link href="/">Funding & Withdrawal</Link>
+                      </div>
+                      <div className="flex flex-col gap-[6px]">
+                        <h4 className="text-[16px] md:text-[20px] font-bold mb-[12px]">
+                          About us
+                        </h4>
+                        <Link href="/">Our Goal</Link>
+                        <Link href="/">Company News</Link>
+                        <Link href="/">License & Regulations</Link>
+                        <Link href="/">Legal Documents</Link>
+                        <Link href="/">Global Offices</Link>
+                      </div>
+                      <div className="flex flex-col gap-[6px]">
+                        <Link href="/partners" legacyBehavior passHref>
+                          Partners
+                        </Link>
+                        <Link href="/supports" legacyBehavior passHref>
+                          Supports
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </SheetContent>
             </Sheet>
           </div>
