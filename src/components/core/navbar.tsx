@@ -101,20 +101,37 @@ const Navbar = () => {
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Trading & tools</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                    <ListItem href="/docs" title="Introduction">
-                      Re-usable components built using Radix UI and Tailwind
-                      CSS.
-                    </ListItem>
-                    <ListItem href="/docs/installation" title="Installation">
-                      How to install dependencies and structure your app.
-                    </ListItem>
-                    <ListItem
-                      href="/docs/primitives/typography"
-                      title="Typography"
-                    >
-                      Styles for headings, paragraphs, lists...etc
-                    </ListItem>
+                  <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] text-primary text-[14px] md:text-[16px]">
+                    <div className="flex flex-col gap-[6px]">
+                      <h6 className="font-semibold">Trading Platform</h6>
+                      <Link href="/">MetaTrader 5</Link>
+                      <Link href="/">MT5 Android</Link>
+                      <Link href="/">MT5 Mac/iOS</Link>
+                    </div>
+                    <div className="flex flex-col gap-[6px]">
+                      <h6 className="font-semibold">Market</h6>
+                      <Link href="/">Forex</Link>
+                      <Link href="/">Cryptos</Link>
+                      <Link href="/">Stock/Share</Link>
+                      <Link href="/">Indices/CFD</Link>
+                      <Link href="/">Commodities</Link>
+                    </div>
+                    <div className="flex flex-col gap-[6px]">
+                      <h6 className="font-semibold">Trading Conditions</h6>
+                      <Link href="/">Account Type</Link>
+                      <Link href="/">Funding & Withdrawal</Link>
+                      <Link href="/">Spread</Link>
+                      <Link href="/">Swap Free Account</Link>
+                      <Link href="/">Security of Fund</Link>
+                      <Link href="/">Trading Conditions </Link>
+                    </div>
+                    <div className="flex flex-col gap-[6px]">
+                      <h6 className="font-semibold">Trading Tools</h6>
+                      <Link href="/">Calculator</Link>
+                      <Link href="/">Free VPS</Link>
+                      <Link href="/">Economic Calendar</Link>
+                      <Link href="/">Market Holidays </Link>
+                    </div>
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
@@ -122,52 +139,56 @@ const Navbar = () => {
                 <NavigationMenuTrigger>Market resources</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] grid-cols-2 ">
-                    {components.map((component) => (
-                      <ListItem
-                        key={component.title}
-                        title={component.title}
-                        href={component.href}
-                      >
-                        {component.description}
-                      </ListItem>
-                    ))}
+                    <div className="flex flex-col gap-[6px] pl-[118px]">
+                      <h6 className="font-semibold">Market resources</h6>
+                      <Link href="/">Forex Trading Educations</Link>
+                      <Link href="/">Technical Analysis</Link>
+                      <Link href="/">Fundamental Analysis</Link>
+                      <Link href="/">Trading Session</Link>
+                    </div>
+                  </ul>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className={navigationMenuTriggerStyle()}>
+                  Accounts
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] grid-cols-1">
+                    <div className="flex flex-col gap-[6px] items-end pr-[117px]">
+                      <h6 className="font-semibold">Accounts</h6>
+                      <Link href="/">Regular Account</Link>
+                      <Link href="/">PROP Funding</Link>
+                      <Link href="/">Funding & Withdrawal</Link>
+                    </div>
+                  </ul>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className={navigationMenuTriggerStyle()}>
+                  About us
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] grid-cols-1 ">
+                    <div className="flex flex-col gap-[6px] items-end pr-[23px]">
+                      <h6 className="font-semibold">About us</h6>
+                      <Link href="/">Our Goal</Link>
+                      <Link href="/">Company News</Link>
+                      <Link href="/">License & Regulations</Link>
+                      <Link href="/">Legal Documents</Link>
+                      <Link href="/">Global Offices</Link>
+                    </div>
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <Link href="/partners" legacyBehavior passHref>
-                  <NavigationMenuTrigger
-                    className={navigationMenuTriggerStyle()}
-                  >
-                    Partners
-                  </NavigationMenuTrigger>
-                </Link>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <Link href="/accounts" legacyBehavior passHref>
-                  <NavigationMenuTrigger
-                    className={navigationMenuTriggerStyle()}
-                  >
-                    Accounts
-                  </NavigationMenuTrigger>
-                </Link>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <Link href="/about-us" legacyBehavior passHref>
-                  <NavigationMenuTrigger
-                    className={navigationMenuTriggerStyle()}
-                  >
-                    About us
-                  </NavigationMenuTrigger>
+                  Partners
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <Link href="/supports" legacyBehavior passHref>
-                  <NavigationMenuTrigger
-                    className={navigationMenuTriggerStyle()}
-                  >
-                    Supports
-                  </NavigationMenuTrigger>
+                  Supports
                 </Link>
               </NavigationMenuItem>
             </NavigationMenuList>
