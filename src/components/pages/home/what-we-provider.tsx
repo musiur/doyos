@@ -67,8 +67,8 @@ const WhatWeProvide = () => {
   ];
   return (
     <section>
-      <div className="bg-primary rounded-tr-[40px]">
-        <div className="container py-12 flex items-center justify-between gap-3">
+      <div className="bg-primary rounded-tr-[20px] md:rounded-tr-[40px]">
+        <div className="container py-12 flex flex-wrap items-center justify-center md:justify-between gap-3">
           {NumberPortfolio.map((item) => {
             return (
               <div
@@ -84,7 +84,7 @@ const WhatWeProvide = () => {
           })}
         </div>
       </div>
-      <div className="bg-muted section rounded-bl-[40px]">
+      <div className="bg-muted section rounded-br-[20px] md:rounded-br-[40px]">
         <div className="container">
           <h2 className="text-center">
             We <span className="text-secondary h2-span">Provide Best</span>{" "}
@@ -100,7 +100,7 @@ const WhatWeProvide = () => {
             {ForexTradingSolution.map((item) => {
               return (
                 <div
-                  className="p-5 bg-white w-full rounded-[20px] flex flex-col items-center justify-center"
+                  className="p-5 bg-white w-full rounded-[10px] md:rounded-[20px] flex flex-col items-center justify-center"
                   key={item.id}
                 >
                   {item.graphic}
