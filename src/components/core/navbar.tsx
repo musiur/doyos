@@ -131,11 +131,13 @@ const Navbar = () => {
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Market resources</NavigationMenuTrigger>
+                <NavigationMenuTrigger>
+                  Market resources
+                </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] grid-cols-2 ">
                     <div className="flex flex-col gap-[6px] pl-[118px]">
-                      <h6 className="font-semibold">Market resources</h6>
+                      <h6 className="font-semibold md:w-[400px] lg:w-[500px]">Market resources</h6>
                       <Link href="/">Forex Trading Educations</Link>
                       <Link href="/">Technical Analysis</Link>
                       <Link href="/">Fundamental Analysis</Link>
