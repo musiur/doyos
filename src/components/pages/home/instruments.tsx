@@ -59,12 +59,12 @@ const Instruments = () => {
             {ForexTradingSolution.map((item) => {
               return (
                 <div
-                  className="p-5 bg-white w-full rounded-[10px] md:rounded-[20px] flex items-center justify-start gap-5"
+                  className="p-5 bg-white w-full rounded-[10px] md:rounded-[20px] flex items-center justify-start gap-5 hover:shadow-lg transition ease-in-out"
                   key={item.id}
                 >
                   <div className="flex flex-col items-start justify-center">
                     {item.graphic}
-                    <p className="text-center">{item.text}</p>
+                    <p className="text-center mt-2 font-semibold w-full">{item.text}</p>
                   </div>
                   <div className="w-auto">
                     <p>

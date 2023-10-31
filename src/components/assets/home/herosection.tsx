@@ -14,6 +14,7 @@ const HeroSectionGraphic = ({ className }: { className: string }) => {
         width="8.14664"
         height="109.589"
         fill="#091E3B"
+        className="animate-bounce duration-5000 delay-100"
       />
       <rect
         x="304.279"
@@ -21,6 +22,7 @@ const HeroSectionGraphic = ({ className }: { className: string }) => {
         width="8.14664"
         height="176.712"
         fill="#C1282D"
+        className="animate-bounce duration-5000 delay-50"
       />
       <rect
         x="333.607"
@@ -28,6 +30,7 @@ const HeroSectionGraphic = ({ className }: { className: string }) => {
         width="8.14664"
         height="109.589"
         fill="#C1282D"
+        className="animate-bounce duration-5000 delay-500"
       />
       <rect
         x="362.935"
@@ -35,6 +38,7 @@ const HeroSectionGraphic = ({ className }: { className: string }) => {
         width="8.14664"
         height="109.589"
         fill="#C1282D"
+        className="animate-bounce duration-5000 delay-100"
       />
       <rect
         x="274.951"
@@ -42,6 +46,7 @@ const HeroSectionGraphic = ({ className }: { className: string }) => {
         width="8.14664"
         height="109.589"
         fill="#091E3B"
+        className="animate-bounce duration-5000 delay-300"
       />
       <rect
         x="773.525"
@@ -49,14 +54,22 @@ const HeroSectionGraphic = ({ className }: { className: string }) => {
         width="8.14664"
         height="109.589"
         fill="#091E3B"
+        className="animate-bounce duration-5000 delay-300"
       />
-      <rect x="802.853" width="8.14664" height="109.589" fill="#091E3B" />
+      <rect
+        x="802.853"
+        width="8.14664"
+        height="109.589"
+        fill="#091E3B"
+        className="animate-bounce duration-5000 delay-50"
+      />
       <rect
         x="685.542"
         y="150.685"
         width="8.14664"
         height="109.589"
         fill="#C1282D"
+        className="animate-bounce duration-5000 delay-300"
       />
       <rect
         x="714.87"
@@ -64,6 +77,7 @@ const HeroSectionGraphic = ({ className }: { className: string }) => {
         width="8.14664"
         height="109.589"
         fill="#091E3B"
+        className="animate-bounce duration-5000 delay-200"
       />
       <rect
         x="744.198"
@@ -71,6 +85,7 @@ const HeroSectionGraphic = ({ className }: { className: string }) => {
         width="8.14664"
         height="173.973"
         fill="#091E3B"
+        className="animate-bounce duration-5000 delay-100"
       />
       <rect
         x="597.558"
@@ -78,6 +93,7 @@ const HeroSectionGraphic = ({ className }: { className: string }) => {
         width="8.14664"
         height="109.589"
         fill="#C1282D"
+        className="animate-bounce duration-5000 delay-800"
       />
       <rect
         x="626.886"
@@ -85,6 +101,7 @@ const HeroSectionGraphic = ({ className }: { className: string }) => {
         width="8.14664"
         height="109.589"
         fill="#C1282D"
+        className="animate-bounce duration-5000 delay-200"
       />
       <rect
         x="656.214"
@@ -92,6 +109,7 @@ const HeroSectionGraphic = ({ className }: { className: string }) => {
         width="8.14664"
         height="179.452"
         fill="#091E3B"
+        className="animate-bounce duration-5000 delay-500"
       />
       <rect
         x="568.23"
@@ -99,6 +117,7 @@ const HeroSectionGraphic = ({ className }: { className: string }) => {
         width="8.14664"
         height="109.589"
         fill="#C1282D"
+        className="animate-bounce duration-5000 delay-800"
       />
       <rect
         x="538.902"
@@ -106,6 +125,7 @@ const HeroSectionGraphic = ({ className }: { className: string }) => {
         width="8.14664"
         height="109.589"
         fill="#C1282D"
+        className="animate-bounce duration-5000 delay-100"
       />
       <rect
         x="509.574"
@@ -113,6 +133,7 @@ const HeroSectionGraphic = ({ className }: { className: string }) => {
         width="8.14664"
         height="109.589"
         fill="#091E3B"
+        className="animate-bounce duration-5000 delay-600"
       />
       <rect
         x="245.623"
@@ -120,6 +141,7 @@ const HeroSectionGraphic = ({ className }: { className: string }) => {
         width="8.14664"
         height="109.589"
         fill="#C1282D"
+        className="animate-bounce duration-5000 delay-200"
       />
       <rect
         x="216.295"
@@ -127,6 +149,7 @@ const HeroSectionGraphic = ({ className }: { className: string }) => {
         width="8.14664"
         height="246.575"
         fill="#091E3B"
+        className="animate-bounce duration-5000 delay-50"
       />
       <rect
         x="480.246"
@@ -134,6 +157,7 @@ const HeroSectionGraphic = ({ className }: { className: string }) => {
         width="8.14664"
         height="246.575"
         fill="#091E3B"
+        className="animate-bounce duration-5000 delay-100"
       />
       <rect
         x="392.263"
@@ -141,6 +165,7 @@ const HeroSectionGraphic = ({ className }: { className: string }) => {
         width="8.14664"
         height="246.575"
         fill="#C1282D"
+        className="animate-bounce duration-5000 delay-600"
       />
       <rect
         x="421.591"
@@ -148,6 +173,7 @@ const HeroSectionGraphic = ({ className }: { className: string }) => {
         width="8.14664"
         height="246.575"
         fill="#091E3B"
+        className="animate-bounce duration-5000 delay-300"
       />
       <rect
         x="450.919"
@@ -155,6 +181,7 @@ const HeroSectionGraphic = ({ className }: { className: string }) => {
         width="8.14664"
         height="132.877"
         fill="#C1282D"
+        className="animate-bounce duration-5000 delay-400"
       />
       <rect
         x="186.967"
@@ -162,6 +189,7 @@ const HeroSectionGraphic = ({ className }: { className: string }) => {
         width="8.14664"
         height="109.589"
         fill="#091E3B"
+        className="animate-bounce duration-5000 delay-900"
       />
       <rect
         x="157.64"
@@ -169,6 +197,7 @@ const HeroSectionGraphic = ({ className }: { className: string }) => {
         width="8.14664"
         height="109.589"
         fill="#091E3B"
+        className="animate-bounce duration-5000 delay-500"
       />
       <rect
         x="128.312"
@@ -176,6 +205,7 @@ const HeroSectionGraphic = ({ className }: { className: string }) => {
         width="8.14664"
         height="109.589"
         fill="#C1282D"
+        className="animate-bounce duration-5000 delay-300"
       />
       <rect
         x="98.9837"
@@ -183,6 +213,7 @@ const HeroSectionGraphic = ({ className }: { className: string }) => {
         width="8.14664"
         height="52.0548"
         fill="#C1282D"
+        className="animate-bounce duration-5000 delay-700"
       />
       <rect
         x="40.3279"
@@ -190,6 +221,7 @@ const HeroSectionGraphic = ({ className }: { className: string }) => {
         width="8.14664"
         height="109.589"
         fill="#091E3B"
+        className="animate-bounce duration-5000 delay-900"
       />
       <rect
         x="69.6558"
@@ -197,19 +229,33 @@ const HeroSectionGraphic = ({ className }: { className: string }) => {
         width="8.14664"
         height="176.712"
         fill="#C1282D"
+        className="animate-bounce duration-5000 delay-800"
       />
-      <circle cx="499" cy="177" r="12" fill="#E5E5E5" />
-      <circle cx="499" cy="177" r="12" fill="#FFF4F5" />
-      <circle cx="499" cy="177" r="7" fill="#E5E5E5" />
-      <circle cx="499" cy="177" r="7" fill="#FFA2A5" />
-      <circle cx="499" cy="177" r="5" fill="#E5E5E5" />
-      <circle cx="499" cy="177" r="5" fill="#C1282D" />
-      <circle cx="499" cy="177" r="3" fill="#E5E5E5" />
-      <circle cx="499" cy="177" r="3" fill="#CFCFCF" />
-      <path d="M0 177H499" stroke="#CFCFCF" />
+      <circle
+        cx="499"
+        cy="177"
+        r="25"
+        fill="#FFF4F5"
+        className="animate-pulse delay-300"
+      />
+      <circle
+        cx="499"
+        cy="177"
+        r="16"
+        fill="#FFA2A5"
+        className="animate-pulse delay-100"
+      />
+      <circle
+        cx="499"
+        cy="177"
+        r="6"
+        fill="#C1282D"
+        className="animate-pulse"
+      />
       <path
-        d="M565.752 353.76V396H556.92V363.744L547.768 369.632L543.736 363.04L557.688 353.76H565.752ZM595.293 396V389.024H577.373V382.304L587.805 353.76H597.533L586.205 381.344H595.293V369.504H604.125V381.344H608.157V389.024H604.125V396H595.293ZM613.825 383.776V376.096H624.641V365.344H632.321V376.096H643.265V383.776H632.321V394.656H624.641V383.776H613.825ZM682.772 396H673.94V378.4L660.5 352.48H670.292L678.292 369.824L686.292 352.48H696.084L682.772 378.4V396ZM702.696 383.648C702.738 385.611 703.25 387.04 704.232 387.936C705.256 388.789 706.706 389.216 708.583 389.216C712.552 389.216 716.093 389.088 719.208 388.832L721 388.64L721.128 394.976C716.221 396.171 711.784 396.768 707.816 396.768C702.994 396.768 699.496 395.488 697.32 392.928C695.144 390.368 694.056 386.208 694.056 380.448C694.056 368.971 698.77 363.232 708.2 363.232C717.501 363.232 722.152 368.053 722.152 377.696L721.512 383.648H702.696ZM713.704 377.12C713.704 374.56 713.298 372.789 712.488 371.808C711.677 370.784 710.248 370.272 708.2 370.272C706.194 370.272 704.765 370.805 703.912 371.872C703.101 372.896 702.674 374.645 702.632 377.12H713.704ZM752.793 373.984V387.296C752.878 388.32 753.049 389.045 753.305 389.472C753.561 389.856 754.094 390.133 754.905 390.304L754.649 396.768C752.473 396.768 750.723 396.619 749.401 396.32C748.121 396.021 746.819 395.424 745.497 394.528C742.425 396.021 739.289 396.768 736.089 396.768C729.475 396.768 726.169 393.269 726.169 386.272C726.169 382.859 727.086 380.448 728.921 379.04C730.755 377.589 733.571 376.736 737.369 376.48L744.217 375.968V373.984C744.217 372.661 743.918 371.765 743.321 371.296C742.723 370.784 741.763 370.528 740.441 370.528L728.409 371.04L728.153 365.088C732.718 363.851 737.049 363.232 741.145 363.232C745.283 363.232 748.249 364.085 750.041 365.792C751.875 367.499 752.793 370.229 752.793 373.984ZM738.393 382.432C736.003 382.645 734.809 383.925 734.809 386.272C734.809 388.619 735.854 389.792 737.945 389.792C739.566 389.792 741.337 389.536 743.257 389.024L744.217 388.768V381.92L738.393 382.432ZM760.968 396V364H769.48V367.392C773.064 365.259 776.477 363.872 779.72 363.232V371.872C776.264 372.597 773.299 373.344 770.824 374.112L769.544 374.56V396H760.968ZM807.757 372C802.466 371.317 798.754 370.976 796.621 370.976C794.53 370.976 793.165 371.168 792.525 371.552C791.927 371.936 791.629 372.555 791.629 373.408C791.629 374.219 792.034 374.795 792.845 375.136C793.698 375.435 795.831 375.904 799.245 376.544C802.701 377.141 805.154 378.144 806.605 379.552C808.055 380.96 808.781 383.243 808.781 386.4C808.781 393.312 804.493 396.768 795.917 396.768C793.101 396.768 789.687 396.384 785.677 395.616L783.629 395.232L783.885 388.064C789.175 388.747 792.845 389.088 794.893 389.088C796.983 389.088 798.391 388.896 799.117 388.512C799.885 388.085 800.269 387.467 800.269 386.656C800.269 385.845 799.863 385.248 799.053 384.864C798.285 384.48 796.237 384.011 792.909 383.456C789.623 382.901 787.17 381.963 785.549 380.64C783.927 379.317 783.117 376.971 783.117 373.6C783.117 370.187 784.269 367.627 786.573 365.92C788.877 364.171 791.842 363.296 795.469 363.296C797.986 363.296 801.421 363.701 805.773 364.512L807.885 364.896L807.757 372ZM561.946 447.648C564.207 444.704 567.983 443.232 573.274 443.232C578.565 443.232 582.341 444.704 584.602 447.648C586.863 450.549 587.994 454.645 587.994 459.936C587.994 471.157 583.087 476.768 573.274 476.768C563.461 476.768 558.554 471.157 558.554 459.936C558.554 454.645 559.685 450.549 561.946 447.648ZM568.538 467.168C569.434 468.704 571.013 469.472 573.274 469.472C575.535 469.472 577.093 468.704 577.946 467.168C578.842 465.632 579.29 463.221 579.29 459.936C579.29 456.651 578.842 454.261 577.946 452.768C577.093 451.275 575.535 450.528 573.274 450.528C571.013 450.528 569.434 451.275 568.538 452.768C567.685 454.261 567.258 456.651 567.258 459.936C567.258 463.221 567.685 465.632 568.538 467.168ZM604.393 451.296V476H595.817V451.296H592.361V444H595.817V442.592C595.817 437.984 596.499 434.805 597.865 433.056C599.23 431.307 601.662 430.432 605.161 430.432C606.697 430.432 608.681 430.645 611.113 431.072L612.457 431.264L612.329 438.24C610.451 438.155 608.873 438.112 607.593 438.112C606.313 438.112 605.459 438.453 605.033 439.136C604.606 439.819 604.393 440.992 604.393 442.656V444H612.137V451.296H604.393ZM628.082 440.288V432.48H660.082V440.288H648.562V476H639.73V440.288H628.082ZM674.506 461.408V476H665.674V432.48H682.57C692.81 432.48 697.93 437.259 697.93 446.816C697.93 452.491 695.796 456.672 691.53 459.36L697.738 476H688.074L683.018 461.408H674.506ZM682.698 453.856C684.788 453.856 686.346 453.216 687.37 451.936C688.394 450.656 688.906 448.971 688.906 446.88C688.906 444.789 688.351 443.125 687.242 441.888C686.175 440.651 684.618 440.032 682.57 440.032H674.506V453.856H682.698ZM713.809 461.472C713.809 466.549 716.39 469.088 721.553 469.088C726.716 469.088 729.297 466.549 729.297 461.472V432.48H738.129V461.28C738.129 466.613 736.742 470.539 733.969 473.056C731.238 475.531 727.1 476.768 721.553 476.768C716.006 476.768 711.846 475.531 709.073 473.056C706.342 470.539 704.977 466.613 704.977 461.28V432.48H713.809V461.472ZM760.612 439.392C755.961 439.392 753.636 440.928 753.636 444C753.636 445.365 754.212 446.411 755.364 447.136C756.516 447.861 759.204 448.907 763.428 450.272C767.695 451.637 770.681 453.195 772.388 454.944C774.095 456.651 774.948 459.296 774.948 462.88C774.948 467.445 773.561 470.901 770.788 473.248C768.015 475.595 764.388 476.768 759.908 476.768C756.58 476.768 752.505 476.256 747.684 475.232L745.38 474.784L746.276 467.936C751.993 468.704 756.367 469.088 759.396 469.088C763.919 469.088 766.18 467.211 766.18 463.456C766.18 462.091 765.647 461.024 764.58 460.256C763.556 459.488 761.487 458.656 758.372 457.76C753.423 456.352 749.924 454.688 747.876 452.768C745.871 450.805 744.868 448.096 744.868 444.64C744.868 440.288 746.191 437.045 748.836 434.912C751.481 432.779 755.108 431.712 759.716 431.712C762.873 431.712 766.884 432.139 771.748 432.992L774.052 433.44L773.348 440.416C767.332 439.733 763.087 439.392 760.612 439.392ZM778.145 440.288V432.48H810.145V440.288H798.625V476H789.793V440.288H778.145Z"
-        fill="#FFF8F8"
+        d="M0 177H499"
+        stroke="#C1282D"
+        className="animate-pulse duration-5000 delay-500"
       />
     </svg>
   );

@@ -99,13 +99,10 @@ const WhatWeProvide = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 pt-16 pb-5">
             {ForexTradingSolution.map((item) => {
               return (
-                <div
-                  className="p-5 bg-white w-full rounded-[10px] md:rounded-[20px] flex flex-col items-center justify-center"
-                  key={item.id}
-                >
-                  {item.graphic}
-                  <p className="text-center">{item.text}</p>
-                </div>
+                  <div key={item.id} className="p-5 bg-white w-full rounded-[10px] md:rounded-[20px] flex flex-col items-center justify-center hover:shadow-lg transition ease-in-out animation-fade-up">
+                    {item.graphic}
+                    <p className="text-center">{item.text}</p>
+                  </div>
               );
             })}
           </div>
