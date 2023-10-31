@@ -4,7 +4,7 @@ const Instruments = () => {
   const ForexTradingSolution = [
     {
       id: 0,
-      text: "24/7 Customer Services Available",
+      text: "24/7 Customer Services",
       graphic: <Clocks />,
     },
     {
