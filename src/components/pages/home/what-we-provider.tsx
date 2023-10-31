@@ -84,7 +84,7 @@ const WhatWeProvide = () => {
           })}
         </div>
       </div>
-      <div className="bg-muted section rounded-br-[20px] md:rounded-br-[40px]">
+      <div className="bg-muted section rounded-bl-[20px] md:rounded-bl-[40px]">
         <div className="container">
           <h2 className="text-center">
             We <span className="text-secondary h2-span">Provide Best</span>{" "}
