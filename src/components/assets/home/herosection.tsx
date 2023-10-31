@@ -3,8 +3,6 @@ import { cn } from "@/lib/utils";
 const HeroSectionGraphic = ({ className }: { className: string }) => {
   return (
     <svg
-      // width="100%"
-      // height="auto"
       className={cn("w-full h-auto", className)}
       viewBox="0 0 811 500"
       fill="none"
