@@ -11,33 +11,31 @@ const PaymentMethods = () => {
             Your money, <span className="text-secondary h2-span">your way</span>
           </h2>
           <p>
-          For more information on deposits, withdrawals and how to fund your trading account, <Link href="/" className="text-primary font-bold hover:text-secondary">Go here</Link>
+            For more information on deposits, withdrawals and how to fund your
+            trading account,{" "}
+            <Link
+              href="/"
+              className="text-primary font-bold hover:text-secondary"
+            >
+              Go here
+            </Link>
           </p>
           <div className="flex flex-wrap items-center justify-start gap-[20px]">
-            <div className="flex items-center justify-center gap-3 px-3 py-2 rounded-[10px] border font-medium">
+            <div className="flex items-center justify-center gap-3 px-3 py-2 rounded-[10px] border font-medium bg-white">
               <BadgeCheck className="w-5 h-5 stroke-secondary" />{" "}
-              <span>Video tutorial</span>
+              <span>Instant Deposit</span>
             </div>
 
-            <div className="flex items-center justify-center gap-3 px-3 py-2 rounded-[10px] border font-medium">
+            <div className="flex items-center justify-center gap-3 px-3 py-2 rounded-[10px] border font-medium bg-white">
               <BadgeCheck className="w-5 h-5 stroke-secondary" />{" "}
-              <span>Webinars</span>
+              <span>Fast Withdrawal</span>
             </div>
-            <div className="flex items-center justify-center gap-3 px-3 py-2 rounded-[10px] border font-medium">
+            <div className="flex items-center justify-center gap-3 px-3 py-2 rounded-[10px] border font-medium bg-white">
               <BadgeCheck className="w-5 h-5 stroke-secondary" />{" "}
-              <span>Trading guides</span>
+              <span>0% Commission</span>
             </div>
-            <div className="flex items-center justify-center gap-3 px-3 py-2 rounded-[10px] border font-medium">
-              <BadgeCheck className="w-5 h-5 stroke-secondary" />{" "}
-              <span>Trading forums</span>
-            </div>
-            <div className="flex items-center justify-center gap-3 px-3 py-2 rounded-[10px] border font-medium">
-              <BadgeCheck className="w-5 h-5 stroke-secondary" />{" "}
-              <span>Technical analysis</span>
-            </div>
-            <div className="flex items-center justify-center gap-3 px-3 py-2 rounded-[10px] border font-medium">
-              <BadgeCheck className="w-5 h-5 stroke-secondary" />{" "}
-              <span>How to manage risk</span>
+            <div className="flex items-center justify-center gap-3 px-5 py-2 mt-10 rounded-[10px] border font-bold bg-white">
+              All Payment Methods
             </div>
           </div>
         </div>
