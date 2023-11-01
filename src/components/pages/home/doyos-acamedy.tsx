@@ -1,10 +1,9 @@
-import { Button } from "@/components/ui/button";
 import { BadgeCheck } from "lucide-react";
 import Image from "next/image";
 
 const DoyosAcademy = () => {
   return (
-    <div className="">
+    <div className="-my-6 md:-my-0">
       <div className="container section grid grid-cols-1 lg:grid-cols-2 gap-10">
         <div className="flex items-center">
           <Image
@@ -12,16 +11,16 @@ const DoyosAcademy = () => {
             alt=""
             width={1000}
             height={1000}
-            className="w-auto h-auto"
+            className="w-auto h-auto mt-"
           />
         </div>
-        <div className="flex flex-col justify-center gap-10">
+        <div className="flex flex-col justify-center gap-3 md:gap-10">
           <p>EXPLORE, LEARN, AND GROW</p>
           <h2 className="">
             What you will learn from <br />Doyos{" "}
             <span className="text-secondary h2-span">Trading Academy</span>
           </h2>
-          <p>
+          <p className="mb-4 md:mb-0">
             Our forex education section is designed to cater to traders of all
             levels, from beginners to advanced traders. Whether you&apos;re just
             starting out or looking to take your trading to the next level, we
