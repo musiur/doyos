@@ -2,6 +2,7 @@ import Navbar from "@/components/core/navbar";
 import type { Metadata } from "next";
 import { Titillium_Web } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/core/footer";
 
 const Titillium = Titillium_Web({
   weight: ["200", "300", "400", "600", "700", "900"],
@@ -25,6 +26,7 @@ export default function RootLayout({
         <main>
           <Navbar />
           {children}
+          <Footer />
         </main>
       </body>
     </html>

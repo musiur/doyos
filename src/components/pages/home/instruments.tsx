@@ -51,34 +51,34 @@ const Instruments = () => {
     },
   ];
   return (
-    <div>
-      <div className="bg-muted section rounded-bl-[20px] md:rounded-bl-[40px]">
-        <div className="container">
-          <h2 className="text-center">Instruments</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 pt-16 pb-5">
-            {ForexTradingSolution.map((item) => {
-              return (
-                <div
-                  className="p-5 bg-white w-full rounded-[10px] md:rounded-[20px] flex items-center justify-start gap-5 hover:shadow-lg transition ease-in-out"
-                  key={item.id}
-                >
-                  <div className="flex flex-col items-start justify-center">
-                    {item.graphic}
-                    <p className="text-center mt-2 font-semibold w-full">{item.text}</p>
-                  </div>
-                  <div className="w-auto">
-                    <p>
-                      {item.description.slice(0, 150)}
-                      {item.description.length > 150 ? "..." : null}
-                    </p>
-                  </div>
+    <section className="bg-muted section rounded-bl-[20px] md:rounded-bl-[40px] rounded-tr-[20px] md:rounded-tr-[40px]">
+      <div className="container">
+        <h2 className="text-center">Instruments</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 pt-16 pb-5">
+          {ForexTradingSolution.map((item) => {
+            return (
+              <div
+                className="p-5 bg-white w-full rounded-[10px] md:rounded-[20px] flex items-center justify-start gap-5 hover:shadow-lg transition ease-in-out"
+                key={item.id}
+              >
+                <div className="flex flex-col items-start justify-center">
+                  {item.graphic}
+                  <p className="text-center mt-2 font-semibold w-full">
+                    {item.text}
+                  </p>
                 </div>
-              );
-            })}
-          </div>
+                <div className="w-auto">
+                  <p>
+                    {item.description.slice(0, 150)}
+                    {item.description.length > 150 ? "..." : null}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

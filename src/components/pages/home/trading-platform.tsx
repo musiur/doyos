@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const TradingPlatform = () => {
   return (
-    <div className="bg-muted">
+    <section className="bg-muted rounded-bl-[20px] md:rounded-bl-[40px] rounded-tr-[20px] md:rounded-tr-[40px]">
       <div className="container section grid grid-cols-1 lg:grid-cols-2 gap-10">
         <div className="flex flex-col justify-center gap-10">
           <h2 className="">
@@ -54,7 +54,7 @@ const TradingPlatform = () => {
           <Image src="/images/gadgets.png" alt="" width={1000} height={1000} className="w-auto h-auto" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
