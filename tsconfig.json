@@ -33,7 +33,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "src/components/assets/home/trading-platform/gadgets.jsx"  ],
   "exclude": [
     "node_modules"
   ]
