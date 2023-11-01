@@ -62,7 +62,7 @@ const Footer = () => {
           </p>
         </section>
         <section className="flex justify-center md:justify-end">
-          <div className="flex items-center justify-end gap-3 px-8 py-2 bg-white rounded-[10px]">
+          <div className="flex items-center justify-end gap-3 px-8 py-2 bg-white rounded-[10px] max-h-[100px]">
             <span>Partner</span>
             <Image
               src="/images/payment-gatways.png"
