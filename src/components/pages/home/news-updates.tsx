@@ -54,7 +54,7 @@ const NewsUpdates = () => {
                     alt=""
                     width={1000}
                     height={1000}
-                    className="w-full h-auto rounded-t-[20px]"
+                    className="w-full h-auto rounded-t-[10px]"
                   />
                   <div className="absolute bottom-0 right-0 py-1 bg-secondary text-white font-bold px-6 rounded-tl-[10px]">
                     {item.date}

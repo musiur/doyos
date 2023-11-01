@@ -32,8 +32,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
-import { AlignRight, Menu } from "lucide-react";
+import { AlignRight } from "lucide-react";
 import BrandLogo from "../assets/home/brandlogo";
 
 const components: { title: string; href: string; description: string }[] = [
@@ -99,49 +98,93 @@ const Navbar = () => {
                   <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] text-primary text-[14px] md:text-[16px]">
                     <div className="flex flex-col gap-[6px]">
                       <h6 className="font-semibold">Trading Platform</h6>
-                      <Link href="/">MetaTrader 5</Link>
-                      <Link href="/">MT5 Android</Link>
-                      <Link href="/">MT5 Mac/iOS</Link>
+                      <Link href="/" className="hover:text-secondary">
+                        MetaTrader 5
+                      </Link>
+                      <Link href="/" className="hover:text-secondary">
+                        MT5 Android
+                      </Link>
+                      <Link href="/" className="hover:text-secondary">
+                        MT5 Mac/iOS
+                      </Link>
                     </div>
                     <div className="flex flex-col gap-[6px]">
                       <h6 className="font-semibold">Market</h6>
-                      <Link href="/">Forex</Link>
-                      <Link href="/">Cryptos</Link>
-                      <Link href="/">Stock/Share</Link>
-                      <Link href="/">Indices/CFD</Link>
-                      <Link href="/">Commodities</Link>
+                      <Link href="/" className="hover:text-secondary">
+                        Forex
+                      </Link>
+                      <Link href="/" className="hover:text-secondary">
+                        Cryptos
+                      </Link>
+                      <Link href="/" className="hover:text-secondary">
+                        Stock/Share
+                      </Link>
+                      <Link href="/" className="hover:text-secondary">
+                        Indices/CFD
+                      </Link>
+                      <Link href="/" className="hover:text-secondary">
+                        Commodities
+                      </Link>
                     </div>
                     <div className="flex flex-col gap-[6px]">
                       <h6 className="font-semibold">Trading Conditions</h6>
-                      <Link href="/">Account Type</Link>
-                      <Link href="/">Funding & Withdrawal</Link>
-                      <Link href="/">Spread</Link>
-                      <Link href="/">Swap Free Account</Link>
-                      <Link href="/">Security of Fund</Link>
-                      <Link href="/">Trading Conditions </Link>
+                      <Link href="/" className="hover:text-secondary">
+                        Account Type
+                      </Link>
+                      <Link href="/" className="hover:text-secondary">
+                        Funding & Withdrawal
+                      </Link>
+                      <Link href="/" className="hover:text-secondary">
+                        Spread
+                      </Link>
+                      <Link href="/" className="hover:text-secondary">
+                        Swap Free Account
+                      </Link>
+                      <Link href="/" className="hover:text-secondary">
+                        Security of Fund
+                      </Link>
+                      <Link href="/" className="hover:text-secondary">
+                        Trading Conditions{" "}
+                      </Link>
                     </div>
                     <div className="flex flex-col gap-[6px]">
                       <h6 className="font-semibold">Trading Tools</h6>
-                      <Link href="/">Calculator</Link>
-                      <Link href="/">Free VPS</Link>
-                      <Link href="/">Economic Calendar</Link>
-                      <Link href="/">Market Holidays </Link>
+                      <Link href="/" className="hover:text-secondary">
+                        Calculator
+                      </Link>
+                      <Link href="/" className="hover:text-secondary">
+                        Free VPS
+                      </Link>
+                      <Link href="/" className="hover:text-secondary">
+                        Economic Calendar
+                      </Link>
+                      <Link href="/" className="hover:text-secondary">
+                        Market Holidays{" "}
+                      </Link>
                     </div>
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger>
-                  Market resources
-                </NavigationMenuTrigger>
+                <NavigationMenuTrigger>Market resources</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] grid-cols-2 ">
-                    <div className="flex flex-col gap-[6px] pl-[118px]">
-                      <h6 className="font-semibold md:w-[400px] lg:w-[500px]">Market resources</h6>
-                      <Link href="/">Forex Trading Educations</Link>
-                      <Link href="/">Technical Analysis</Link>
-                      <Link href="/">Fundamental Analysis</Link>
-                      <Link href="/">Trading Session</Link>
+                  <ul className="gap-3 p-4 md:w-[400px] lg:w-[500px]">
+                    <div className="grid grid-cols-1 gap-[6px] pl-[118px] w-full">
+                      <h6 className="font-semibold md:w-[400px] lg:w-[500px]">
+                        Market resources
+                      </h6>
+                      <Link href="/" className="hover:text-secondary">
+                        Forex Trading Educations
+                      </Link>
+                      <Link href="/" className="hover:text-secondary">
+                        Technical Analysis
+                      </Link>
+                      <Link href="/" className="hover:text-secondary">
+                        Fundamental Analysis
+                      </Link>
+                      <Link href="/" className="hover:text-secondary">
+                        Trading Session
+                      </Link>
                     </div>
                   </ul>
                 </NavigationMenuContent>
@@ -154,9 +197,15 @@ const Navbar = () => {
                   <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] grid-cols-1">
                     <div className="flex flex-col gap-[6px] items-end pr-[117px]">
                       <h6 className="font-semibold">Accounts</h6>
-                      <Link href="/">Regular Account</Link>
-                      <Link href="/">PROP Funding</Link>
-                      <Link href="/">Funding & Withdrawal</Link>
+                      <Link href="/" className="hover:text-secondary">
+                        Regular Account
+                      </Link>
+                      <Link href="/" className="hover:text-secondary">
+                        PROP Funding
+                      </Link>
+                      <Link href="/" className="hover:text-secondary">
+                        Funding & Withdrawal
+                      </Link>
                     </div>
                   </ul>
                 </NavigationMenuContent>
@@ -169,23 +218,33 @@ const Navbar = () => {
                   <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] grid-cols-1 ">
                     <div className="flex flex-col gap-[6px] items-end pr-[23px]">
                       <h6 className="font-semibold">About us</h6>
-                      <Link href="/">Our Goal</Link>
-                      <Link href="/">Company News</Link>
-                      <Link href="/">License & Regulations</Link>
-                      <Link href="/">Legal Documents</Link>
-                      <Link href="/">Global Offices</Link>
+                      <Link href="/" className="hover:text-secondary">
+                        Our Goal
+                      </Link>
+                      <Link href="/" className="hover:text-secondary">
+                        Company News
+                      </Link>
+                      <Link href="/" className="hover:text-secondary">
+                        License & Regulations
+                      </Link>
+                      <Link href="/" className="hover:text-secondary">
+                        Legal Documents
+                      </Link>
+                      <Link href="/" className="hover:text-secondary">
+                        Global Offices
+                      </Link>
                     </div>
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <Link href="/partners" legacyBehavior passHref>
-                  Partners
+                  <span className="hover:text-secondary cursor-pointer">Partners</span>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <Link href="/supports" legacyBehavior passHref>
-                  Supports
+                  <span className="hover:text-secondary cursor-pointer">Supports</span>
                 </Link>
               </NavigationMenuItem>
             </NavigationMenuList>
