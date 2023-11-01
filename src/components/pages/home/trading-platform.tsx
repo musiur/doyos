@@ -1,4 +1,4 @@
-import Gadgets from "@/components/assets/home/trading-platform/gadgets";
+
 import { Button } from "@/components/ui/button";
 import { BadgeCheck } from "lucide-react";
 import Image from "next/image";
@@ -45,7 +45,7 @@ const TradingPlatform = () => {
               </div>
             </li>
           </ul>
-          <div className="flex items-center justify-start gap-[20px]">
+          <div className="flex flex-wrap items-center justify-start gap-[20px]">
             <Button>Open Demo Account</Button>
             <Button variant="secondary">Open Real Acccount</Button>
           </div>
