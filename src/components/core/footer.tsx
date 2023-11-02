@@ -6,12 +6,12 @@ const Footer = () => {
   return (
     <footer className="section bg-primary">
       <div className="container text-center text-white">
-        <section className="flex flex-wrap items-start justify-between gap-10 md:gap-5">
+        <section className="flex flex-wrap items-start justify-between gap-10 md:gap-5 ">
           {HeadingLinks.map((item) => {
             return (
               <div
                 key={item.id}
-                className="text-white flex flex-col items-start justify-start gap-3"
+                className="text-white flex flex-col items-start justify-start gap-3 md:flex-start"
               >
                 <h4 className="font-bold text-white text-lg md:text-xl">
                   {item.title}
@@ -32,7 +32,7 @@ const Footer = () => {
           })}
         </section>
         <section className=" section flex flex-col gap-10">
-          <p className="text-white text-left">
+          <p className="text-white text-justify">
             High Risk Investment Notice: Trading Forex/CFDs on margin carries a
             high level of risk and may not be suitable for all investors as you
             could sustain losses in excess of deposits. The products are
@@ -74,10 +74,12 @@ const Footer = () => {
           </div>
         </section>
         <section className="flex flex-wrap-reverse items-center justify-between gap-10 mt-10">
-          <div className="inline-flex gap-2 items-center">
-            <div className="bg-white p-1 rounded-md">
+          {/* items-center ms-[28%] md:ms-[0%] */}
+          <div className="inline-flex gap-2 items-center flex-col m-auto md:flex-row md:m-0">
+            <div className="bg-white p-1 m-auto flex rounded-md">
               <BrandLogo />
             </div>
+
             <span className="text-white">
               © {new Date().getFullYear()}. All rights reserved
             </span>

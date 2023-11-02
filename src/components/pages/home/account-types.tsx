@@ -42,7 +42,7 @@ const AccountTypes = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center gap-10">
-          <h2 className="text-right">
+          <h2 className="text-center md:text-right">
             Choose the{" "}
             <span className="text-secondary h2-span">
               best
@@ -50,7 +50,9 @@ const AccountTypes = () => {
             </span>{" "}
             for you
           </h2>
-          <div className="flex flex-col items-end justify-center gap-[20px]">
+
+          <div className="flex flex-col items-center md:items-end justify-center gap-[20px]">
+
             <div className="flex items-center justify-center gap-3 px-3 py-2 rounded-[10px] border font-medium bg-white">
               <BadgeCheck className="w-5 h-5 stroke-secondary" />{" "}
               <span>Individual accounts</span>
@@ -60,12 +62,14 @@ const AccountTypes = () => {
               <BadgeCheck className="w-5 h-5 stroke-secondary" />{" "}
               <span>Islamic accounts</span>
             </div>
+
             <div className="flex items-center justify-center gap-3 px-3 py-2 rounded-[10px] border font-medium bg-white">
               <BadgeCheck className="w-5 h-5 stroke-secondary" />{" "}
               <span>Institutional/Corporate Accounts</span>
             </div>
+
           </div>
-          <div className="flex flex-wrap items-center justify-end gap-[20px]">
+          <div className="flex flex-wrap items-center justify-center md:justify-end gap-[20px]">
             <Button>Open Demo Account</Button>
             <Button variant="secondary">Open Real Acccount</Button>
           </div>

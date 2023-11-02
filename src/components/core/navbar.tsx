@@ -7,10 +7,8 @@ import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetHeader,
-  SheetTitle,
-  SheetTrigger,
+  SheetTrigger
 } from "@/components/ui/sheet";
 
 import {
@@ -321,7 +319,7 @@ const Navbar = () => {
                         <Link href="/">Fundamental Analysis</Link>
                         <Link href="/">Trading Session</Link>
                       </div>
-                      <div className="flex flex-col gap-[6px]">
+                      <div className="flex flex-col gap-[6px] -mt-20 md:-mt-0">
                         <h4 className="text-[16px] md:text-[20px] font-bold mb-[12px]">
                           Accounts
                         </h4>
@@ -329,7 +327,7 @@ const Navbar = () => {
                         <Link href="/">PROP Funding</Link>
                         <Link href="/">Funding & Withdrawal</Link>
                       </div>
-                      <div className="flex flex-col gap-[6px]">
+                      <div className="flex flex-col gap-[6px] -mt-8 md:-mt-0">
                         <h4 className="text-[16px] md:text-[20px] font-bold mb-[12px]">
                           About us
                         </h4>
@@ -339,7 +337,7 @@ const Navbar = () => {
                         <Link href="/">Legal Documents</Link>
                         <Link href="/">Global Offices</Link>
                       </div>
-                      <div className="flex flex-col gap-[6px]">
+                      <div className="flex flex-col gap-[6px] -mt-16 md:-mt-0 font-bold lg:font-normal">
                         <Link href="/partners" legacyBehavior passHref>
                           Partners
                         </Link>
