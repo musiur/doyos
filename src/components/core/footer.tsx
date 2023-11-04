@@ -11,7 +11,7 @@ const Footer = () => {
             return (
               <div
                 key={item.id}
-                className="text-white flex flex-col items-start justify-start gap-3 md:flex-start"
+                className="text-white flex flex-col items-start flex-start gap-3 md:flex-start"
               >
                 <h4 className="font-bold text-white text-lg md:text-xl">
                   {item.title}
