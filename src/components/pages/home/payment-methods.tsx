@@ -38,7 +38,7 @@ const PaymentMethods = () => {
 
             {/* This section should display as a newline in smaller devices.   */}
           </div>
-          <div className="flex items-center justify-center gap-3 px-5 py-2 mt-10 rounded-[10px] border font-bold bg-white w-48 -mt-1 md:-mt-2">
+          <div className="flex items-center justify-center gap-3 px-5 py-2 mt-10 rounded-[10px] border font-bold bg-white w-48 -mt-2 md:-mt-2">
             All Payment Methods
           </div>
         </div>
@@ -48,7 +48,7 @@ const PaymentMethods = () => {
             alt=""
             width={1000}
             height={1000}
-            className="w-4/5 ml-auto h-auto"
+            className="w-4/5 ml-auto h-auto flex w-auto"
           />
         </div>
       </div>
