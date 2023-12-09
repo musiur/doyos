@@ -96,69 +96,33 @@ const Navbar = () => {
                   <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] text-primary text-[14px] md:text-[16px]">
                     <div className="flex flex-col gap-[6px]">
                       <h6 className="font-semibold">Trading Platform</h6>
-                      <Link href="/" className="hover:text-secondary">
-                        MetaTrader 5
-                      </Link>
-                      <Link href="/" className="hover:text-secondary">
-                        MT5 Android
-                      </Link>
-                      <Link href="/" className="hover:text-secondary">
-                        MT5 Mac/iOS
-                      </Link>
+                      <Link href="/trading-and-tools/trading-platform/meta-trader5">MetaTrader 5</Link>
+                      <Link href="/trading-and-tools/trading-platform/mt5-android">MT5 Android</Link>
+                      <Link href="/trading-and-tools/trading-platform/mt5-ios">MT5 Mac/iOS</Link>
                     </div>
                     <div className="flex flex-col gap-[6px]">
                       <h6 className="font-semibold">Market</h6>
-                      <Link href="/" className="hover:text-secondary">
-                        Forex
-                      </Link>
-                      <Link href="/" className="hover:text-secondary">
-                        Cryptos
-                      </Link>
-                      <Link href="/" className="hover:text-secondary">
-                        Stock/Share
-                      </Link>
-                      <Link href="/" className="hover:text-secondary">
-                        Indices/CFD
-                      </Link>
-                      <Link href="/" className="hover:text-secondary">
-                        Commodities
-                      </Link>
+                      <Link href="/trading-and-tools/market/forex">Forex</Link>
+                      <Link href="/trading-and-tools/market/cryptos">Cryptos</Link>
+                      <Link href="/trading-and-tools/market/stock">Stock/Share</Link>
+                      <Link href="/trading-and-tools/market/indices">Indices/CFD</Link>
+                      <Link href="/trading-and-tools/market/commodities">Commodities</Link>
                     </div>
                     <div className="flex flex-col gap-[6px]">
                       <h6 className="font-semibold">Trading Conditions</h6>
-                      <Link href="/" className="hover:text-secondary">
-                        Account Type
-                      </Link>
-                      <Link href="/" className="hover:text-secondary">
-                        Funding & Withdrawal
-                      </Link>
-                      <Link href="/" className="hover:text-secondary">
-                        Spread
-                      </Link>
-                      <Link href="/" className="hover:text-secondary">
-                        Swap Free Account
-                      </Link>
-                      <Link href="/" className="hover:text-secondary">
-                        Security of Fund
-                      </Link>
-                      <Link href="/" className="hover:text-secondary">
-                        Trading Conditions{" "}
-                      </Link>
+                      <Link href="/trading-and-tools/trading-conditions/account-type">Account Type</Link>
+                      <Link href="/trading-and-tools/trading-conditions/funding-withdrawal">Funding & Withdrawal</Link>
+                      <Link href="/trading-and-tools/trading-conditions/spread">Spread</Link>
+                      <Link href="/trading-and-tools/trading-conditions/swap-free-account">Swap Free Account</Link>
+                      <Link href="/trading-and-tools/trading-conditions/security-fund">Security of Fund</Link>
+                      <Link href="/trading-and-tools/trading-conditions/trading-conditions">Trading Conditions </Link>
                     </div>
                     <div className="flex flex-col gap-[6px]">
                       <h6 className="font-semibold">Trading Tools</h6>
-                      <Link href="/" className="hover:text-secondary">
-                        Calculator
-                      </Link>
-                      <Link href="/" className="hover:text-secondary">
-                        Free VPS
-                      </Link>
-                      <Link href="/" className="hover:text-secondary">
-                        Economic Calendar
-                      </Link>
-                      <Link href="/" className="hover:text-secondary">
-                        Market Holidays{" "}
-                      </Link>
+                      <Link href="/trading-and-tools/trading-tools/calculator">Calculator</Link>
+                      <Link href="/trading-and-tools/trading-tools/free-vps">Free VPS</Link>
+                      <Link href="/trading-and-tools/trading-tools/economic-calendar">Economic Calendar</Link>
+                      <Link href="/trading-and-tools/trading-tools/market-holidays">Market Holidays </Link>
                     </div>
                   </ul>
                 </NavigationMenuContent>
@@ -166,23 +130,13 @@ const Navbar = () => {
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Market resources</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="gap-3 p-4 md:w-[400px] lg:w-[500px]">
-                    <div className="grid grid-cols-1 gap-[6px] pl-[118px] w-full">
-                      <h6 className="font-semibold md:w-[400px] lg:w-[500px]">
-                        Market resources
-                      </h6>
-                      <Link href="/" className="hover:text-secondary">
-                        Forex Trading Educations
-                      </Link>
-                      <Link href="/" className="hover:text-secondary">
-                        Technical Analysis
-                      </Link>
-                      <Link href="/" className="hover:text-secondary">
-                        Fundamental Analysis
-                      </Link>
-                      <Link href="/" className="hover:text-secondary">
-                        Trading Session
-                      </Link>
+                  <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] grid-cols-2 ">
+                    <div className="flex flex-col gap-[6px] pl-[118px]">
+                      <h6 className="font-semibold md:w-[400px] lg:w-[500px]">Market resources</h6>
+                      <Link href="/market-resources/forex-educations">Forex Trading Educations</Link>
+                      <Link href="/market-resources/technical-analysis">Technical Analysis</Link>
+                      <Link href="/market-resources/fundamental-analysis">Fundamental Analysis</Link>
+                      <Link href="/market-resources/trading-session">Trading Session</Link>
                     </div>
                   </ul>
                 </NavigationMenuContent>
@@ -195,15 +149,9 @@ const Navbar = () => {
                   <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] grid-cols-1">
                     <div className="flex flex-col gap-[6px] items-end pr-[117px]">
                       <h6 className="font-semibold">Accounts</h6>
-                      <Link href="/" className="hover:text-secondary">
-                        Regular Account
-                      </Link>
-                      <Link href="/" className="hover:text-secondary">
-                        PROP Funding
-                      </Link>
-                      <Link href="/" className="hover:text-secondary">
-                        Funding & Withdrawal
-                      </Link>
+                      <Link href="/accounts/regular">Regular Account</Link>
+                      <Link href="/accounts/prop-funding">PROP Funding</Link>
+                      <Link href="/accounts/funding-widthdrawal">Funding & Withdrawal</Link>
                     </div>
                   </ul>
                 </NavigationMenuContent>
@@ -216,21 +164,11 @@ const Navbar = () => {
                   <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] grid-cols-1 ">
                     <div className="flex flex-col gap-[6px] items-end pr-[23px]">
                       <h6 className="font-semibold">About us</h6>
-                      <Link href="/" className="hover:text-secondary">
-                        Our Goal
-                      </Link>
-                      <Link href="/" className="hover:text-secondary">
-                        Company News
-                      </Link>
-                      <Link href="/" className="hover:text-secondary">
-                        License & Regulations
-                      </Link>
-                      <Link href="/" className="hover:text-secondary">
-                        Legal Documents
-                      </Link>
-                      <Link href="/" className="hover:text-secondary">
-                        Global Offices
-                      </Link>
+                      <Link href="/about-us/our-goal">Our Goal</Link>
+                      <Link href="/about-us/company-news">Company News</Link>
+                      <Link href="/about-us/license-regulations">License & Regulations</Link>
+                      <Link href="/about-us/legal-documents">Legal Documents</Link>
+                      <Link href="/about-us/global-offices">Global Offices</Link>
                     </div>
                   </ul>
                 </NavigationMenuContent>
@@ -297,7 +235,7 @@ const Navbar = () => {
                         <Link href="/">Account Type</Link>
                         <Link href="/">Funding & Withdrawal</Link>
                         <Link href="/">Spread</Link>
-                        <Link href="/">Swap Free Account</Link>
+                        <Link href="/trading-and-tools/trading-conditions/swap-free-account">Swap Free Account</Link>
                         <Link href="/">Security of Fund</Link>
                         <Link href="/">Trading Conditions </Link>
                       </div>
