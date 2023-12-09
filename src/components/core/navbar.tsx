@@ -96,33 +96,33 @@ const Navbar = () => {
                   <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] text-primary text-[14px] md:text-[16px]">
                     <div className="flex flex-col gap-[6px]">
                       <h6 className="font-semibold">Trading Platform</h6>
-                      <Link href="/">MetaTrader 5</Link>
-                      <Link href="/">MT5 Android</Link>
-                      <Link href="/">MT5 Mac/iOS</Link>
+                      <Link href="/trading-and-tools/trading-platform/meta-trader5">MetaTrader 5</Link>
+                      <Link href="/trading-and-tools/trading-platform/mt5-android">MT5 Android</Link>
+                      <Link href="/trading-and-tools/trading-platform/mt5-ios">MT5 Mac/iOS</Link>
                     </div>
                     <div className="flex flex-col gap-[6px]">
                       <h6 className="font-semibold">Market</h6>
-                      <Link href="/">Forex</Link>
-                      <Link href="/">Cryptos</Link>
-                      <Link href="/">Stock/Share</Link>
-                      <Link href="/">Indices/CFD</Link>
-                      <Link href="/">Commodities</Link>
+                      <Link href="/trading-and-tools/market/forex">Forex</Link>
+                      <Link href="/trading-and-tools/market/cryptos">Cryptos</Link>
+                      <Link href="/trading-and-tools/market/stock">Stock/Share</Link>
+                      <Link href="/trading-and-tools/market/indices">Indices/CFD</Link>
+                      <Link href="/trading-and-tools/market/commodities">Commodities</Link>
                     </div>
                     <div className="flex flex-col gap-[6px]">
                       <h6 className="font-semibold">Trading Conditions</h6>
-                      <Link href="/">Account Type</Link>
-                      <Link href="/">Funding & Withdrawal</Link>
-                      <Link href="/">Spread</Link>
-                      <Link href="/">Swap Free Account</Link>
-                      <Link href="/">Security of Fund</Link>
-                      <Link href="/">Trading Conditions </Link>
+                      <Link href="/trading-and-tools/trading-conditions/account-type">Account Type</Link>
+                      <Link href="/trading-and-tools/trading-conditions/funding-withdrawal">Funding & Withdrawal</Link>
+                      <Link href="/trading-and-tools/trading-conditions/spread">Spread</Link>
+                      <Link href="/trading-and-tools/trading-conditions/swap-free-account">Swap Free Account</Link>
+                      <Link href="/trading-and-tools/trading-conditions/security-fund">Security of Fund</Link>
+                      <Link href="/trading-and-tools/trading-conditions/trading-conditions">Trading Conditions </Link>
                     </div>
                     <div className="flex flex-col gap-[6px]">
                       <h6 className="font-semibold">Trading Tools</h6>
-                      <Link href="/">Calculator</Link>
-                      <Link href="/">Free VPS</Link>
-                      <Link href="/">Economic Calendar</Link>
-                      <Link href="/">Market Holidays </Link>
+                      <Link href="/trading-and-tools/trading-tools/calculator">Calculator</Link>
+                      <Link href="/trading-and-tools/trading-tools/free-vps">Free VPS</Link>
+                      <Link href="/trading-and-tools/trading-tools/economic-calendar">Economic Calendar</Link>
+                      <Link href="/trading-and-tools/trading-tools/market-holidays">Market Holidays </Link>
                     </div>
                   </ul>
                 </NavigationMenuContent>
@@ -135,10 +135,10 @@ const Navbar = () => {
                   <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] grid-cols-2 ">
                     <div className="flex flex-col gap-[6px] pl-[118px]">
                       <h6 className="font-semibold md:w-[400px] lg:w-[500px]">Market resources</h6>
-                      <Link href="/">Forex Trading Educations</Link>
-                      <Link href="/">Technical Analysis</Link>
-                      <Link href="/">Fundamental Analysis</Link>
-                      <Link href="/">Trading Session</Link>
+                      <Link href="/market-resources/forex-educations">Forex Trading Educations</Link>
+                      <Link href="/market-resources/technical-analysis">Technical Analysis</Link>
+                      <Link href="/market-resources/fundamental-analysis">Fundamental Analysis</Link>
+                      <Link href="/market-resources/trading-session">Trading Session</Link>
                     </div>
                   </ul>
                 </NavigationMenuContent>
@@ -151,9 +151,9 @@ const Navbar = () => {
                   <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] grid-cols-1">
                     <div className="flex flex-col gap-[6px] items-end pr-[117px]">
                       <h6 className="font-semibold">Accounts</h6>
-                      <Link href="/">Regular Account</Link>
-                      <Link href="/">PROP Funding</Link>
-                      <Link href="/">Funding & Withdrawal</Link>
+                      <Link href="/accounts/regular">Regular Account</Link>
+                      <Link href="/accounts/prop-funding">PROP Funding</Link>
+                      <Link href="/accounts/funding-widthdrawal">Funding & Withdrawal</Link>
                     </div>
                   </ul>
                 </NavigationMenuContent>
@@ -166,11 +166,11 @@ const Navbar = () => {
                   <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] grid-cols-1 ">
                     <div className="flex flex-col gap-[6px] items-end pr-[23px]">
                       <h6 className="font-semibold">About us</h6>
-                      <Link href="/">Our Goal</Link>
-                      <Link href="/">Company News</Link>
-                      <Link href="/">License & Regulations</Link>
-                      <Link href="/">Legal Documents</Link>
-                      <Link href="/">Global Offices</Link>
+                      <Link href="/about-us/our-goal">Our Goal</Link>
+                      <Link href="/about-us/company-news">Company News</Link>
+                      <Link href="/about-us/license-regulations">License & Regulations</Link>
+                      <Link href="/about-us/legal-documents">Legal Documents</Link>
+                      <Link href="/about-us/global-offices">Global Offices</Link>
                     </div>
                   </ul>
                 </NavigationMenuContent>
@@ -237,7 +237,7 @@ const Navbar = () => {
                         <Link href="/">Account Type</Link>
                         <Link href="/">Funding & Withdrawal</Link>
                         <Link href="/">Spread</Link>
-                        <Link href="/">Swap Free Account</Link>
+                        <Link href="/trading-and-tools/trading-conditions/swap-free-account">Swap Free Account</Link>
                         <Link href="/">Security of Fund</Link>
                         <Link href="/">Trading Conditions </Link>
                       </div>
