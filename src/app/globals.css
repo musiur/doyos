@@ -59,3 +59,7 @@ h2,
 .section {
   @apply py-[80px];
 }
+
+.action-span {
+  @apply text-[#C1282D] text-[27px] md:text-[35px] lg:text-[48px];
+}
