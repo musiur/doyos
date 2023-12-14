@@ -1,15 +1,27 @@
 import MostPopularCard from "@/components/molecules/most-popular-card";
 import Image from "next/image";
+// import Image from "next/image";
 
 const ForexTrading = () => {
-    return (
-        <div>
-            <div className="bg-[url('/images/pages/trading-and-tools/market/ForexTradingBanner.svg')] bg-cover bg-center h-[317px]">
-            </div>
-            <br />
-            {/* most popular forex trading content card */}
-            <MostPopularCard />
-            {/* <div className="container  flex flex-col-reverse lg:flex-row items-center justify-between py-[70px]">
+  return (
+    <div>
+      <div className="bg-[url('/images/pages/trading-and-tools/market/ForexTradingBanner.svg')] bg-cover bg-center h-[317px]"></div>
+      <br />
+      {/* most popular forex trading content card */}
+      <MostPopularCard
+        sectionImage={
+          <Image
+            src="/images/pages/trading-and-tools/market/popular-trade.png"
+            alt="most popular trade image"
+            width={600}
+            height={493}
+          />
+        }
+        highlighter="Hello"
+        heading={<>Hello</>}
+        paragraphs={[<>Hello</>]}
+      />
+      {/* <div className="container  flex flex-col-reverse lg:flex-row items-center justify-between py-[70px]">
                 <div className="text">
                     <h1 className="font-bold text-[27px] md:text-[35px] lg:text-[48px] max-w-[664px] leading-[55px] pt-5" >
                         Trade The Most Popular <span className="action-span">Forex Trading Pairs
@@ -29,8 +41,8 @@ const ForexTrading = () => {
                     />
                 </div>
             </div> */}
-        </div>
-    );
+    </div>
+  );
 };
 
 export default ForexTrading;
