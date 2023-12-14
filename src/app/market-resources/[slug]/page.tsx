@@ -1,8 +1,9 @@
+import ForexEducation from "@/components/pages/market-resources/forex-educations/forex-education";
 
 const MarketResourcesSlug = ({ params }: { params: { slug: String } }) => {
     return (
         <div>
-            <h1>{params.slug}...Hey!</h1>
+            <ForexEducation />
         </div>
     );
 };
