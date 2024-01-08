@@ -4,38 +4,17 @@ import Image from "next/image";
 
 // Your Indices component
 const Indices = () => {
-    // Provide your custom image component
-    const customImageComponent = (
-        <Image
-            src="/images/pages/trading-and-tools/market/popular-indices.png"
-            alt="most popular indices image"
-            width={600}
-            height={493}
-        />
-    );
-
-    // Your custom paragraphs
-    const newParagraphs = [
-        <>
-            Customize the first paragraph with your own content and{' '}
-            <span>customize the span</span>.
-        </>,
-        <>
-            Add a new paragraph here with your own content. You can also use{' '}
-            <span>additional spans</span>.
-        </>,
-    ];
-
-    // Render the MostPopularCard component with custom props
-    return (
-        <div>
-            <MostPopularCard
-                sectionImage={customImageComponent}
-                highlighter="Trade Indices Online."
-                paragraphs={newParagraphs}
+    <MostPopularCard
+        sectionImage={
+            <Image
+                src="/images/pages/trading-and-tools/market/popular-trade.png"
+                alt="most popular trade image"
+                width={600}
+                height={493}
             />
-        </div>
-    );
-};
-
+        }
+        heading={<>What is the <span>Heading</span></>}
+        paragraphs={[<>Hello <span> Sajid</span> </>]}
+    />
+}
 export default Indices;

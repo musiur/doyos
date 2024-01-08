@@ -12,7 +12,7 @@ const MostPopularCard = ({
       />
     </>
   ),
-  highlighter = "Trade The Most Popular",
+
   heading = (
     <span className="action-span">Forex Trading Pairs with Low Spreads</span>
   ),
@@ -31,25 +31,28 @@ const MostPopularCard = ({
   ],
 }: {
   sectionImage?: ReactElement;
-  highlighter?: string;
   heading?: ReactElement;
   paragraphs?: ReactNode[];
 }) => {
   return (
-    <div className="container flex flex-col-reverse lg:flex-row items-center justify-between py-[70px]">
-      <div className="text">
-        {highlighter ? (
-          <p className="font-bold text-[27px] md:text-[35px] lg:text-[48px] max-w-[664px] leading-[55px] py-7">
-            {highlighter} {heading}
-          </p>
-        ) : null}
-        {paragraphs.length
-          ? paragraphs.map((item: ReactNode, index: number) => (
-              <p key={index} className="max-w-[752px]  pb-[22px]">
-                {item}
-              </p>
-            ))
-          : null}
+    <div className="container grid grid-cols-1 md:grid-cols-2  py-[70px]">
+      <div>
+        <h2>
+          {heading}
+        </h2>
+        <div className="flex flex-col gap-[22px]">
+          {paragraphs.length
+            ? paragraphs.map((item: ReactNode, index: number) => {
+              return (
+                <p key={index} className="max-w-[752px] py-[22px]">
+                  {item}
+                </p>
+              );
+            })
+            : null}
+        </div>
+
+
       </div>
       {sectionImage ? <div className="image">{sectionImage}</div> : null}
     </div>
