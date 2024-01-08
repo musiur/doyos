@@ -1,17 +1,12 @@
+import clsx from "clsx";
+import { BadgeCheck } from "lucide-react";
 import Image from "next/image";
 import React, { ReactElement, ReactNode } from "react";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 const MostPopularCard = ({
-  sectionImage = (
-    <>
-      <Image
-        src="/images/pages/trading-and-tools/market/popular-trade.png"
-        alt="most popular trade image"
-        width={600}
-        height={493}
-      />
-    </>
-  ),
+  image = "/images/pages/trading-and-tools/market/popular-trade.png",
 
   heading = (
     <span className="action-span">Forex Trading Pairs with Low Spreads</span>
@@ -29,32 +24,83 @@ const MostPopularCard = ({
       you.
     </>,
   ],
+  imageLeft = false,
+  checkItems = [],
+  buttonList = [],
 }: {
-  sectionImage?: ReactElement;
+  image?: string;
   heading?: ReactElement;
   paragraphs?: ReactNode[];
+  imageLeft?: boolean;
+  checkItems?: string[];
+  buttonList?: {
+    id: number;
+    text: string;
+    link: string;
+    variant:
+      | "default"
+      | "destructive"
+      | "outline"
+      | "secondary"
+      | "ghost"
+      | "link"
+      | null
+      | undefined;
+  }[];
 }) => {
   return (
-    <div className="container grid grid-cols-1 md:grid-cols-2  py-[70px]">
-      <div>
-        <h2>
-          {heading}
-        </h2>
-        <div className="flex flex-col gap-[22px]">
-          {paragraphs.length
-            ? paragraphs.map((item: ReactNode, index: number) => {
+    <div
+      className={clsx(
+        "container flex flex-col md:flex-row items-center justify-between gap-[32px]  py-[70px]",
+        { "md:flex-row-reverse": imageLeft, "md:flex-row": !imageLeft }
+      )}
+    >
+      <div className="flex flex-col gap-[48px] max-w-[750px]">
+        <h2>{heading}</h2>
+        {paragraphs.length ? (
+          <div className="flex flex-col gap-[22px]">
+            {paragraphs.map((item, index) => {
+              return <p key={index}>{item}</p>;
+            })}
+          </div>
+        ) : null}
+        {checkItems.length ? (
+          <div className="flex flex-wrap items-center gap-[22px]">
+            {checkItems.map((item, index) => {
               return (
-                <p key={index} className="max-w-[752px] py-[22px]">
-                  {item}
-                </p>
+                <div
+                  key={index}
+                  className="flex items-center gap-[4px] py-[10px] px-[20px] rounded-[8px] border"
+                >
+                  <BadgeCheck className="stroke-secondary storke-[1.3px] w-[16px] h-[16px]" />
+                  <span>{item}</span>
+                </div>
               );
-            })
-            : null}
-        </div>
-
-
+            })}
+          </div>
+        ) : null}
+        {buttonList.length ? (
+          <div className="flex flex-wrap items-center gap-[22px]">
+            {buttonList.map((item) => {
+              const { id, text, link, variant } = item;
+              return (
+                <Link key={id} href={link}>
+                  <Button variant={variant}>{text}</Button>
+                </Link>
+              );
+            })}
+          </div>
+        ) : null}
       </div>
-      {sectionImage ? <div className="image">{sectionImage}</div> : null}
+      {image ? (
+        <Image
+          src={image}
+          alt="section-image"
+          width={1000}
+          height={1000}
+          className="w-auto max-h-[500px]"
+        />
+      ) : null}
     </div>
   );
 };
