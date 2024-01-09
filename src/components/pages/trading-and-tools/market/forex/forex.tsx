@@ -23,8 +23,10 @@ const ForexTrading = () => {
 
         heading={<>Trade The Most Popular <span className="h2-span text-secondary">Forex
           Trading Pairs</span> with Low Spreads</>}
-        paragraphs={[<>Trade Forex with a globally recognized broker. Buy and sell CFDs through our bespoke MetaTrader 5 trading platform, and benefit from the award-winning multilingual customer support available 24/7, <br /> <>Some believe you must choose between an online broker and a wealth management firm. At DOYOS, you don&apos;t need to compromise. Whether you invest on your own, with an advisor, or a little of both — we can support you.</>
-        </>]}
+        paragraphs={[<>Trade Forex with a globally recognized broker. Buy and sell CFDs through our bespoke MetaTrader 5 trading platform, and benefit from the award-winning multilingual customer support available 24/7</>,
+
+        <>Some believe you must choose between an online broker and a wealth management firm. At DOYOS, you don&apos;t need to compromise. Whether you invest on your own, with an advisor, or a little of both — we can support you.</>
+        ]}
       />
 
     </div>

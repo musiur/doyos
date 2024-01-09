@@ -35,7 +35,7 @@ const MostPopularCard = ({
   paragraphs?: ReactNode[];
 }) => {
   return (
-    <div className="container grid grid-cols-1 md:grid-cols-2  py-[70px]">
+    <div className="container grid grid-cols-1 md:grid-cols-2  items-center gap-12 py-[70px]">
       <div>
         <h2>
           {heading}

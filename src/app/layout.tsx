@@ -1,7 +1,7 @@
 import Navbar from "@/components/core/navbar";
 import type { Metadata } from "next";
 import { Titillium_Web } from "next/font/google";
-import "./globals.css";
+import "./globals.scss";
 import Footer from "@/components/core/footer";
 
 const Titillium = Titillium_Web({
