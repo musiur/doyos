@@ -3,9 +3,9 @@ import Rockets from "@/components/assets/trading-tools/rockets";
 
 import MostPopularCard from "@/components/molecules/most-popular-card";
 import WhyTraderChooseCarousel from "@/components/molecules/why-trader-choose-carousel";
-import HowToGetStarted from "@/components/molecules/how-to-get-started-section";
+import HowToGetStarted from "@/components/pages/how-to-get-started-section";
 import Image from "next/image";
-import InterestedAndChoosePlatform from "@/components/molecules/interested-and-choose-platform-section";
+import InterestedAndChoosePlatform from "@/components/pages/interested-and-choose-platform-section";
 
 const ForexTrading = () => {
   return (
