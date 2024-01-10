@@ -1,6 +1,7 @@
+import { cn } from "@/lib/utils";
 import React from "react";
 
-const Mt5AppleIcon = () => {
+const Mt5AppleIcon = ({ className }: { className: string }) => {
   return (
     <svg
       width="115"
@@ -8,6 +9,7 @@ const Mt5AppleIcon = () => {
       viewBox="0 0 115 39"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={cn(className, "")}
     >
       <path
         d="M0 37V12H9.23772L13.9549 30.2353L18.672 12H27.9097V37H22.485V17.6618H21.8954L16.6672 35.8971H11.2425L6.01434 17.6618H5.4247V37H0Z"
