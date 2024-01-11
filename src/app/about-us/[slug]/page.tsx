@@ -1,10 +1,11 @@
+import LegalDocuments from "@/components/pages/about-us/legal-documents";
 
 const AboutUsSlug = ({ params }: { params: { slug: String } }) => {
-    return (
-        <>
-            <h1>hi...{params.slug}</h1>
-        </>
-    );
+  return (
+    <>
+      <LegalDocuments />
+    </>
+  );
 };
 
 export default AboutUsSlug;

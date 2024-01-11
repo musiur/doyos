@@ -8,18 +8,23 @@ import Mt5AppleIcon from "../icons/mt5-apple-icon";
 import Mt5AndroidIcon from "../icons/mt5-android-icon";
 import Mt5MultiTerminalIcon from "../icons/mt5-multi-terminal";
 import FeatureCard from "../molecules/feature-card";
+import SectionHead from "../molecules/section-head";
 
 const InterestedAndChoosePlatform = () => {
   return (
     <div className="  bg-[url('/images/market-and-platform-bg.png')] bg-cover bg-bottom pt-[30px] pb-[140px]">
       <div className="section container">
-        <div className="text-center pb-[50px]">
-          <h2>Interested in Other Markets?</h2>
-          <p className="pt-[30px]">
-            Doyos offers access to tier-1 bank liquidity across a large
-            selection of trading instruments including
-          </p>
-        </div>
+        <SectionHead
+          details={{
+            H2: <>Interested in Other Markets?</>,
+            p: [
+              <>
+                Doyos offers access to tier-1 bank liquidity across a large
+                selection of trading instruments including
+              </>,
+            ],
+          }}
+        />
         <div className="flex flex-wrap items-center justify-center gap-[30px] md:gap-[100px]">
           {MarketData.map((item) => {
             return <FeatureCard key={item.id} details={item} />;
@@ -27,14 +32,18 @@ const InterestedAndChoosePlatform = () => {
         </div>
       </div>
       <div className="section container">
-        <div className="text-center pb-[50px]">
-          <h2>Choose Your Platform</h2>
-          <p className="pt-[30px]">
-            Trade the world&apos;s most advanced platforms, anywhere, any time
-            and on any device, without compromising on speed, precision, or
-            execution.
-          </p>
-        </div>
+        <SectionHead
+          details={{
+            H2: <>Choose Your Platform</>,
+            p: [
+              <>
+                Trade the world&apos;s most advanced platforms, anywhere, any
+                time and on any device, without compromising on speed,
+                precision, or execution.
+              </>,
+            ],
+          }}
+        />
         <div className="flex flex-wrap items-center justify-center gap-[50px]">
           {PlatformData.map((item) => {
             return <FeatureCard key={item.id} details={item} />;

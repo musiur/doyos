@@ -8,6 +8,7 @@ const FeatureCard = ({
     title: "Title",
     text: "text",
     icon: <AccountIcon className="" />,
+    steps: false,
   },
 }: {
   details: {
@@ -15,24 +16,33 @@ const FeatureCard = ({
     title?: string;
     text?: string;
     icon: ReactNode;
+    steps?: boolean;
   };
 }) => {
   return (
     <div
       className={clsx(
-        "card flex flex-col text-center items-center gap-[13px] bg-white rounded-[10px] px-[48px] h-auto py-[24px]",
+        "card relative flex flex-col text-center items-center gap-[13px] bg-white rounded-[10px] px-[48px] h-auto py-[24px]",
         {
           "w-full md:max-w-[472px] border-0": details.text,
           border: !details.text,
         }
       )}
     >
+      <div
+        className={clsx(
+          "absolute top-[-20px] right-[-20px] z-10 w-[48px] h-[48px] md:w-[60px] md:h-[60px] bg-[#E3F4FE] text-[#77C7FA] flex items-center justify-center rounded-full shadow text-[24px] md:text-[32px]",
+          { hidden: !details.steps, flex: details.steps }
+        )}
+      >
+        {details.id}
+      </div>
       {details.icon}
       {details.title ? (
         <p
           className={clsx({
             "text-[16px] md:text-[24px] font-bold": details.text,
-            "text-[14px] md:text-[16px] font-medium": !details.text,
+            "text-[14px] md:text-[16px] font-semibold": !details.text,
           })}
         >
           {details.title}

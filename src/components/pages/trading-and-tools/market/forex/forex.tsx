@@ -8,6 +8,7 @@ import Image from "next/image";
 import InterestedAndChoosePlatform from "@/components/pages/interested-and-choose-platform-section";
 import CloudShield from "@/components/assets/trading-tools/cloud-shield";
 import Trophies from "@/components/assets/trading-tools/trophies";
+import HowItWorks from "@/components/pages/how-it-works-section";
 
 const ForexTrading = () => {
   return (
@@ -74,7 +75,13 @@ const ForexTrading = () => {
 
       {/* Forex Graph Section -image */}
       <div className="section container flex justify-center">
-        <Image className="w-full " src="/images/pages/trading-and-tools/market/forexGraph.png" alt="Forex Graph" width={1000} height={1000} />
+        <Image
+          className="w-full "
+          src="/images/pages/trading-and-tools/market/forexGraph.png"
+          alt="Forex Graph"
+          width={1000}
+          height={1000}
+        />
       </div>
 
       {/* why traders choose doyos carousol Starts */}
@@ -103,12 +110,12 @@ const ForexTrading = () => {
       <HowToGetStarted />
       {/* Interested Markets and Choose Platform */}
       <InterestedAndChoosePlatform />
+      <HowItWorks />
     </div>
-  )
+  );
 };
 
 export default ForexTrading;
-
 
 const cards = [
   {

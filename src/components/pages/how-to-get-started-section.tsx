@@ -2,18 +2,23 @@ import AccountIcon from "../icons/account-icon";
 import SignupIcon from "../icons/signup-icon";
 import TradeIcon from "../icons/trade-icon";
 import FeatureCard from "../molecules/feature-card";
+import SectionHead from "../molecules/section-head";
 
 const HowToGetStarted = () => {
   return (
     <div className="get-gradient">
       <div className="section container">
-        <div className="header-text pt-[50px] text-center">
-          <h2>How to Get Started</h2>
-          <p className="pt-[30px]">
-            To begin your investment journey in theForex markets, follow these
-            simple steps
-          </p>
-        </div>
+        <SectionHead
+          details={{
+            H2: <>How to Get Started</>,
+            p: [
+              <>
+                To begin your investment journey in theForex markets, follow
+                these simple steps
+              </>,
+            ],
+          }}
+        />
         <div className="icons-card pt-[60px] pb-[40px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 content-center gap-[10px] ">
           {CardData.map((item) => {
             return <FeatureCard key={item.id} details={item} />;
