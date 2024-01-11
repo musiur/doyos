@@ -5,7 +5,7 @@ import FeatureCard from "../molecules/feature-card";
 
 const HowToGetStarted = () => {
   return (
-    <div className="bg-muted">
+    <div className="get-gradient">
       <div className="section container">
         <div className="header-text pt-[50px] text-center">
           <h2>How to Get Started</h2>

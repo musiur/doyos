@@ -46,6 +46,10 @@
   @apply max-w-[1437px] mx-auto px-5 2xl:px-0;
 }
 
+.get-gradient {
+  background: linear-gradient(180deg, rgba(37, 191, 198, 0.10) 0%, rgba(27, 59, 136, 0.10) 100%);
+}
+
 h1,
 .h1-span {
   @apply text-[28px] md:text-[42px] xl:text-[64px] font-bold leading-[42px] md:leading-[58px] xl:leading-[80px];
