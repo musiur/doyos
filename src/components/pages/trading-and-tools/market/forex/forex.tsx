@@ -6,6 +6,8 @@ import WhyTraderChooseCarousel from "@/components/molecules/why-trader-choose-ca
 import HowToGetStarted from "@/components/pages/how-to-get-started-section";
 import Image from "next/image";
 import InterestedAndChoosePlatform from "@/components/pages/interested-and-choose-platform-section";
+import CloudShield from "@/components/assets/trading-tools/cloud-shield";
+import Trophies from "@/components/assets/trading-tools/trophies";
 
 const ForexTrading = () => {
   return (
@@ -70,10 +72,12 @@ const ForexTrading = () => {
         ]}
       />
 
-      {/* Graph Section */}
+      {/* Forex Graph Section -image */}
       <div className="section container flex justify-center">
         <Image className="w-full " src="/images/pages/trading-and-tools/market/forexGraph.png" alt="Forex Graph" width={1000} height={1000} />
       </div>
+
+      {/* why traders choose doyos carousol Starts */}
       <div className="section container">
         <h2>
           Why traders choose&nbsp;
@@ -96,14 +100,15 @@ const ForexTrading = () => {
       </div>
 
       {/* How to Get Started Section */}
-     <HowToGetStarted/>
-     {/* Interested Markets and Choose Platform */}
-     <InterestedAndChoosePlatform/>
+      <HowToGetStarted />
+      {/* Interested Markets and Choose Platform */}
+      <InterestedAndChoosePlatform />
     </div>
   )
 };
 
 export default ForexTrading;
+
 
 const cards = [
   {
@@ -120,15 +125,15 @@ const cards = [
   },
   {
     id: 3,
-    image: <FastClock className="" />,
-    title: "Ultra-Fast Execution",
-    text: "Experience an NDD trading environment that employs the latest technology to execute trading orders in just 0.03 seconds (average order execution speed).",
+    image: <CloudShield className="" />,
+    title: "Top Tier Security",
+    text: "Trade responsibly with negative balance protection, highly secure data encryption, and free VPS, and rest assured that client funds remain segregated from proprietary company funds.",
   },
   {
     id: 4,
-    image: <FastClock className="" />,
-    title: "Ultra-Fast Execution",
-    text: "Experience an NDD trading environment that employs the latest technology to execute trading orders in just 0.03 seconds (average order execution speed).",
+    image: <Trophies className="" />,
+    title: "Award-Winning Research",
+    text: "Benefit from daily actionable analytics and market research from the renowned in-house Doyos investment research team; as seen on Bloomberg, CNBC and Refinitiv Eikon.",
   },
   {
     id: 5,
@@ -138,20 +143,20 @@ const cards = [
   },
   {
     id: 6,
-    image: <FastClock className="" />,
-    title: "Ultra-Fast Execution",
-    text: "Experience an NDD trading environment that employs the latest technology to execute trading orders in just 0.03 seconds (average order execution speed).",
+    image: <Rockets className="" />,
+    title: "Competitive Trading Conditions",
+    text: "Trade with tight spreads starting from 0.0 pips on the internationally acclaimed MetaTrader 4 & 5 platforms.",
   },
   {
     id: 7,
-    image: <FastClock className="" />,
-    title: "Ultra-Fast Execution",
-    text: "Experience an NDD trading environment that employs the latest technology to execute trading orders in just 0.03 seconds (average order execution speed).",
+    image: <CloudShield className="" />,
+    title: "Top Tier Security",
+    text: "Trade responsibly with negative balance protection, highly secure data encryption, and free VPS, and rest assured that client funds remain segregated from proprietary company funds.",
   },
   {
     id: 8,
-    image: <FastClock className="" />,
-    title: "Ultra-Fast Execution",
-    text: "Experience an NDD trading environment that employs the latest technology to execute trading orders in just 0.03 seconds (average order execution speed).",
+    image: <Trophies className="" />,
+    title: "Award-Winning Research",
+    text: "Benefit from daily actionable analytics and market research from the renowned in-house Doyos investment research team; as seen on Bloomberg, CNBC and Refinitiv Eikon.",
   },
 ];

@@ -11,7 +11,7 @@ import FeatureCard from "../molecules/feature-card";
 
 const InterestedAndChoosePlatform = () => {
   return (
-    <div className="bg-[url('/images/market-and-platform-bg.png')] bg-cover bg-bottom">
+    <div className="  bg-[url('/images/market-and-platform-bg.png')] bg-cover bg-bottom pt-[30px] pb-[140px]">
       <div className="section container">
         <div className="text-center pb-[50px]">
           <h2>Interested in Other Markets?</h2>
@@ -20,7 +20,7 @@ const InterestedAndChoosePlatform = () => {
             selection of trading instruments including
           </p>
         </div>
-        <div className="flex flex-wrap items-center justify-center gap-[50px]">
+        <div className="flex flex-wrap items-center justify-center gap-[30px] md:gap-[100px]">
           {MarketData.map((item) => {
             return <FeatureCard key={item.id} details={item} />;
           })}
