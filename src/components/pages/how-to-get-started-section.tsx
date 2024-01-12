@@ -19,7 +19,7 @@ const HowToGetStarted = () => {
             ],
           }}
         />
-        <div className="icons-card pt-[60px] pb-[40px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 content-center gap-[10px] ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 content-center gap-[10px] ">
           {CardData.map((item) => {
             return <FeatureCard key={item.id} details={item} />;
           })}

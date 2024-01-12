@@ -9,15 +9,15 @@ import InterestedAndChoosePlatform from "@/components/pages/interested-and-choos
 import CloudShield from "@/components/assets/trading-tools/cloud-shield";
 import Trophies from "@/components/assets/trading-tools/trophies";
 import HowItWorks from "@/components/pages/how-it-works-section";
+import HeroSection from "@/components/molecules/hero-section";
 
 const ForexTrading = () => {
   return (
     <div>
-      <section className="bg-[url('/images/pages/trading-and-tools/market/ForexTradingBanner.png')] bg-cover bg-center section">
-        <div className="container flex items-center h-full">
-          <h1 className="text-white">Forex Trading</h1>
-        </div>
-      </section>
+      <HeroSection
+        backgroundUrl="/images/pages/trading-and-tools/market/ForexTradingBanner.png"
+        heading={<>Forex Trading</>}
+      />
 
       <MostPopularCard
         image="/images/pages/trading-and-tools/market/popular-trade.png"
