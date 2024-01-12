@@ -10,6 +10,7 @@ import TradingPlatform from "@/components/pages/home/trading-platform";
 import WhatWeProvide from "@/components/pages/home/what-we-provider";
 
 const Home = () => {
+
   return (
     <>
       <HomeHero />
