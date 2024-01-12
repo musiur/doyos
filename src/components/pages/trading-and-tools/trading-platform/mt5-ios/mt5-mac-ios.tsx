@@ -1,24 +1,68 @@
+import AppleStore from "@/components/assets/online stores/apple-store";
 import GooglePlayStore from "@/components/assets/online stores/google-playstore";
+import MicrosoftStore from "@/components/assets/online stores/microsoft-store";
+import WebTerminal from "@/components/assets/online stores/web-terminal";
+import OnlineStoresCard from "@/components/molecules/online-stores-card";
 import clsx from "clsx";
 
 const Mt5MacIOS = () => {
     return (
-        <>
-            <section className="section container grid  grid-cols-1 md:grid-cols-2 items-center max-w-[1350px]">
-                {
-                    [1, 2, 3, 4, 5, 6].map((item) => (
-                        <>
-                            <div className={clsx("flex flex-col justify-center items-center gap-[47px] border-l border-t p-[37px]", {
-                                "border-r": item % 2 === 0, "border-b": item > 4, "border-r md:border-r-0": item % 2 !== 0,
-                            })}>
-                                <p className="font-semibold text-center text-[24px]">Download MetaTrader 5 for Android</p>
-                                <GooglePlayStore className="max-w-[280px] md:max-w-[380px] h-auto" />
-                            </div>
-                        </>
-                    ))
-                }
-            </section>
-        </>
+
+
+        <section className="section container grid  grid-cols-1 md:grid-cols-2 items-center max-w-[1350px]">
+            {
+                storesData.map((item) => (
+                    <OnlineStoresCard key={item.id} data={item}
+                    />
+                ))}
+
+        </section>
+
     )
 }
 export default Mt5MacIOS;
+
+const storesData = [
+    {
+        id: 1,
+        icon: <GooglePlayStore className="" />,
+        title: "Download MetaTrader 5 for Android",
+        subtitle: "",
+
+    },
+    {
+        id: 2,
+        icon: <MicrosoftStore className="" />,
+        title: "Download MetaTrader 5 for Windows",
+        subtitle: "",
+
+    },
+    {
+        id: 3,
+        icon: <AppleStore className="" />,
+        title: "Download MetaTrader 5 for iOS",
+        subtitle: " ",
+
+    },
+    {
+        id: 4,
+        icon: <AppleStore className="" />,
+        title: "Download MetaTrader 5 for MacOs",
+        subtitle: " ",
+
+    },
+    {
+        id: 5,
+        icon: <WebTerminal className="" />,
+        title: "DOYOS MT5 Web Terminal",
+        subtitle: " Browser based. No Download Needed. (Latest Version)",
+    },
+    {
+        id: 6,
+        icon: <WebTerminal className="" />,
+        title: "DOYOS MT5 Web Terminal",
+        subtitle: "Browser based. No Download Needed. (Old Version) ",
+
+    }
+
+];
