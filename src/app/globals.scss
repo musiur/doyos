@@ -38,7 +38,7 @@
 
 @layer base {
   * {
-    @apply p-0 m-0 box-border text-primary text-[14px] md:text-[16px];
+    @apply p-0 m-0 box-border text-primary text-[14px] md:text-[16px] outline-none;
   }
 }
 
@@ -47,7 +47,11 @@
 }
 
 .get-gradient {
-  background: linear-gradient(180deg, rgba(37, 191, 198, 0.10) 0%, rgba(27, 59, 136, 0.10) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(37, 191, 198, 0.1) 0%,
+    rgba(27, 59, 136, 0.1) 100%
+  );
 }
 
 h1,
@@ -56,7 +60,8 @@ h1,
 }
 
 h2,
-.h2-span {
+.h2-span,
+h2 > span {
   @apply text-[24px] md:text-[36px] xl:text-[48px] font-bold leading-[30px] md:leading-[42px] xl:leading-[55px];
 }
 
@@ -75,7 +80,6 @@ h2,
 
 .swiper:hover {
   @media (min-width: 500px) {
-
     .swiper-button-next::after,
     .swiper-button-prev::after,
     .swiper-button-prev,
@@ -133,4 +137,17 @@ h2,
   display: flex;
   // justify-content: flex-start;
   // align-items: flex-start;
+}
+
+.input-style {
+  @apply flex flex-col gap-[4px];
+
+  label {
+    @apply text-primary font-semibold;
+  }
+  input,
+  textarea,
+  select {
+    @apply px-[16px] py-[8px] rounded-[8px] border border-gray-200 text-gray-600;
+  }
 }
