@@ -1,10 +1,29 @@
+import Link from "next/link";
 import AccountIcon from "../icons/account-icon";
 import SignupIcon from "../icons/signup-icon";
 import TradeIcon from "../icons/trade-icon";
 import FeatureCard from "../molecules/feature-card";
 import SectionHead from "../molecules/section-head";
+import { Button } from "../ui/button";
 
-const HowToGetStarted = () => {
+const HowToGetStarted = ({
+  buttonList = [],
+}: {
+  buttonList?: {
+    id: number;
+    text: string;
+    link: string;
+    variant:
+    | "default"
+    | "destructive"
+    | "outline"
+    | "secondary"
+    | "ghost"
+    | "link"
+    | null
+    | undefined;
+  }[];
+}) => {
   return (
     <div className="get-gradient">
       <div className="section container">
@@ -23,6 +42,20 @@ const HowToGetStarted = () => {
           {CardData.map((item) => {
             return <FeatureCard key={item.id} details={item} />;
           })}
+        </div>
+        <div className="flex section justify-center items-center">
+          {buttonList.length ? (
+            <div className="flex flex-wrap items-center gap-[22px]">
+              {buttonList.map((item) => {
+                const { id, text, link, variant } = item;
+                return (
+                  <Link key={id} href={link}>
+                    <Button variant={variant}>{text}</Button>
+                  </Link>
+                );
+              })}
+            </div>
+          ) : null}
         </div>
       </div>
     </div>

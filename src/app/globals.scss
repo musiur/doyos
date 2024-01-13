@@ -47,11 +47,9 @@
 }
 
 .get-gradient {
-  background: linear-gradient(
-    180deg,
-    rgba(37, 191, 198, 0.1) 0%,
-    rgba(27, 59, 136, 0.1) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(37, 191, 198, 0.1) 0%,
+      rgba(27, 59, 136, 0.1) 100%);
 }
 
 h1,
@@ -61,7 +59,7 @@ h1,
 
 h2,
 .h2-span,
-h2 > span {
+h2>span {
   @apply text-[24px] md:text-[36px] xl:text-[48px] font-bold leading-[30px] md:leading-[42px] xl:leading-[55px];
 }
 
@@ -80,6 +78,7 @@ h2 > span {
 
 .swiper:hover {
   @media (min-width: 500px) {
+
     .swiper-button-next::after,
     .swiper-button-prev::after,
     .swiper-button-prev,
@@ -92,6 +91,7 @@ h2 > span {
 .swiper-button-prev,
 .swiper-button-next {
   @apply border border-primary/50 bg-white/50 backdrop-blur min-w-[40px] max-h-[40px] rounded-full flex items-center justify-center;
+
   opacity: 0 !important;
 }
 
@@ -99,6 +99,7 @@ h2 > span {
 .swiper-button-prev::after {
   font-size: 20px !important;
   opacity: 0 !important;
+  // margin-bottom: 30px;
   @apply text-gray-500 transition ease-in-out duration-500;
 }
 
@@ -111,6 +112,7 @@ h2 > span {
   height: 3px !important;
   border-radius: 0 !important;
   margin-inline: 8px !important;
+  // background: #c73131 !important;
   background: #d8d8d8 !important;
   opacity: 100 !important;
 }
@@ -145,6 +147,7 @@ h2 > span {
   label {
     @apply text-primary font-semibold;
   }
+
   input,
   textarea,
   select {

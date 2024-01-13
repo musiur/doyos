@@ -7,7 +7,7 @@ const OnlineStoresCard = ({
         id: 1,
         title: 'Title',
         subtitle: " ",
-        icon: <GooglePlayStore className="max-w-[280px] md:max-w-[380px] h-auto" />
+        icon: <GooglePlayStore className="max-w-[150px] md:max-w-[380px] h-[100px]" />
     },
 }: {
     data: {

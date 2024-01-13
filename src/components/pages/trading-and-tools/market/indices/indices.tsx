@@ -8,15 +8,16 @@ import Image from "next/image";
 import InterestedAndChoosePlatform from "@/components/pages/interested-and-choose-platform-section";
 import CloudShield from "@/components/assets/trading-tools/cloud-shield";
 import Trophies from "@/components/assets/trading-tools/trophies";
+import HeroSection from "@/components/molecules/hero-section";
 
 const MarketIndices = () => {
   return (
     <div>
-      <section className="bg-[url('/images/pages/trading-and-tools/market/IndicesBanner.png')] bg-cover bg-center section" >
-        <div className="container flex items-center h-full">
-          <h1 className="text-white py-[30px]" >Indices</h1>
-        </div>
-      </section>
+      <HeroSection
+        backgroundUrl="/images/pages/trading-and-tools/market/IndicesBanner.png"
+        heading={<>Indices</>}
+      />
+
 
       <MostPopularCard
         image="/images/pages/trading-and-tools/market/trade-indices-online.png"
@@ -37,6 +38,10 @@ const MarketIndices = () => {
           </>,
         ]}
         imageLeft={false}
+        buttonList={[
+          { id: 1, text: "Open Demo Account", link: "/", variant: "default" },
+          { id: 2, text: "Open Real Account", link: "/", variant: "secondary" },
+        ]}
       />
       <MostPopularCard
         image="/images/pages/trading-and-tools/market/why-trade-indices.png"

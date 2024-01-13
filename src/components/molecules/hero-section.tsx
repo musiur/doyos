@@ -23,7 +23,7 @@ const HeroSection = ({
         className="bg-cover bg-center z-[-1]"
       />
       <div className="container section flex items-center">
-        <h1 className="text-white">{heading}</h1>
+        <h1 className="text-white py-[15px]">{heading}</h1>
       </div>
     </section>
   );
