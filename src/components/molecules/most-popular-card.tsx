@@ -6,7 +6,7 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 
 const MostPopularCard = ({
-  image = "/images/pages/trading-and-tools/market/popular-trade.png",
+  image = "/images/pages/trading-and-tools/popular-trade.png",
 
   heading = (
     <span className="action-span">Forex Trading Pairs with Low Spreads</span>

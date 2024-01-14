@@ -110,7 +110,7 @@ const Navbar = () => {
                     </div>
                     <div className="flex flex-col gap-[6px]">
                       <h6 className="font-semibold">Trading Conditions</h6>
-                      <Link href="/trading-and-tools/trading-conditions/account-type">Account Type</Link>
+                      {/* <Link href="/trading-and-tools/trading-conditions/account-type">Account Type</Link> */}
                       <Link href="/trading-and-tools/trading-conditions/funding-withdrawal">Funding & Withdrawal</Link>
                       <Link href="/trading-and-tools/trading-conditions/spread">Spread</Link>
                       <Link href="/trading-and-tools/trading-conditions/swap-free-account">Swap Free Account</Link>
@@ -232,7 +232,7 @@ const Navbar = () => {
                       </div>
                       <div className="flex flex-col gap-[6px]">
                         <h6 className="font-semibold">Trading Conditions</h6>
-                        <Link href="/">Account Type</Link>
+                        {/* <Link href="/">Account Type</Link> */}
                         <Link href="/">Funding & Withdrawal</Link>
                         <Link href="/">Spread</Link>
                         <Link href="/trading-and-tools/trading-conditions/swap-free-account">Swap Free Account</Link>

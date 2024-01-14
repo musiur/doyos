@@ -1,4 +1,4 @@
-import MostPopularTrade from '@/components/pages/trading-and-tools/market/forex/forex';
+import MostPopularTrade from '@/components/pages/trading-and-tools/forex';
 
 const Partners = () => {
     return (

@@ -8,7 +8,7 @@ type HeroSectionProps = {
 };
 
 const HeroSection = ({
-  backgroundUrl = "/images/pages/trading-and-tools/market/ForexTradingBanner.png",
+  backgroundUrl = "/images/pages/trading-and-tools/ForexTradingBanner.png",
   heading = <>Title Here</>,
 }: HeroSectionProps) => {
   return (

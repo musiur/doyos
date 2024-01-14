@@ -16,14 +16,14 @@ const SectionHead = ({
       text: string;
       link: string;
       variant:
-        | "link"
-        | "default"
-        | "destructive"
-        | "outline"
-        | "secondary"
-        | "ghost"
-        | null
-        | undefined;
+      | "link"
+      | "default"
+      | "destructive"
+      | "outline"
+      | "secondary"
+      | "ghost"
+      | null
+      | undefined;
     }[];
   };
 }) => {
@@ -37,6 +37,7 @@ const SectionHead = ({
           })}
         </>
       ) : null}
+
       {details.buttons && details.buttons.length ? (
         <div>
           {details.buttons.map((button) => {
