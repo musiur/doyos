@@ -1,0 +1,1 @@
+export type TSearchParams = { [key: "slide" | string]: string | string[] | undefined };

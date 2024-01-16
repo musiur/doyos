@@ -1,16 +1,20 @@
+import AccountCarousel from "@/components/molecules/account-carousel";
 import AccountTypes from "@/components/pages/home/account-types";
 import DoyosAcademy from "@/components/pages/home/doyos-acamedy";
 import HomeHero from "@/components/pages/home/hero";
 import Instruments from "@/components/pages/home/instruments";
 import JoinBanner from "@/components/pages/home/join-banner";
 import MarketUpdate from "@/components/pages/home/market-update";
-import NewsUpdates from "@/components/pages/home/news-updates";
 import PaymentMethods from "@/components/pages/home/payment-methods";
 import TradingPlatform from "@/components/pages/home/trading-platform";
 import WhatWeProvide from "@/components/pages/home/what-we-provider";
+import { TSearchParams } from "@/lib/type";
 
-const Home = () => {
-
+const Home = ({
+  searchParams,
+}: {
+  searchParams: TSearchParams;
+}) => {
   return (
     <>
       <HomeHero />
@@ -21,8 +25,8 @@ const Home = () => {
       <TradingPlatform />
       <DoyosAcademy />
       <PaymentMethods />
-      <AccountTypes />
-      <NewsUpdates />
+      <AccountTypes searchParams={searchParams}/>
+      {/* <NewsUpdates /> */}
     </>
   );
 };
