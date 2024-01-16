@@ -9,19 +9,20 @@ import Rockets from '@/components/assets/trading-tools/rockets';
 import FastClock from '@/components/assets/trading-tools/fast-clock';
 import InterestedAndChoosePlatform from '../interested-and-choose-platform-section';
 
-const RegularAccount = () => {
+const Types = () => {
     return (
         <div>
             <HeroSection
                 backgroundUrl="/images/pages/accounts/RegularAccountBanner.png"
-                heading={<>Regular Account</>}
+                heading={<>Account Types</>}
             />
 
-            <div className='section text-center'>
-                <h2><span className='h2-span text-secondary'>Corporate</span> Regular Account</h2>
+            <div className='section'>
+
+                {/* todo >> 3 cards  */}
+
             </div>
 
-            {/* todo >> 3 cards */}
 
             {/* why traders choose doyos carousol Starts */}
             <div className="section container">
@@ -55,7 +56,7 @@ const RegularAccount = () => {
     );
 };
 
-export default RegularAccount;
+export default Types;
 
 
 
