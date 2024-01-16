@@ -1,4 +1,3 @@
-import AccountCarousel from "@/components/molecules/account-carousel";
 import AccountTypes from "@/components/pages/home/account-types";
 import DoyosAcademy from "@/components/pages/home/doyos-acamedy";
 import HomeHero from "@/components/pages/home/hero";
