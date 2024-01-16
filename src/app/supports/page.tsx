@@ -1,13 +1,12 @@
-import MostPopularTrade from '@/components/pages/trading-and-tools/forex';
+import Supports from "@/components/pages/supports/supports";
 
-const Supports = () => {
+const Page = () => {
     return (
         <>
-            <h1>Supports</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, hic sint iste officia fuga provident assumenda repellendus cumque ut asperiores rerum, neque molestias aut sequi cupiditate, ullam eveniet iusto. Nostrum!</p>
-            <MostPopularTrade />
+            <Supports />
+
         </>
     );
 };
 
-export default Supports;
+export default Page;

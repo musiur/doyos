@@ -43,6 +43,7 @@ const MarketIndices = () => {
           { id: 2, text: "Open Real Account", link: "/", variant: "secondary" },
         ]}
       />
+
       <MostPopularCard
         image="/images/pages/trading-and-tools/why-trade-indices.png"
         heading={

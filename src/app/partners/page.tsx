@@ -1,12 +1,13 @@
+import Partners from "@/components/pages/partners/partners";
 
 
-const Partners = () => {
+const Page = () => {
     return (
         <>
-            <h1>Partners</h1>
+            <Partners />
 
         </>
     );
 };
 
-export default Partners;
+export default Page;

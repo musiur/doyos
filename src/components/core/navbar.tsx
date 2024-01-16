@@ -127,20 +127,7 @@ const Navbar = () => {
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger>Market resources</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] grid-cols-2 ">
-                    <div className="flex flex-col gap-[6px] pl-[118px]">
-                      <h6 className="font-semibold md:w-[400px] lg:w-[500px]">Market resources</h6>
-                      <Link href="/market-resources/forex-educations">Forex Trading Educations</Link>
-                      <Link href="/market-resources/technical-analysis">Technical Analysis</Link>
-                      <Link href="/market-resources/fundamental-analysis">Fundamental Analysis</Link>
-                      <Link href="/market-resources/trading-session">Trading Session</Link>
-                    </div>
-                  </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
+
               <NavigationMenuItem>
                 <NavigationMenuTrigger className={navigationMenuTriggerStyle()}>
                   Accounts
@@ -152,10 +139,12 @@ const Navbar = () => {
                       <Link href="/accounts/regular">Regular Account</Link>
                       <Link href="/accounts/prop-funding">PROP Funding</Link>
                       <Link href="/accounts/funding-widthdrawal">Funding & Withdrawal</Link>
+                      <Link href="/accounts/account-types">Account Types</Link>
                     </div>
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
+
               <NavigationMenuItem>
                 <NavigationMenuTrigger className={navigationMenuTriggerStyle()}>
                   About us
@@ -179,9 +168,24 @@ const Navbar = () => {
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="/supports" legacyBehavior passHref>
+                {/* <Link href="/supports" legacyBehavior passHref>
                   <span className="hover:text-secondary cursor-pointer">Supports</span>
-                </Link>
+                </Link> */}
+                <NavigationMenuTrigger className={navigationMenuTriggerStyle()}>
+                  Supports
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] grid-cols-1 ">
+
+                    <div className="flex flex-col gap-[6px] items-end pr-[23px]">
+                      <h6 className="font-semibold">Supports</h6>
+                      <Link href="/supports/contact">Contact</Link>
+                      <Link href="/supports/call-request">Call Back Request</Link>
+                    </div>
+
+                  </ul>
+                </NavigationMenuContent>
+
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
@@ -248,15 +252,7 @@ const Navbar = () => {
                       </div>
                     </div>
                     <div className="grid grid-cols-1 gap-[20px]">
-                      <div className="flex flex-col gap-[6px]">
-                        <h4 className="text-[16px] md:text-[20px] font-bold mb-[12px]">
-                          Market resouces
-                        </h4>
-                        <Link href="/">Forex Trading Educations</Link>
-                        <Link href="/">Technical Analysis</Link>
-                        <Link href="/">Fundamental Analysis</Link>
-                        <Link href="/">Trading Session</Link>
-                      </div>
+
                       <div className="flex flex-col gap-[6px] -mt-20 md:-mt-0">
                         <h4 className="text-[16px] md:text-[20px] font-bold mb-[12px]">
                           Accounts
@@ -264,6 +260,7 @@ const Navbar = () => {
                         <Link href="/">Regular Account</Link>
                         <Link href="/">PROP Funding</Link>
                         <Link href="/">Funding & Withdrawal</Link>
+                        <Link href="/">Account Types</Link>
                       </div>
                       <div className="flex flex-col gap-[6px] -mt-8 md:-mt-0">
                         <h4 className="text-[16px] md:text-[20px] font-bold mb-[12px]">
@@ -279,9 +276,17 @@ const Navbar = () => {
                         <Link href="/partners" legacyBehavior passHref>
                           Partners
                         </Link>
-                        <Link href="/supports" legacyBehavior passHref>
+                        {/* <Link href="/supports" legacyBehavior passHref>
                           Supports
-                        </Link>
+                        </Link> */}
+                      </div>
+                      <div className="flex flex-col gap-[6px] -mt-8 md:-mt-0">
+                        <h4 className="text-[16px] md:text-[20px] font-bold mb-[12px]">
+                          Supports
+                        </h4>
+                        <Link href="/">Contact</Link>
+                        <Link href="/">Call Back Request</Link>
+
                       </div>
                     </div>
                   </div>
