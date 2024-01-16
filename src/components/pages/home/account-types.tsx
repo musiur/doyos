@@ -1,8 +1,7 @@
 import AccountCarousel from "@/components/molecules/account-carousel";
 import { Button } from "@/components/ui/button";
 import { TSearchParams } from "@/lib/type";
-import { BadgeCheck, ChevronLeft, ChevronRight } from "lucide-react";
-import Image from "next/image";
+import { BadgeCheck, } from "lucide-react";
 
 const AccountTypes = ({searchParams}: {searchParams: TSearchParams}) => {
   return (
