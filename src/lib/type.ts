@@ -16,7 +16,7 @@ export type THeads = {
   id: number;
   key: string;
   th: string;
-  subTh: string;
+  subTh?: string;
 };
 export type TTableData = {
   thead: THeads[];

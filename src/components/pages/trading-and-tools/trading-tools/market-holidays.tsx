@@ -11,6 +11,7 @@ import HowToGetStarted from "../../how-to-get-started-section";
 import InterestedAndChoosePlatform from "../../interested-and-choose-platform-section";
 import TableWithSection from "@/components/molecules/table-with-section";
 import { MarketHolidayTableTabs } from "@/lib/data";
+import { MarketHolidayTableData } from "@/lib/data";
 
 const MarketHolidays = () => {
   return (
@@ -39,7 +40,10 @@ const MarketHolidays = () => {
             ],
           }}
         />
-        <TableWithSection tabs={MarketHolidayTableTabs} />
+        <TableWithSection
+          data={MarketHolidayTableData}
+          tabs={MarketHolidayTableTabs}
+        />
       </div>
 
       {/* issues -tooo */}

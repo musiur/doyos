@@ -15,12 +15,11 @@ import {
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs";
-import { MarketHolidayTableData } from "@/lib/data";
-import { TCells, THeads, TRows, TTableTabs } from "@/lib/type";
+import { TCells, THeads, TRows, TTableData, TTableTabs } from "@/lib/type";
 import clsx from "clsx";
 
-const TableWithSection = ({ tabs }: { tabs?: TTableTabs[] }) => {
-  const { thead, tbody } = MarketHolidayTableData;
+const TableWithSection = ({ data, tabs }: { data: TTableData, tabs?: TTableTabs[] }) => {
+  const { thead, tbody } = data;
   return (
     <section className="container flex flex-col items-center justify-center gap-[40px]">
       {tabs ? (

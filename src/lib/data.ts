@@ -1,4 +1,26 @@
 import { TTableData, TTableTabs } from "./type";
+export const MarketHolidayTableTabs: TTableTabs[] = [
+  {
+    value: "nov23",
+    text: "November 23",
+  },
+  {
+    value: "oct23",
+    text: "October 23",
+  },
+  {
+    value: "sep23",
+    text: "Septerber 23",
+  },
+  {
+    value: "aug23",
+    text: "August 23",
+  },
+  {
+    value: "jul23",
+    text: "July 23",
+  },
+];
 export const MarketHolidayTableData: TTableData = {
   thead: [
     {
@@ -47,7 +69,7 @@ export const MarketHolidayTableData: TTableData = {
           value: "Early Close 21:30",
         },
         {
-          id: 2,
+          id: 3,
           key: "thanks_giving_day_after",
           value: "Early Close 20:45",
         },
@@ -68,7 +90,7 @@ export const MarketHolidayTableData: TTableData = {
           value: "Early Close 20:15",
         },
         {
-          id: 2,
+          id: 3,
           key: "thanks_giving_day_after",
           value: "Early Close 20:30",
         },
@@ -89,7 +111,7 @@ export const MarketHolidayTableData: TTableData = {
           value: "Early Close 20:15",
         },
         {
-          id: 2,
+          id: 3,
           key: "thanks_giving_day_after",
           value: "Early Close 20:30",
         },
@@ -110,7 +132,7 @@ export const MarketHolidayTableData: TTableData = {
           value: "Early Close 20:15",
         },
         {
-          id: 2,
+          id: 3,
           key: "thanks_giving_day_after",
           value: "Early Close 20:30",
         },
@@ -142,7 +164,7 @@ export const MarketHolidayTableData: TTableData = {
           value: "Early Close 20:00",
         },
         {
-          id: 2,
+          id: 3,
           key: "thanks_giving_day_after",
           value: "Early Close 20:15",
         },
@@ -150,25 +172,237 @@ export const MarketHolidayTableData: TTableData = {
     },
   ],
 };
-export const MarketHolidayTableTabs: TTableTabs[] = [
+
+export const SpreadTableTabs: TTableTabs[] = [
   {
-    value: "nov23",
-    text: "November 23",
+    value: "major_currencies",
+    text: "Major Currencies",
   },
   {
-    value: "oct23",
-    text: "October 23",
+    value: "crosses",
+    text: "Crosses",
   },
   {
-    value: "sep23",
-    text: "Septerber 23",
+    value: "exotics",
+    text: "Exotics",
   },
   {
-    value: "aug23",
-    text: "August 23",
+    value: "cash_indices",
+    text: "Cash Indices",
   },
   {
-    value: "jul23",
-    text: "July 23",
+    value: "energies_spreads",
+    text: "Energies Spreads",
   },
 ];
+export const SpreadTableData: TTableData = {
+  thead: [
+    {
+      id: 1,
+      key: "symbol",
+      th: "Symbol",
+    },
+    {
+      id: 2,
+      key: "ultimate",
+      th: "Ultimate Account",
+      subTh: "as low as",
+    },
+    {
+      id: 3,
+      key: "pro",
+      th: "Pro Account",
+      subTh: "as low as",
+    },
+    {
+      id: 4,
+      key: "mini",
+      th: "Min Account",
+      subTh: "as low as",
+    },
+  ],
+  tbody: [
+    {
+      id: 1,
+      rowAsSection: false,
+      cells: [
+        {
+          id: 1,
+          key: "symbol",
+          value: "EURUSD",
+        },
+        {
+          id: 2,
+          key: "ultimate",
+          value: "0.0",
+        },
+        {
+          id: 3,
+          key: "pro",
+          value: "0.0",
+        },
+        {
+          id: 3,
+          key: "mini",
+          value: "1.5",
+        },
+      ],
+    },
+    {
+      id: 2,
+      rowAsSection: false,
+      cells: [
+        {
+          id: 1,
+          key: "symbol",
+          value: "AUDUSD",
+        },
+        {
+          id: 2,
+          key: "ultimate",
+          value: "0.0",
+        },
+        {
+          id: 3,
+          key: "pro",
+          value: "0.0",
+        },
+        {
+          id: 3,
+          key: "mini",
+          value: "1.5",
+        },
+      ],
+    },
+    {
+      id: 3,
+      rowAsSection: false,
+      cells: [
+        {
+          id: 1,
+          key: "symbol",
+          value: "GBPUSD",
+        },
+        {
+          id: 2,
+          key: "ultimate",
+          value: "0.0",
+        },
+        {
+          id: 3,
+          key: "pro",
+          value: "0.0",
+        },
+        {
+          id: 3,
+          key: "mini",
+          value: "1.5",
+        },
+      ],
+    },
+    {
+      id: 4,
+      rowAsSection: false,
+      cells: [
+        {
+          id: 1,
+          key: "symbol",
+          value: "NZDUSD",
+        },
+        {
+          id: 2,
+          key: "ultimate",
+          value: "0.0",
+        },
+        {
+          id: 3,
+          key: "pro",
+          value: "0.0",
+        },
+        {
+          id: 3,
+          key: "mini",
+          value: "1.5",
+        },
+      ],
+    },
+    {
+      id: 5,
+      rowAsSection: false,
+      cells: [
+        {
+          id: 1,
+          key: "symbol",
+          value: "USDCHF",
+        },
+        {
+          id: 2,
+          key: "ultimate",
+          value: "0.0",
+        },
+        {
+          id: 3,
+          key: "pro",
+          value: "0.0",
+        },
+        {
+          id: 3,
+          key: "mini",
+          value: "1.3",
+        },
+      ],
+    },
+    {
+      id: 6,
+      rowAsSection: false,
+      cells: [
+        {
+          id: 1,
+          key: "symbol",
+          value: "USDCAD",
+        },
+        {
+          id: 2,
+          key: "ultimate",
+          value: "0.0",
+        },
+        {
+          id: 3,
+          key: "pro",
+          value: "0.0",
+        },
+        {
+          id: 3,
+          key: "mini",
+          value: "2.1",
+        },
+      ],
+    },
+    {
+      id: 7,
+      rowAsSection: false,
+      cells: [
+        {
+          id: 1,
+          key: "symbol",
+          value: "USDJPY",
+        },
+        {
+          id: 2,
+          key: "ultimate",
+          value: "0.0",
+        },
+        {
+          id: 3,
+          key: "pro",
+          value: "0.0",
+        },
+        {
+          id: 3,
+          key: "mini",
+          value: "2.1",
+        },
+      ],
+    },
+  ],
+};

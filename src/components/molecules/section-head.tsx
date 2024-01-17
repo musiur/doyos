@@ -28,7 +28,7 @@ const SectionHead = ({
   };
 }) => {
   return (
-    <div className="max-w-[650px] mx-auto flex flex-col items-center justify-center gap-[40px] [&>*]:text-center pb-[64px]">
+    <div className="max-w-[700px] mx-auto flex flex-col items-center justify-center gap-[40px] [&>*]:text-center pb-[64px]">
       {details.H2 ? <h2>{details.H2}</h2> : null}
       {details.p ? (
         <>
