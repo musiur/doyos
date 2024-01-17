@@ -1,7 +1,7 @@
 const PropFunding = () => {
     return (
         <>
-            <h1>Prop Funding </h1>
+            <h1>Prop Funding ?? May Be No Need to do!! </h1>
         </>
 
     )
