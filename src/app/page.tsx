@@ -25,7 +25,6 @@ const Home = ({
       <DoyosAcademy />
       <PaymentMethods />
       <AccountTypes searchParams={searchParams}/>
-      {/* <NewsUpdates /> */}
     </>
   );
 };
