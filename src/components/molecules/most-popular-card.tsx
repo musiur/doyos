@@ -98,7 +98,7 @@ const MostPopularCard = ({
           alt="section-image"
           width={1000}
           height={1000}
-          className="w-auto max-h-[500px]"
+          className="w-auto max-h-[540px]"
         />
       ) : null}
     </div>

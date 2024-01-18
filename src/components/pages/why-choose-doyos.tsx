@@ -19,7 +19,7 @@ const WhyChooseDoyos = () => {
             alt="why-choose-doyos"
             width={1000}
             height={1000}
-            className="max-w-[550px] mr-auto ml-auto md:ml-0 h-auto"
+            className="max-w-[540px] mr-auto ml-auto md:ml-0 h-auto"
           />
         </div>
         <div className="w-full min-[1390px]:max-w-[700px]">

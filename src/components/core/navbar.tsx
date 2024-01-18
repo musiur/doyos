@@ -190,6 +190,8 @@ const Navbar = () => {
             </NavigationMenuList>
           </NavigationMenu>
           <div className="flex items-center justify-end gap-[13px]">
+            <Button className="bg-transparent max-h-[32px] md:max-h-[37px] text-primary border border-secondary me-[10px] md:me-[50px] hover:text-white hover:bg-primary/90">Try Free Demo</Button>
+
             <Button>Register</Button>
             <DropdownMenu>
               <DropdownMenuTrigger className="px-[15px] py-[6px] rounded-[5px] text-[14px] md:px-[25px] md:py-[8px] md:rounded-[10px] md:text-[16px] font-semibold md:font-bold bg-secondary hover:bg-secondary/90 text-white outline-none">
