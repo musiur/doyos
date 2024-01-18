@@ -71,7 +71,7 @@ const PipCalculator = () => {
       <div className="input-style">
         <input readOnly defaultValue="Result" className="text-center" />
       </div>
-      <Button variant="secondary">Submit</Button>
+      <Button type="submit" variant="secondary">Submit</Button>
     </form>
   );
 };

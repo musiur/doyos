@@ -190,7 +190,7 @@ const Navbar = () => {
             </NavigationMenuList>
           </NavigationMenu>
           <div className="flex items-center justify-end gap-[13px]">
-            <Button className="bg-transparent max-h-[32px] md:max-h-[37px] text-primary border border-secondary me-[10px] md:me-[50px] hover:text-white hover:bg-primary/90">Try Free Demo</Button>
+            <Button className="bg-transparent max-h-[35px] md:max-h-[37px] text-primary border border-secondary me-[20px] md:me-[40px] text-[12px] md:text-[14px] hover:text-white hover:bg-primary/90">Try Free Demo</Button>
 
             <Button>Register</Button>
             <DropdownMenu>
