@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FormEvent } from "react";
 
+
 const Partners = () => {
     const handleOnSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -11,8 +12,8 @@ const Partners = () => {
         console.log(formData);
     };
     return (
-        <>
-            <div className="section container flex flex-col-reverse items-center lg:flex-row justify-center gap-[60px]">
+        <div>
+            <section className="section container flex flex-col-reverse items-center lg:flex-row justify-center gap-[60px]">
                 <form onSubmit={handleOnSubmit} className="left md:w-[560px] h-[auto] flex flex-col gap-[15px] rounded-[10px] border border-gray-500 p-[30px]">
                     <h2>Login</h2>
                     <p>Please Fill out the following fields to login:</p>
@@ -41,8 +42,9 @@ const Partners = () => {
                         className="max-w-[350px] lg:max-w-[560px]  md:ml-0 h-auto"
                     />
                 </div>
-            </div>
-        </>
+            </section>
+           
+        </div>
     )
 }
 

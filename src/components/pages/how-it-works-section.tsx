@@ -1,6 +1,10 @@
-import SignupIcon from "../icons/signup-icon";
+import ClientsTradingIcon from "../icons/how-it-works-section/clients-trading";
+import PartnersLinkIcon from "../icons/how-it-works-section/partners-link";
+import RegisterIBAccountIcon from "../icons/how-it-works-section/register-IB-account";
+import WithdrawProfitIcon from "../icons/how-it-works-section/withdraw-profit";
 import FeatureCard from "../molecules/feature-card";
 import SectionHead from "../molecules/section-head";
+import { Button } from "../ui/button";
 
 const HowItWorks = () => {
   return (
@@ -24,6 +28,10 @@ const HowItWorks = () => {
           );
         })}
       </div>
+      <div className="flex justify-center pt-[50px]">
+
+        <Button className="px-[30px]" variant="secondary"> Start Now </Button>
+      </div>
     </div>
   );
 };
@@ -33,22 +41,22 @@ export default HowItWorks;
 const CardData = [
   {
     id: 1,
-    title: "Sign Up",
-    icon: <SignupIcon className="" />,
+    title: "Register for an IB account",
+    icon: <RegisterIBAccountIcon className="h-[82px]" />,
   },
   {
     id: 2,
-    title: "Find your account",
-    icon: <SignupIcon className="" />,
+    title: "Publish your partner link",
+    icon: <PartnersLinkIcon className="" />,
   },
   {
     id: 3,
-    title: "Trade",
-    icon: <SignupIcon className="" />,
+    title: "Get your clients trading",
+    icon: <ClientsTradingIcon className="" />,
   },
   {
     id: 4,
-    title: "Trade",
-    icon: <SignupIcon className="" />,
+    title: "Withdraw your profits!",
+    icon: <WithdrawProfitIcon className="" />,
   },
 ];
