@@ -55,7 +55,7 @@ const MostPopularCard = ({
         { "md:flex-row-reverse": imageLeft, "md:flex-row": !imageLeft }
       )}
     >
-      <div className="flex flex-col gap-[48px] max-w-[750px]">
+      <div className="flex flex-col gap-[17px] md:gap-[45px] max-w-[750px]">
         <h2>{heading}</h2>
         {paragraphs.length ? (
           <div className="flex flex-col gap-[22px]">
@@ -98,7 +98,7 @@ const MostPopularCard = ({
           alt="section-image"
           width={1000}
           height={1000}
-          className="w-auto max-h-[540px]"
+          className="w-auto md:w-[550px] h-auto"
         />
       ) : null}
     </div>

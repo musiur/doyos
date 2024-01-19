@@ -4,9 +4,9 @@ const DeepIcon = ({ className }: { className: string }) => {
     return (
         <svg width="88" height="81" viewBox="0 0 88 81" fill="none" xmlns="http://www.w3.org/2000/svg"
             className={cn(className, "")} >
-            <g clip-path="url(#clip0_17_11683)">
-                <g clip-path="url(#clip1_17_11683)">
-                    <g clip-path="url(#clip2_17_11683)">
+            <g clipPath="url(#clip0_17_11683)">
+                <g clipPath="url(#clip1_17_11683)">
+                    <g clipPath="url(#clip2_17_11683)">
                         <g opacity="0.1">
                             <path d="M83.3105 39.5816C71.8888 27.3332 70.3791 13.009 64.8795 7.11396C59.3799 1.21892 44.4176 -8.01005 17.2519 17.3134C-9.91376 42.6369 1.70557 63.0269 7.77134 69.5151C36.1232 99.9069 103.548 61.2566 83.3105 39.5816Z" fill="#4480AD" />
                         </g>

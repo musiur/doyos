@@ -24,7 +24,7 @@ const HowItWorks = () => {
       <div className="flex flex-wrap items-center justify-center gap-[50px]">
         {CardData.map((item) => {
           return (
-            <FeatureCard key={item.id} details={{ ...item, steps: true }} />
+            <FeatureCard key={item.id} details={{ ...item, steps: true, hasBorder: true }} />
           );
         })}
       </div>

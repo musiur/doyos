@@ -5,9 +5,9 @@ const ExecutiveToolsIcon = ({ className }: { className: string }) => {
     return (
         <svg width="88" height="79" viewBox="0 0 88 79" fill="none" xmlns="http://www.w3.org/2000/svg" className={cn(className, "")}
         >
-            <g clip-path="url(#clip0_17_11727)">
-                <g clip-path="url(#clip1_17_11727)">
-                    <g clip-path="url(#clip2_17_11727)">
+            <g clipPath="url(#clip0_17_11727)">
+                <g clipPath="url(#clip1_17_11727)">
+                    <g clipPath="url(#clip2_17_11727)">
                         <g opacity="0.1">
                             <path d="M85.6683 50.7701C78.5499 35.1814 81.732 20.7884 78.3108 13.2746C74.8896 5.76075 63.3476 -8.03451 28.795 7.75647C-5.75749 23.5474 -1.14068 47.0822 2.63003 55.3501C20.3155 94.0412 98.2772 78.3422 85.6683 50.7517V50.7701Z" fill="#4480AD" />
                         </g>

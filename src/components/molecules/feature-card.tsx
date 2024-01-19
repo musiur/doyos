@@ -9,6 +9,7 @@ const FeatureCard = ({
     text: "text",
     icon: <AccountIcon className="" />,
     steps: false,
+    hasBorder: true,
   },
 }: {
   details: {
@@ -17,6 +18,7 @@ const FeatureCard = ({
     text?: string;
     icon: ReactNode;
     steps?: boolean;
+    hasBorder?: boolean;
   };
 }) => {
   return (
@@ -25,8 +27,10 @@ const FeatureCard = ({
         "card relative flex flex-col text-center items-center gap-[13px] bg-white rounded-[10px] px-[48px] h-auto py-[24px]",
         {
           "w-full md:max-w-[472px] border-0": details.text,
-          border: !details.text,
-        }
+
+          "border": details.hasBorder, // Apply border if hasBorder is true
+          "border-0": !details.hasBorder, // Remove border if hasBorder is false
+        },
       )}
     >
       <div

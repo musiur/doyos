@@ -6,9 +6,9 @@ const RegulatedIcon = ({ className }: { className: string }) => {
     return (
         <svg width="88" height="78" viewBox="0 0 88 78" fill="none" xmlns="http://www.w3.org/2000/svg"
             className={cn(className, "")}>
-            <g clip-path="url(#clip0_17_11648)">
-                <g clip-path="url(#clip1_17_11648)">
-                    <g clip-path="url(#clip2_17_11648)">
+            <g clipPath="url(#clip0_17_11648)">
+                <g clipPath="url(#clip1_17_11648)">
+                    <g clipPath="url(#clip2_17_11648)">
                         <g opacity="0.1">
                             <path d="M85.6683 50.2701C78.5499 34.6814 81.732 20.2884 78.3108 12.7746C74.8896 5.26075 63.3476 -8.53451 28.795 7.25647C-5.75749 23.0474 -1.14068 46.5822 2.63003 54.8501C20.3155 93.5412 98.2772 77.8422 85.6683 50.2517V50.2701Z" fill="#4480AD" />
                         </g>

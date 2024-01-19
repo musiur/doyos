@@ -6,11 +6,13 @@ import { FormEvent } from "react";
 
 
 const Partners = () => {
+
     const handleOnSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         const formData = new FormData(event.currentTarget);
         console.log(formData);
     };
+
     return (
         <div>
             <section className="section container flex flex-col-reverse items-center lg:flex-row justify-center gap-[60px]">
@@ -43,7 +45,7 @@ const Partners = () => {
                     />
                 </div>
             </section>
-           
+
         </div>
     )
 }

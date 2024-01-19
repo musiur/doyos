@@ -4,7 +4,6 @@ import { cn } from '@/lib/utils';
 const UltraFastIcon = ({ className }: { className: string }) => {
     return (
         <svg width="88" height="79" viewBox="0 0 88 79" fill="none" xmlns="http://www.w3.org/2000/svg"
-
             className={cn(className, "")}>
             <g clipPath="url(#clip0_17_11711)">
                 <g clipPath="url(#clip1_17_11711)">

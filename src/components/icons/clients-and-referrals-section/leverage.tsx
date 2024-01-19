@@ -6,9 +6,9 @@ const LeverageIcon = ({ className }: { className: string }) => {
     return (
         <svg width="88" height="80" viewBox="0 0 88 80" fill="none" xmlns="http://www.w3.org/2000/svg" className={cn(className, "")}
         >
-            <g clip-path="url(#clip0_17_11668)">
-                <g clip-path="url(#clip1_17_11668)">
-                    <g clip-path="url(#clip2_17_11668)">
+            <g clipPath="url(#clip0_17_11668)">
+                <g clipPath="url(#clip1_17_11668)">
+                    <g clipPath="url(#clip2_17_11668)">
                         <g opacity="0.1">
                             <path d="M2.18805 20.2472C5.47387 37.6355 -1.2782 51.2821 0.307726 59.6581C1.89366 68.034 10.0322 84.7195 48.5789 77.4357C87.1255 70.1518 88.3126 45.4132 86.5652 36.2015C78.4171 -6.96048 -3.65235 -10.5502 2.18805 20.2472Z" fill="#4480AD" />
                         </g>
