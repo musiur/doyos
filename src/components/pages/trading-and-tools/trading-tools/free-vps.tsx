@@ -1,3 +1,4 @@
+"use client"
 import CloudShield from "@/components/assets/trading-tools/cloud-shield";
 import FastClock from "@/components/assets/trading-tools/fast-clock";
 import Rockets from "@/components/assets/trading-tools/rockets";
@@ -9,8 +10,16 @@ import WhyTraderChooseCarousel from "@/components/molecules/why-trader-choose-ca
 import Image from "next/image";
 import HowToGetStarted from "../../how-to-get-started-section";
 import InterestedAndChoosePlatform from "../../interested-and-choose-platform-section";
+import CountryCombobox from "@/components/ui/country-combobox";
+import { Button } from "@/components/ui/button";
+import { FormEvent } from "react";
 
 const FreeVps = () => {
+    const handleOnSubmit = (event: FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        const formData = new FormData(event.currentTarget);
+        console.log(formData);
+    };
     return (
         <>
 
@@ -94,31 +103,59 @@ const FreeVps = () => {
             </div>
 
 
-            {/* issues -todo  here */}
+            {/* user info submission form */}
+            <form className="section" onSubmit={handleOnSubmit}>
 
-            {
+                <div className="text-center">
+                    <h2> Ready to experience the <span className="h2-span text-secondary">benefits</span> of VPS Trading? </h2>
+                    <p className="py-[30px]"> To begin your investment journey in the Forex markets, follow these simple steps</p>
+                </div>
 
+                <div className="flex flex-wrap items-start justify-center gap-0 md:gap-[50px]">
 
-                <SectionHead
-                    details={{
-                        H2: (
-                            <>
-                                Ready to experience the <span className="h2-span">benefits </span> of VPS trading?
-                            </>
-                        ),
-                        p: [
-                            <>
-                                Our values are important to us.Trade without compromising yours.
-                            </>,
-                        ],
+                    <div className="left-input-area pt-[40px] flex flex-col gap-[20px] w-[400px] max-w-[400px]">
 
+                        <div className="input-style">
+                            <label>First Name</label>
+                            <input type="text" placeholder='Your First Name' />
+                        </div>
+                        <div className="input-style">
+                            <label>Phone</label>
+                            <input type="number" placeholder='+880...' />
+                        </div>
+                        <div className="input-style">
+                            <label>Phone</label>
+                            <input type="email" placeholder='Your Email' />
+                        </div>
+                    </div>
 
+                    <div className="right-input-area pt-[40px] flex flex-col gap-[20px] w-[400px] max-w-[400px]">
+                        <div className="input-style">
+                            <label>Last Name</label>
+                            <input type="text" placeholder='Your First Name' />
+                        </div>
+                        <div className="input-style">
+                            <label>Select Country</label>
+                            <div className="border rounded-[8px]">
+                                <CountryCombobox onChange={(e: any) => console.log(e.target.value)} />
+                            </div>
+                        </div>
+                        <div className="input-style">
+                            <label>Doyos Account Number</label>
+                            <input type="email" placeholder='Your Email' />
+                        </div>
+                    </div>
+                </div>
 
-                    }}
+                <div className="flex justify-center items-center gap-[10px] mt-[10px]">
+                    <input type="checkbox" name="is-areed" id="" />
+                    <p>Please note that by submitting this form you accept the terms and conditions</p>
+                </div>
 
-                />
+                <Button type="submit" className="w-1/5 mt-[20px] flex mx-auto"> Submit </Button>
 
-            }
+            </form>
+
             <HowToGetStarted />
             <InterestedAndChoosePlatform />
         </>
