@@ -17,21 +17,20 @@ import UltraFastIcon from "@/components/icons/clients-and-referrals-section/ultr
 import ExecutiveToolsIcon from "@/components/icons/clients-and-referrals-section/executive-tools";
 import AwardIcon from "@/components/icons/clients-and-referrals-section/award-wining-market-research";
 import FreeVpsIcon from "@/components/icons/clients-and-referrals-section/free-vps";
-import { FormEvent } from "react";
 
 import { Button } from "@/components/ui/button";
 import CountryCombobox from "@/components/ui/country-combobox";
 
 
 const BecomeDoyosIB = () => {
-    const handleOnSubmit = (event: FormEvent<HTMLFormElement>) => {
-        event.preventDefault();
-        const formData = new FormData(event.currentTarget);
-        console.log(formData);
-    };
-    const handleOnChange = (e: any) => {
-        console.log(e.target.value);
-    }
+    // const handleOnSubmit = (event: FormEvent<HTMLFormElement>) => {
+    //     event.preventDefault();
+    //     const formData = new FormData(event.currentTarget);
+    //     console.log(formData);
+    // };
+    // const handleOnChange = (e: any) => {
+    //     console.log(e.target.value);
+    // }
     return (
         <main>
             <MostPopularCard
@@ -126,7 +125,7 @@ const BecomeDoyosIB = () => {
                 <div className="pt-[45px] pb-1 container  md:w-[790px] rounded-[15px] border">
                     <div className="border-[5px] border-secondary"></div>
 
-                    <form onSubmit={handleOnSubmit} className=" bg-white h-[auto] flex flex-col gap-[25px] rounded-[10px]  p-[30px]">
+                    <form className=" bg-white h-[auto] flex flex-col gap-[25px] rounded-[10px]  p-[30px]">
 
                         <div className="text-center">
                             <h2>Become a Doyos Partner Today</h2>
@@ -150,7 +149,7 @@ const BecomeDoyosIB = () => {
 
 
                         <div className="border-b">
-                            <CountryCombobox onChange={handleOnChange} />
+                            <CountryCombobox onChange={() => {}} />
                         </div>
 
                         <input className="border-b p-[15px]" name="phone-no" type="tel" placeholder="Phone Number (+01...)" />

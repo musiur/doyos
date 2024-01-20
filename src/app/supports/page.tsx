@@ -1,11 +1,6 @@
-import Supports from "@/components/pages/supports/supports";
-
 const Page = () => {
     return (
-        <>
-            <Supports />
-
-        </>
+        <div>Support</div>
     );
 };
 
