@@ -3,6 +3,7 @@ import MostPopularCard from '@/components/molecules/most-popular-card';
 import SectionHead from '@/components/molecules/section-head';
 import React from 'react';
 import HowToGetStarted from '../../how-to-get-started-section';
+import Image from 'next/image';
 
 const FundingWithdrawal = () => {
     return (
@@ -50,7 +51,7 @@ const FundingWithdrawal = () => {
 
             />
 
-            {/* issues */}
+            {/* todo */}
             <SectionHead
                 details={{
                     H2: (
@@ -70,7 +71,16 @@ const FundingWithdrawal = () => {
                 }}
 
             />
-
+            {/* Forex Graph Section -image */}
+            <div className="section container flex justify-center">
+                <Image
+                    className="w-full"
+                    src="/images/pages/trading-and-tools/doyos-wallet-table.png"
+                    alt="wallet"
+                    width={10000}
+                    height={10000}
+                />
+            </div>
             <HowToGetStarted />
 
 

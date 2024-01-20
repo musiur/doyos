@@ -74,8 +74,8 @@ const ForexTrading = () => {
           className="w-full "
           src="/images/pages/trading-and-tools/forexGraph.png"
           alt="Forex Graph"
-          width={1000}
-          height={1000}
+          width={10000}
+          height={10000}
         />
       </div>
 

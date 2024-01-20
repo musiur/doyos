@@ -72,7 +72,7 @@ const Cryptos = () => {
 
       {/* Crypto Table -image */}
       <div className="section container flex justify-center">
-        <Image className="md:w-full hidden md:block  " src="/images/pages/trading-and-tools/crypto-table.png" alt="Forex Graph" width={1000} height={1000} />
+        <Image className="md:w-full hidden md:block  " src="/images/pages/trading-and-tools/crypto-table.png" alt="Forex Graph" width={10000} height={10000} />
       </div>
 
       {/* why traders choose doyos carousol Starts */}

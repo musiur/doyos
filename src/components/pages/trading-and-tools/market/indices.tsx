@@ -72,7 +72,7 @@ const MarketIndices = () => {
 
       {/* Indices Table Section -image */}
       <div className="section container flex justify-center">
-        <Image className="w-full " src="/images/pages/trading-and-tools/indices-table.png" alt="indices table" width={1000} height={1000} />
+        <Image className="w-full " src="/images/pages/trading-and-tools/indices-table.png" alt="indices table" width={10000} height={10000} />
       </div>
 
       {/* why traders choose doyos carousol Starts */}

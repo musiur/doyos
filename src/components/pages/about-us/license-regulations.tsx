@@ -42,7 +42,7 @@ const LicenseRegulation = () => {
       />
 
       {/* card section */}
-      <section className="bg-[url('/images/pages/regulations/bg.png')] bg-cover bg-center min-h-[820px] flex items-center justify-center py-10 pb">
+      <section className="bg-[url('/images/pages/regulations/bg.png')] bg-cover bg-center min-h-[820px] flex items-center justify-center py-10">
 
         <div className="text-white container pb-[35px]">
 
@@ -53,15 +53,15 @@ const LicenseRegulation = () => {
           <div className="flex flex-wrap justify-center items-center py-[50px]  gap-[35px] md:gap-[70px] ">
 
             <div className="flex items-center flex-col" >
-              <Image className="min-w-[250px]" src="/images/pages/regulations/reliable.png" width={100} height={100} alt="reliable" />
+              <Image className="max-w-[250px]" src="/images/pages/regulations/reliable.png" width={1000} height={100} alt="reliable" />
               <h2 className="text-white pt-2">Reliable</h2>
             </div>
             <div className="flex items-center flex-col" >
-              <Image className="min-w-[250px]" src="/images/pages/regulations/regulated.png" width={100} height={100} alt="reliable" />
+              <Image className="max-w-[250px]" src="/images/pages/regulations/regulated.png" width={1000} height={100} alt="reliable" />
               <h2 className="text-white">Regulated</h2>
             </div>
             <div className="flex items-center flex-col" >
-              <Image className="min-w-[250px]" src="/images/pages/regulations/renowned.png" width={100} height={100} alt="renowned" />
+              <Image className="max-w-[250px]" src="/images/pages/regulations/renowned.png" width={1000} height={100} alt="renowned" />
               <h2 className="text-white">Renowned</h2>
             </div>
           </div>
@@ -77,8 +77,8 @@ const LicenseRegulation = () => {
           <Image
             src="/images/pages/about-us/licese-regulations/license-sheet.png"
             alt=""
-            width={1000}
-            height={1000}
+            width={10000}
+            height={10000}
             className="max-w-full h-auto mr-auto"
           />
           <div className="flex flex-wrap items-center justify-center gap-[20px]">
