@@ -1,10 +1,16 @@
 import LegalFileDownloadCard from "./legal-file-download-card";
 import PdfFile from "@/components/icons/pdf-file";
 import SectionHead from "@/components/molecules/section-head";
+import HowToGetStarted from "../how-to-get-started-section";
+import HeroSection from "@/components/molecules/hero-section";
 
 const LegalDocuments = () => {
   return (
     <div>
+      <HeroSection
+        backgroundUrl="/images/pages/about-us/LegalDocumentsBanner.png"
+        heading={<>Legal Documents</>}
+      />
       <section className="container section">
         <SectionHead
           details={{
@@ -33,6 +39,7 @@ const LegalDocuments = () => {
           })}
         </div>
       </section>
+      <HowToGetStarted />
     </div>
   );
 };

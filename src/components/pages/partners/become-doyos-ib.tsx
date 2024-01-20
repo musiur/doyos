@@ -121,7 +121,7 @@ const BecomeDoyosIB = () => {
             </div>
 
             {/* register form */}
-            <div className="section  bg-[url('/images/market-and-platform-bg.png')] bg-cover bg-bottom pt-[30px] pb-[140px]">
+            <div className="section bg-[url('/images/market-and-platform-bg.png')] bg-cover bg-bottom pt-[30px] pb-[140px]">
                 <div className="pt-[45px] pb-1 container  md:w-[790px] rounded-[15px] border">
                     <div className="border-[5px] border-secondary"></div>
 

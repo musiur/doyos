@@ -111,10 +111,11 @@ const Navbar = () => {
                     <div className="flex flex-col gap-[6px]">
                       <h6 className="font-semibold">Trading Conditions</h6>
                       {/* <Link href="/trading-and-tools/trading-conditions/account-type">Account Type</Link> */}
-                      <Link href="/trading-and-tools/trading-conditions/funding-withdrawal">Funding & Withdrawal</Link>
+
                       <Link href="/trading-and-tools/trading-conditions/spread">Spread</Link>
                       <Link href="/trading-and-tools/trading-conditions/swap-free-account">Swap Free Account</Link>
                       <Link href="/trading-and-tools/trading-conditions/security-fund">Security of Fund</Link>
+                      <Link href="/trading-and-tools/trading-conditions/funding-withdrawal">Funding & Withdrawal</Link>
                       <Link href="/trading-and-tools/trading-conditions/trading-conditions">Trading Conditions </Link>
                     </div>
                     <div className="flex flex-col gap-[6px]">
@@ -136,10 +137,11 @@ const Navbar = () => {
                   <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] grid-cols-1">
                     <div className="flex flex-col gap-[6px] items-end pr-[117px]">
                       <h6 className="font-semibold">Accounts</h6>
-                      <Link href="/accounts/regular">Regular Account</Link>
-                      <Link href="/accounts/prop-funding">PROP Funding</Link>
-                      <Link href="/accounts/funding-widthdrawal">Funding & Withdrawal</Link>
                       <Link href="/accounts/account-types">Account Types</Link>
+                      <Link href="/accounts/regular">Regular Account</Link>
+                      {/* <Link href="/accounts/prop-funding">PROP Funding</Link> */}
+                      <Link href="/accounts/funding-widthdrawal">Funding & Withdrawal</Link>
+
                     </div>
                   </ul>
                 </NavigationMenuContent>
@@ -154,7 +156,7 @@ const Navbar = () => {
                     <div className="flex flex-col gap-[6px] items-end pr-[23px]">
                       <h6 className="font-semibold">About us</h6>
                       <Link href="/about-us/our-goal">Our Goal</Link>
-                      <Link href="/about-us/company-news">Company News</Link>
+                      {/* <Link href="/about-us/company-news">Company News</Link> */}
                       <Link href="/about-us/license-regulations">License & Regulations</Link>
                       <Link href="/about-us/legal-documents">Legal Documents</Link>
                       <Link href="/about-us/global-offices">Global Offices</Link>
@@ -190,9 +192,15 @@ const Navbar = () => {
             </NavigationMenuList>
           </NavigationMenu>
           <div className="flex items-center justify-end gap-[13px]">
-            <Button className="bg-transparent max-h-[35px] md:max-h-[37px] text-primary border border-secondary me-[20px] md:me-[40px] text-[12px] md:text-[14px] hover:text-white hover:bg-primary/90">Try Free Demo</Button>
 
-            <Button>Register</Button>
+            <Link href="/try-free-demo">
+              <Button className="bg-transparent max-h-[35px] md:max-h-[37px] text-primary border border-secondary me-[20px] md:me-[40px] text-[12px] md:text-[14px] hover:text-white hover:bg-primary/90">Try Free Demo</Button>
+            </Link>
+
+            <Link href="/register">
+              <Button>Register</Button>
+            </Link>
+
             <DropdownMenu>
               <DropdownMenuTrigger className="px-[15px] py-[6px] rounded-[5px] text-[14px] md:px-[25px] md:py-[8px] md:rounded-[10px] md:text-[16px] font-semibold md:font-bold bg-secondary hover:bg-secondary/90 text-white outline-none">
                 Login

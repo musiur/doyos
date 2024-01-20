@@ -22,20 +22,13 @@ const RegularAccount = () => {
         heading={<>Regular Account</>}
       />
 
-      <div className="section text-center">
-        <h2>
-          <span className="h2-span text-secondary">Corporate</span> Regular
-          Account
-        </h2>
-      </div>
-
-      {/* todo >> 3 cards */}
+{/* todo */}
       <section className="container section">
         <SectionHead
           details={{
             H2: (
               <>
-                <span>Corporate</span>&nbsp;Regular Account
+                <span className="h2-span text-secondary">Corporate</span>&nbsp;Regular Account
               </>
             ),
           }}

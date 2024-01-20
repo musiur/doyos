@@ -6,6 +6,12 @@ import HowToGetStarted from "../../how-to-get-started-section";
 import TableWithSection from "@/components/molecules/table-with-section";
 import { SpreadTableData, SpreadTableTabs } from "@/lib/data";
 import SectionHead from "@/components/molecules/section-head";
+import Spread1 from "@/components/icons/spread-swaps-commision-section/spread-1";
+import Spread2 from "@/components/icons/spread-swaps-commision-section/spread-2";
+import Spread3 from "@/components/icons/spread-swaps-commision-section/spread-3";
+import Spread4 from "@/components/icons/spread-swaps-commision-section/spread-4";
+import Spread5 from "@/components/icons/spread-swaps-commision-section/spread-5";
+import Spread6 from "@/components/icons/spread-swaps-commision-section/spread-6";
 
 const Spread = () => {
   return (
@@ -70,56 +76,36 @@ export default Spread;
 const CardData = [
   {
     id: 1,
-    title: "Multi-asset Trading",
-    text: "Trade over 400 CFDs including Forex pairs, Stocks, Indices, Commodities,and Cryptocurrencies.",
-    icon: <CheckTik className="" />,
+    title: "NDD (No Dealing Desk) Execution",
+
+    icon: <Spread1 />,
   },
   {
     id: 2,
-    title: "Flexible Trading",
-    text: "Gain more control over your trades with different types of orders, modes of execution, and market depth.",
-    icon: <CheckTik className="" />,
+    title: "NDD (No Dealing Desk) Execution",
+
+    icon: <Spread2 />,
   },
   {
     id: 3,
-    title: "Integrated Tools",
-    text: "Add plugins including Doyos’s Trading Central, Elliott Wave indicator and VPS service.",
-    icon: <CheckTik className="" />,
+    title: "NDD (No Dealing Desk) Execution",
+
+    icon: <Spread3 />,
   },
   {
     id: 4,
-    title: "Join a Community",
-    text: "Share ideas, strategies, and custom indicators with a community of other traders and developers.",
-    icon: <CheckTik className="" />,
+    title: "NDD (No Dealing Desk) Execution",
+    icon: <Spread4 />,
   },
   {
     id: 5,
-    title: "Advanced Tools",
-    text: "Spot the most promising trade opportunities with 38+ preinstalled technical indicators and 44 analytical charting tools.",
-    icon: <CheckTik className="" />,
+    title: "NDD (No Dealing Desk) Execution",
+    icon: <Spread5 />,
   },
   {
     id: 6,
-    title: "Custom Indicators",
-    text: "Develop and back test your own indicators and EAs to perform any trading operation.",
-    icon: <CheckTik className="" />,
+    title: "NDD (No Dealing Desk) Execution",
+    icon: <Spread6 />,
   },
-  {
-    id: 7,
-    title: "Track Your Performance",
-    text: "Improve your strategy by tracking your performance with advanced reports and daily statements.",
-    icon: <CheckTik className="" />,
-  },
-  {
-    id: 8,
-    title: "Automate Your Trades",
-    text: "Improve your strategy by tracking your performance with advanced reports and daily statements.",
-    icon: <CheckTik className="" />,
-  },
-  {
-    id: 8,
-    title: "Custom Indicators",
-    text: "Improve your strategy by tracking your performance with advanced reports and daily statements.",
-    icon: <CheckTik className="" />,
-  },
+
 ];
