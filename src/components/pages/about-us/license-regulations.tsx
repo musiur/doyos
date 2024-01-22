@@ -116,7 +116,6 @@ const LicenseRegulation = () => {
           </div>
         </div>
       </div>
-
       {/* How to Get Started Section */}
       <HowToGetStarted />
       {/* Interested Markets and Choose Platform */}
