@@ -137,7 +137,7 @@ const Navbar = () => {
                   <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] grid-cols-1">
                     <div className="flex flex-col gap-[6px] items-end pr-[117px]">
                       <h6 className="font-semibold">Accounts</h6>
-                      <Link href="/accounts/account-types">Account Types</Link>
+                      <Link href="/accounts/basic">Basic Account</Link>
                       <Link href="/accounts/regular">Regular Account</Link>
                       {/* <Link href="/accounts/prop-funding">PROP Funding</Link> */}
                       <Link href="/accounts/funding-widthdrawal">Funding & Withdrawal</Link>
@@ -208,10 +208,10 @@ const Navbar = () => {
               <DropdownMenuContent>
                 <DropdownMenuLabel>Account types</DropdownMenuLabel>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem>Standard</DropdownMenuItem>
-                <DropdownMenuItem>VIP</DropdownMenuItem>
-                <DropdownMenuItem>ENC</DropdownMenuItem>
-                <DropdownMenuItem>Islamic</DropdownMenuItem>
+                <Link href="/partner-login"> <DropdownMenuItem>Partner</DropdownMenuItem></Link>
+                <Link href="/client-login">
+                <DropdownMenuItem>Client</DropdownMenuItem>
+                </Link>
               </DropdownMenuContent>
             </DropdownMenu>
             <Sheet>
@@ -232,33 +232,34 @@ const Navbar = () => {
                       </h4>
                       <div className="flex flex-col gap-[6px]">
                         <h6 className="font-semibold">Trading Platform</h6>
-                        <Link href="/">MetaTrader 5</Link>
-                        <Link href="/">MT5 Android</Link>
-                        <Link href="/">MT5 Mac/iOS</Link>
+                        <Link href="/trading-and-tools/trading-platform/meta-trader5">MetaTrader 5</Link>
+                        <Link href="/trading-and-tools/trading-platform/mt5-android">MT5 Android</Link>
+                        <Link href="/trading-and-tools/trading-platform/mt5-ios">MT5 Mac/iOS</Link>
                       </div>
                       <div className="flex flex-col gap-[6px]">
                         <h6 className="font-semibold">Market</h6>
-                        <Link href="/">Forex</Link>
-                        <Link href="/">Cryptos</Link>
-                        <Link href="/">Stock/Share</Link>
-                        <Link href="/">Indices/CFD</Link>
-                        <Link href="/">Commodities</Link>
+                        <Link href="/trading-and-tools/market/forex">Forex</Link>
+                        <Link href="/trading-and-tools/market/cryptos">Cryptos</Link>
+                        <Link href="/trading-and-tools/market/stock">Stock/Share</Link>
+                        <Link href="/trading-and-tools/market/indices">Indices/CFD</Link>
+                        <Link href="/trading-and-tools/market/commodities">Commodities</Link>
                       </div>
                       <div className="flex flex-col gap-[6px]">
                         <h6 className="font-semibold">Trading Conditions</h6>
                         {/* <Link href="/">Account Type</Link> */}
-                        <Link href="/">Funding & Withdrawal</Link>
-                        <Link href="/">Spread</Link>
+
+                        <Link href="/trading-and-tools/trading-conditions/spread">Spread</Link>
                         <Link href="/trading-and-tools/trading-conditions/swap-free-account">Swap Free Account</Link>
-                        <Link href="/">Security of Fund</Link>
-                        <Link href="/">Trading Conditions </Link>
+                        <Link href="/trading-and-tools/trading-conditions/security-fund">Security of Fund</Link>
+                        <Link href="/trading-and-tools/trading-conditions/funding-withdrawal">Funding & Withdrawal</Link>
+                        <Link href="/trading-and-tools/trading-conditions/trading-conditions">Trading Conditions </Link>
                       </div>
                       <div className="flex flex-col gap-[6px]">
                         <h6 className="font-semibold">Trading Tools</h6>
-                        <Link href="/">Calculator</Link>
-                        <Link href="/">Free VPS</Link>
-                        <Link href="/">Economic Calendar</Link>
-                        <Link href="/">Market Holidays </Link>
+                        <Link href="/trading-and-tools/trading-tools/calculator">Calculator</Link>
+                        <Link href="/trading-and-tools/trading-tools/free-vps">Free VPS</Link>
+                        <Link href="/trading-and-tools/trading-tools/economic-calendar">Economic Calendar</Link>
+                        <Link href="/trading-and-tools/trading-tools/market-holidays">Market Holidays </Link>
                       </div>
                     </div>
                     <div className="grid grid-cols-1 gap-[20px]">
@@ -267,20 +268,22 @@ const Navbar = () => {
                         <h4 className="text-[16px] md:text-[20px] font-bold mb-[12px]">
                           Accounts
                         </h4>
-                        <Link href="/">Regular Account</Link>
-                        <Link href="/">PROP Funding</Link>
-                        <Link href="/">Funding & Withdrawal</Link>
-                        <Link href="/">Account Types</Link>
+                        <Link href="/accounts/basic">Basic Account</Link>
+                        <Link href="/accounts/regular">Regular Account</Link>
+
+                        <Link href="/accounts/funding-widthdrawal">Funding & Withdrawal</Link>
+
                       </div>
                       <div className="flex flex-col gap-[6px] -mt-8 md:-mt-0">
                         <h4 className="text-[16px] md:text-[20px] font-bold mb-[12px]">
                           About us
                         </h4>
-                        <Link href="/">Our Goal</Link>
-                        <Link href="/">Company News</Link>
-                        <Link href="/">License & Regulations</Link>
-                        <Link href="/">Legal Documents</Link>
-                        <Link href="/">Global Offices</Link>
+                        <Link href="/about-us/our-goal">Our Goal</Link>
+
+                        <Link href="/about-us/license-regulations">License & Regulations</Link>
+                        <Link href="/about-us/legal-documents">Legal Documents</Link>
+
+                        <Link href="/about-us/global-offices">Global Offices</Link>
                       </div>
                       <div className="flex flex-col gap-[6px] -mt-16 md:-mt-0 font-bold lg:font-normal">
                         <Link href="/partners" legacyBehavior passHref>
@@ -294,8 +297,8 @@ const Navbar = () => {
                         <h4 className="text-[16px] md:text-[20px] font-bold mb-[12px]">
                           Supports
                         </h4>
-                        <Link href="/">Contact</Link>
-                        <Link href="/">Call Back Request</Link>
+                        <Link href="/supports/contact">Contact</Link>
+                        <Link href="/supports/call-request">Call Back Request</Link>
 
                       </div>
                     </div>

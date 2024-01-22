@@ -411,7 +411,7 @@ export const PricingFeaturesData = [
   {
     id: 1,
     accountType: "Classic",
-    accountSubType: "cTrader",
+    accountSubType: "",
     features: [
       "MT5",
       "Spread 3.0",

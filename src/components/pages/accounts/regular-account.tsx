@@ -22,7 +22,7 @@ const RegularAccount = () => {
         heading={<>Regular Account</>}
       />
 
-{/* todo */}
+
       <section className="container section">
         <SectionHead
           details={{

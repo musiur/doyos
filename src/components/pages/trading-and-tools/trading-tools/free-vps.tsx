@@ -56,7 +56,7 @@ const FreeVps = () => {
                 imageLeft={true}
                 heading={
                     <>
-                        What is a
+                        What is
                         &nbsp;
                         <span className="h2-span text-secondary">VPS</span>
                         &nbsp;?
@@ -83,7 +83,7 @@ const FreeVps = () => {
             {/* why traders choose doyos carousol Starts */}
             <div className="section container">
                 <h2>
-                    Benefits of Free &nbsp; VPS
+                    Benefits of Free VPS
 
                 </h2>
                 <div className="flex flex-col lg:flex-row items-center justify-start min-[1390px]:justify-between gap-10 pt-[90px]">

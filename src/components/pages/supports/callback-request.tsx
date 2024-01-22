@@ -75,8 +75,10 @@ const CallBackRequest = () => {
             </section>
 
             <div className="container  mb-[80px] bg-secondary h-[290px] rounded-[24px] flex flex-col md:flex-row items-center justify-around">
-                <h2 className='text-white'>Want to skip ahead</h2>
-                <Button className='bg-white text-[24px] text-primary min-w-[300px] h-[70px] hover:bg-primary hover:text-white'>Open an Account</Button>
+                <h2 className='text-white'>Want to skip ahead?</h2>
+               
+                    <Button className='bg-white text-[24px] text-primary min-w-[300px] h-[70px] hover:bg-primary hover:text-white'>Open an Account</Button>
+
             </div>
         </div>
     );
