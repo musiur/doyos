@@ -24,15 +24,7 @@ const RegularAccount = () => {
 
 
       <section className="container section">
-        <SectionHead
-          details={{
-            H2: (
-              <>
-                <span className="h2-span text-secondary">Corporate</span>&nbsp;Regular Account
-              </>
-            ),
-          }}
-        />
+
         <div className="flex flex-wrap items-center justify-center gap-[40px]">
           {PricingFeaturesData.map((pack) => {
             const { id, accountType, features } = pack;

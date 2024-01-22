@@ -36,7 +36,7 @@ const LicenseRegulation = () => {
         imageLeft={false}
 
         buttonList={[
-          { id: 1, text: "Start Now", link: "/", variant: "secondary" },
+          { id: 1, text: "Start Now", link: "/try-free-demo", variant: "secondary" },
 
         ]}
       />
@@ -105,7 +105,7 @@ const LicenseRegulation = () => {
           <div className="w-full hidden min-[1390px]:flex">
             <Image
               src="/images/pages/trading-and-tools/indices-carousel.png "
-              alt="why-choose-doyos"
+              alt="license and regulations carousel image"
               width={1000}
               height={1000}
               className="max-w-[550px] mr-auto ml-auto md:ml-0 h-auto"

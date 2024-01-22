@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 import { TSearchParams } from "@/lib/type";
 import { BadgeCheck, } from "lucide-react";
 
-const AccountTypes = ({searchParams}: {searchParams: TSearchParams}) => {
+const AccountTypes = ({ searchParams }: { searchParams: TSearchParams }) => {
   return (
     <div className="">
       <div className="container section grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-10">
-        <AccountCarousel searchParams={searchParams}/>
+        <AccountCarousel searchParams={searchParams} />
         <div className="flex flex-col justify-center gap-10">
           <h2 className="">
             Choose the&nbsp;
@@ -38,13 +38,18 @@ const AccountTypes = ({searchParams}: {searchParams: TSearchParams}) => {
             </div>
           </div>
           <div className="flex flex-wrap items-center justify-start gap-[20px]">
-            <Button>Open Demo Account</Button>
-            <Button variant="secondary">Open Real Acccount</Button>
+            <Link href="/try-free-demo">
+              <Button>Free Free Demo </Button>
+            </Link>
+            <Link href="/register">
+              <Button>Open Real Account </Button>
+            </Link>
+            <div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  );
+      );
 };
 
-export default AccountTypes;
+      export default AccountTypes;
