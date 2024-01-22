@@ -104,7 +104,7 @@ const LicenseRegulation = () => {
         <div className="flex flex-col lg:flex-row items-center justify-start min-[1390px]:justify-between gap-10 pt-[90px]">
           <div className="w-full hidden min-[1390px]:flex">
             <Image
-              src="/images/pages/trading-and-tools/indices-carousel-image.png "
+              src="/images/pages/trading-and-tools/indices-carousel-image.webp "
               alt="why-choose-doyos"
               width={1000}
               height={1000}
