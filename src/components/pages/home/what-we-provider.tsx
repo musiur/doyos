@@ -15,7 +15,7 @@ const WhatWeProvide = () => {
     {
       id: 1,
       text: "LEVERAGE",
-      number: "1.1000",
+      number: "1.500",
     },
     {
       id: 2,
@@ -84,7 +84,7 @@ const WhatWeProvide = () => {
           })}
         </div>
       </div>
-      <div className="bg-muted section rounded-bl-[20px] md:rounded-bl-[40px]">
+      <div className="bg-muted bg-[url('/images/market-and-platform-bg.png')] bg-cover bg-bottom section">
         <div className="container">
           <h2 className="text-center">
             We <span className="text-secondary h2-span">Provide Best</span>{" "}

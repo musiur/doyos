@@ -86,7 +86,7 @@ const ForexTrading = () => {
       <HowToGetStarted />
       {/* Interested Markets and Choose Platform */}
       <InterestedAndChoosePlatform />
-      <HowItWorks />
+
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import Types from "@/components/pages/accounts/account-types";
+import BasicAccount from "@/components/pages/accounts/basic-account";
 import PropFunding from "@/components/pages/accounts/prop-funding";
 import RegularAccount from "@/components/pages/accounts/regular-account";
 
@@ -16,8 +17,8 @@ const AccountsSlug = ({ params }: { params: { slug: String } }) => {
                     <PropFunding />
                 ) : params.slug === "funding-widthdrawal" ? (
                     <FundingWithdrawal />
-                ) : params.slug === "account-types" ? (
-                    <Types />
+                ) : params.slug === "basic" ? (
+                    <BasicAccount />
                 ) : null
             }
         </div>

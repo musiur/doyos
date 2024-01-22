@@ -51,22 +51,22 @@ const WhyTraderChooseCarousel = ({
         0: {
           slidesPerView: 1,
           spaceBetween: 20,
-          grid: {rows: 1, fill: "row"}
+          grid: { rows: 1, fill: "row" }
         },
         450: {
           slidesPerView: 1,
           spaceBetween: 20,
-          grid: {rows: 1, fill: "row"}
+          grid: { rows: 1, fill: "row" }
         },
         900: {
           slidesPerView: 2,
           spaceBetween: 50,
-          grid: {rows: 2, fill: "row"}
+          grid: { rows: 2, fill: "row" }
         },
         1260: {
           slidesPerView: 2,
           spaceBetween: 50,
-          grid: {rows: 2, fill: "row"}
+          grid: { rows: 2, fill: "row" }
         },
       }}
     >
@@ -88,7 +88,7 @@ const WhyTraderChooseCarousel = ({
               {image}
               <h4 className="font-semibold text-[16px] md:text-[20px]">
                 {title}
-                {id}
+
               </h4>
               <p>{text}</p>
             </div>
