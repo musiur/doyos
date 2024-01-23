@@ -2,7 +2,7 @@ import HeroSection from '@/components/molecules/hero-section';
 import WhyTraderChooseCarousel from '@/components/molecules/why-trader-choose-carousel';
 import Image from 'next/image';
 import React from 'react';
-import { PricingFeaturesData } from "@/lib/data";
+import { PricingFeaturesData2 } from "@/lib/data";
 import HowToGetStarted from '../how-to-get-started-section';
 import Trophies from '@/components/assets/trading-tools/trophies';
 import CloudShield from '@/components/assets/trading-tools/cloud-shield';
@@ -13,31 +13,31 @@ import { Button } from '@/components/ui/button';
 import { CheckCircle } from 'lucide-react';
 import SectionHead from '@/components/molecules/section-head';
 import clsx from 'clsx';
+import Link from "next/link";
 
 const BasicAccount = () => {
     return (
         <div>
             <HeroSection
                 backgroundUrl="/images/pages/accounts/RegularAccountBanner.png"
-                heading={<>Basic Account</>}
+                heading={<>Doyos Basic Account</>}
             />
 
             {/* todo */}
             <section className="container section">
 
                 <div className="flex flex-wrap items-center justify-center gap-[40px]">
-                    {PricingFeaturesData.map((pack) => {
-                        const { id, accountType, features } = pack;
+                    {PricingFeaturesData2.map((pack) => {
+                        const { id, accountType, platformName, commission, spreads } = pack;
                         return (
                             <div
                                 key={id}
-                                className="min-w-[300px] w-[360px] flex flex-col items-center justify-center border rounded-[20px]"
-                            >
-                                <div
-                                    className={clsx(
-                                        "w-full relative px-[20px] h-[190px] rounded-t-[20px] flex flex-col items-center justify-center",
-                                        { "bg-[#C1282D]": id === 2, "bg-[#C1282D10]": id !== 2 }
-                                    )}
+                                className="min-w-[300px] w-[360px] flex flex-col items-center justify-center border rounded-[20px]">
+
+                                <div className={clsx(
+                                    "w-full relative px-[20px] h-[190px] rounded-t-[20px] flex flex-col items-center justify-center",
+                                    { "bg-[#C1282D] h-[220px]": id === 2, "bg-[#979aaa] ": id !== 2 },
+                                )}
                                 >
                                     <Image
                                         src={id === 2 ? "/map.png" : "/map1.png"}
@@ -61,56 +61,56 @@ const BasicAccount = () => {
                                             Account
                                         </p>
                                         <h4
-                                            className={clsx("text-[32px] md:text-[40px] font-bold", {
-                                                "text-white": id === 2,
-                                                "text-gray-600": id !== 2,
-                                            })}
+                                            className={"text-[32px] md:text-[40px] font-bold text-[#E8EDF4]"}
                                         >
                                             {accountType}
                                         </h4>
-                                        {pack.accountSubType ? (
-                                            <p>({pack.accountSubType})</p>
-                                        ) : null}
+
+
                                     </div>
                                 </div>
-                                <ul
-                                    className={clsx("flex flex-col gap-[10px]", {
-                                        "pt-[64px]": id === 2,
-                                        "pt-[24px]": id !== 2,
-                                    })}
-                                >
-                                    {features.map((item, index) => {
-                                        return (
-                                            <li key={index} className="flex items-center gap-[4px]">
-                                                <CheckCircle
-                                                    className={clsx({
-                                                        "stroke-white fill-secondary w-5 h-5": index < 10,
-                                                        "stroke-secondary fill-white w-[18px] h-4":
-                                                            index >= 10,
-                                                    })}
-                                                />
-                                                {item}
-                                            </li>
-                                        );
-                                    })}
-                                </ul>
-                                <div className="w-full p-[32px]">
-                                    <Button
+
+                                <div className='flex justify-between items-center border-b  px-2 py-4 w-4/5 mt-5 font-bold'>
+                                    <p className={clsx("text-[16px]", { "text-black": id === 2, "text-gray-500": id !== 2 })}>Trading Platform</p>
+                                    <p className={clsx("text-[16px]", { "text-black": id === 2, "text-gray-500": id !== 2 })}>{platformName}</p>
+                                </div>
+                                <div className='flex justify-between items-center border-b  px-2 py-5 w-4/5  my-2 font-bold'>
+                                    <div>
+                                        <p className={clsx("text-[16px]", { "text-black": id === 2, "text-gray-500": id !== 2 })}>Commission</p>
+                                        <small className='text-gray-600'>(per lot per side)</small>
+                                    </div>
+                                    <p className={clsx("text-[50px] font-bold", { "text-black": id === 2, "text-gray-500": id !== 2 })}>${commission}</p>
+                                </div>
+                                <div className='flex justify-between items-center border-b  p-2 w-4/5  my-1 font-bold'>
+                                    <div>
+                                        <p className={clsx("text-[16px]", { "text-black": id === 2, "text-gray-500": id !== 2 })}>Spreads From</p>
+                                        <small className='text-gray-600'>(pips)</small>
+                                    </div>
+                                    <p className={clsx("text-[50px] font-bold", { "text-black": id === 2, "text-gray-500": id !== 2 })} >{spreads}</p>
+                                </div>
+
+
+                                <div className="w-full p-[32px] flex flex-col gap-[20px] ">
+                                    <Link href='/register'> <Button
                                         variant={id === 2 ? "secondary" : "outline"}
-                                        className="w-full"
+                                        className="w-full border-red "
                                     >
-                                        Sign Up
+                                        Start Trading Now
                                     </Button>
+                                    </Link>
+                                    <div className="text-center text-secondary">
+                                        <Link href='/try-free-demo'> TRY A FREE DEMO </Link>
+                                    </div>
                                 </div>
                             </div>
                         );
                     })}
                 </div>
-            </section>
+            </section >
 
 
             {/* todo */}
-            <SectionHead
+            < SectionHead
                 details={{
                     H2: (
                         <>
@@ -166,7 +166,7 @@ const BasicAccount = () => {
             <InterestedAndChoosePlatform />
 
 
-        </div>
+        </div >
     );
 };
 

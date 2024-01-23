@@ -9,6 +9,8 @@ import WhyTraderChooseCarousel from "@/components/molecules/why-trader-choose-ca
 import Image from "next/image";
 import HowToGetStarted from "../../how-to-get-started-section";
 import InterestedAndChoosePlatform from "../../interested-and-choose-platform-section";
+import Faq from "@/components/molecules/faq";
+import { conditionsFAQ } from "@/lib/data";
 
 const TradingConditions = () => {
     return (
@@ -39,6 +41,7 @@ const TradingConditions = () => {
                     }}
                 />
             </div>
+            <Faq data={conditionsFAQ} />
 
 
             {/* issues -todo--accrodion */}

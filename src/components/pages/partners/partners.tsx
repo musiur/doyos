@@ -52,7 +52,7 @@ const Partners = () => {
                 ]}
                 imageLeft={false}
                 buttonList={[
-                    { id: 1, text: "Start Now", link: "/", variant: "secondary" },
+                    { id: 1, text: "Start Now", link: "/try-free-demo", variant: "secondary" },
 
                 ]}
             />
@@ -112,7 +112,7 @@ const Partners = () => {
                     ]}
                     imageLeft={true}
                     buttonList={[
-                        { id: 1, text: "Become an IB", link: "/", variant: "default" },
+                        { id: 1, text: "Become an IB", link: "/partner-login", variant: "default" },
 
                     ]}
                 />

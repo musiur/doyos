@@ -1,4 +1,7 @@
+import OrderTypes from "@/components/molecules/order-types";
 import { TTableData, TTableTabs } from "./type";
+import AccountTable from "@/components/molecules/account-table";
+import Leverage from "@/components/molecules/leverage";
 export const MarketHolidayTableTabs: TTableTabs[] = [
   {
     value: "nov23",
@@ -467,3 +470,84 @@ export const PricingFeaturesData = [
     ],
   },
 ];
+
+
+
+export const PricingFeaturesData2 = [
+  {
+    id: 1,
+    accountType: "Mini",
+    platformName: "MetaTrader5",
+    commission: "0.0",
+    spreads: 1.3,
+
+  },
+  {
+    id: 2,
+    accountType: "Pro",
+    platformName: "MetaTrader5",
+    commission: 10,
+    spreads: 1.3,
+  },
+  {
+    id: 3,
+    accountType: "Ultimate",
+    platformName: "MetaTrader5",
+    commission: 6,
+    spreads: "0.0",
+  },
+];
+
+export const conditionsFAQ = {
+
+  qnaList: [
+    {
+      id: 1,
+      title: "Market",
+      details:
+        "Doyos strives to ensure that the market watch is accurate and prices are obtained from several major banks/liquidity providers/exchanges; in case of closure/failure of one or more price provider for any or all CFDs, quotes will be provided which will reflect what the company thinks to be the current Bid and Ask price for each CFD; we do not guarantee that our prices are the best prices available on the world market. The Client agrees hereunder that our market watch is only an indicator of the current world market and any misunderstanding regarding this service must be returned to Doyos Operations data.Moreover, charts for all traded instruments are drawn according to the default spreads, and may differ from the prices displayed on the market watch according to your account type because of differences in markups.",
+    },
+    {
+      id: 2,
+      title:
+        "Spread",
+      details: <AccountTable />
+    },
+    {
+      id: 3,
+      title: "Hedging",
+      details:
+        "Doyos allows clients to open positions in the opposite direction of previously opened positions in the trading account, to reduce loss and to decide later when to enter the market.Hedging an instrument by its corresponding Future OTC contract is forbidden (for swap-free accounts), because this represents an attempt to take advantage of the swap free facility and gain profits from swaps, one direction of this kind of hedge must be closed immediately. If the client fails to take action to avoid such practices, Doyos will, unfortunately, be required to close or take other action (by deducting the swaps retroactively or any other means) on these accounts without further notice.Hedged positions will be held in the trading account without affecting the required margin value, since the required margin is calculated for each instrument according to the net positions opened at a specific moment. The Company reserves the rights and at its sole discretion to close or partialy close any hedged position kept by the clients for a long period without priot notice to the clients",
+    },
+    {
+      id: 4,
+      title: "Order Types",
+      details: <OrderTypes />
+    },
+
+    {
+      id: 5,
+      title: "Future -OTC",
+      details:
+        "All future trades are classified as market orders, and will be executed according to the market prices provided from its corresponding exchange at the time of execution; in addition, exchange fees may apply. Rollover: Futures-OTC contracts will not be rolled over automatically, neither accepting rollover requests from clients; in the case of any client need to rollover a future-otc position/s, open positions on the current contract can be closed and reopened at the next nearby future-otc contract before the last trading day for each contract. Available Futures instruments: Indices,Commodities & Energies, Where margin, contract size, and general contract specifications are displayed in the Markets Section of the website, and updated periodically.",
+    },
+
+    {
+      id: 6,
+      title: "Leverage",
+      details: <Leverage />,
+    },
+    {
+      id: 7,
+      title: "Margin Requirements",
+      details:
+        "All future trades are classified as market orders, and will be executed according to the market prices provided from its corresponding exchange at the time of execution; in addition, exchange fees may apply. Rollover: Futures-OTC contracts will not be rolled over automatically, neither accepting rollover requests from clients; in the case of any client need to rollover a future-otc position/s, open positions on the current contract can be closed and reopened at the next nearby future-otc contract before the last trading day for each contract. Available Futures instruments: Indices,Commodities,Energies Where margin, contract size, and general contract specifications are displayed in the Markets Section of the website, and updated periodically.",
+    },
+    {
+      id: 8,
+      title: "Slippage",
+      details:
+        "Slippage involves executing any given trade on a specific price different from the expected price sent or preset by the client. This may take place during highly volatile market conditions such (but not limited to) economic or political news; the order will be filled at the next best available market price because, but not limited to – the desired/preset order price is not available, or because higher spread differences are applied in the corresponding exchanges of the traded instrument. Doyos does not apply slippage under normal market conditions, and applies it on stop pending entry or liquidation orders during times when Doyos is closed or when – but not limited to – there is a weekend or bank holiday, international economic events or hectic market movements. In this case, stop orders will be filled on the opening price which Doyos finds suitable.Clients acknowledge that slippage might occur as per the liquidity providers’ terms and conditions and that this is beyond the control of Doyos Global Limited and agrees to waive Doyos Global Limited from any liability that may arise subjective to any damage or expense or loss incurred by the Client, in relation to or directly or indirectly arising from but not limited to such terms and conditions.",
+    },
+  ],
+};

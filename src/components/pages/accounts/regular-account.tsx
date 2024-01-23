@@ -19,7 +19,7 @@ const RegularAccount = () => {
     <div>
       <HeroSection
         backgroundUrl="/images/pages/accounts/RegularAccountBanner.png"
-        heading={<>Regular Account</>}
+        heading={<>Doyos Regular Account</>}
       />
 
 
@@ -36,7 +36,7 @@ const RegularAccount = () => {
                 <div
                   className={clsx(
                     "w-full relative px-[20px] h-[190px] rounded-t-[20px] flex flex-col items-center justify-center",
-                    { "bg-[#C1282D]": id === 2, "bg-[#C1282D10]": id !== 2 }
+                    { "bg-[#C1282D]": id === 2, "bg-[#CC6B6E]": id !== 2 }
                   )}
                 >
                   <Image
@@ -137,6 +137,8 @@ const RegularAccount = () => {
     </div>
   );
 };
+
+
 
 export default RegularAccount;
 

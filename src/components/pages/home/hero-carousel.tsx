@@ -23,7 +23,7 @@ const Slides: TSlide[] = [
   },
   {
     id: 3,
-    image: "/images/payment-methods.png",
+    image: "/images/pages/trading-and-tools/trade-indices-online.png",
   },
 ];
 const HomeHeroCarousel = () => {

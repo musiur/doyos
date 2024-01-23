@@ -104,7 +104,6 @@ const Footer = () => {
 };
 
 export default Footer;
-
 const footerlinks = [
   {
     id: 1,
@@ -138,6 +137,7 @@ const footerlinks = [
   },
 ];
 
+
 const HeadingLinks = [
   {
     id: 0,
@@ -146,17 +146,17 @@ const HeadingLinks = [
       {
         id: 0,
         text: "MetaTrader 5",
-        link: "/",
+        link: "/trading-and-tools/meta-trader5",
       },
       {
         id: 1,
         text: "MT5 android",
-        link: "/",
+        link: "/trading-and-tools/mt5-android",
       },
       {
         id: 2,
         text: "MT5 Mac/iOS",
-        link: "/",
+        link: "/trading-and-tools/mt5-ios",
       },
     ],
   },
@@ -167,27 +167,27 @@ const HeadingLinks = [
       {
         id: 0,
         text: "Forex",
-        link: "/",
+        link: "/trading-and-tools/market/forex",
       },
       {
         id: 1,
         text: "Cryptos",
-        link: "/",
+        link: "/trading-and-tools/market/cryptos",
       },
       {
         id: 2,
         text: "Stock/Share",
-        link: "/",
+        link: "/trading-and-tools/market/stock",
       },
       {
         id: 3,
         text: "Indices/CFD",
-        link: "/",
+        link: "/trading-and-tools/market/indices",
       },
       {
         id: 4,
         text: "Commodities",
-        link: "/",
+        link: "/trading-and-tools/market/commodities",
       },
     ],
   },
@@ -197,107 +197,90 @@ const HeadingLinks = [
     links: [
       {
         id: 0,
-        text: "Account type",
-        link: "/",
+        text: "Doyos Regular Account",
+        link: "/trading-and-tools/accounts/regular",
       },
       {
         id: 1,
         text: "Funding & Withdrawal",
-        link: "/",
+        link: "/trading-and-tools/trading-conditions/funding-withdrawal",
       },
       {
         id: 2,
         text: "Spread",
-        link: "/",
+        link: "/trading-and-tools/trading-conditions/spread",
       },
       {
         id: 3,
         text: "Swap free account",
-        link: "/",
+        link: "/trading-and-tools/trading-conditions/swap-free-account",
       },
       {
         id: 4,
         text: "Security of fund",
-        link: "/",
+        link: "/trading-and-tools/trading-conditions/security-fund",
       },
       {
         id: 5,
         text: "Trading conditions",
-        link: "/",
+        link: "/trading-and-tools/trading-conditions/trading-conditions",
       },
     ],
   },
   {
     id: 3,
-    title: "Account types",
-    links: [
-      {
-        id: 0,
-        text: "Regular account",
-        link: "/",
-      },
-      {
-        id: 1,
-        text: "PROP funding",
-        link: "/",
-      },
-      {
-        id: 2,
-        text: "Funding & Withdrawal",
-        link: "/",
-      },
-    ],
-  },
-  {
-    id: 4,
     title: "About us",
     links: [
       {
         id: 0,
         text: "Our goal",
-        link: "/",
+        link: "/about-us/our-goal",
       },
       {
         id: 1,
         text: "Company news",
-        link: "/",
+        link: "/about-us/company-news",
       },
       {
         id: 2,
         text: "License & regulations",
-        link: "/",
+        link: "/about-us/license-regulations",
       },
       {
         id: 3,
         text: "Legal documents",
-        link: "/",
+        link: "/about-us/legal-documents",
       },
       {
         id: 4,
         text: "Global offices",
-        link: "/",
+        link: "/about-us/global-offices",
       },
       {
         id: 5,
         text: "Partners",
-        link: "/",
+        link: "/partners",
       },
     ],
   },
   {
-    id: 5,
+    id: 4,
     title: "Support",
     links: [
       {
         id: 0,
         text: "Callback request",
-        link: "/",
+        link: "/supports/callback-request",
       },
       {
         id: 1,
         text: "Contact us",
-        link: "/",
+        link: "/supports/contact-us",
       },
     ],
   },
+
 ];
+
+export { HeadingLinks };
+

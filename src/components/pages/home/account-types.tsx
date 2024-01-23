@@ -42,7 +42,7 @@ const AccountTypes = ({ searchParams }: { searchParams: TSearchParams }) => {
             <Link href="/try-free-demo">
               <Button>Try Free Demo </Button>
             </Link>
-            <Link href="/Register">
+            <Link href="/register">
               <Button>Open </Button>
             </Link>
 
