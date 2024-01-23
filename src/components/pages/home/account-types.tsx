@@ -2,6 +2,7 @@ import AccountCarousel from "@/components/molecules/account-carousel";
 import { Button } from "@/components/ui/button";
 import { TSearchParams } from "@/lib/type";
 import { BadgeCheck, } from "lucide-react";
+import Link from "next/link";
 
 const AccountTypes = ({ searchParams }: { searchParams: TSearchParams }) => {
   return (
@@ -39,17 +40,17 @@ const AccountTypes = ({ searchParams }: { searchParams: TSearchParams }) => {
           </div>
           <div className="flex flex-wrap items-center justify-start gap-[20px]">
             <Link href="/try-free-demo">
-              <Button>Free Free Demo </Button>
+              <Button>Try Free Demo </Button>
             </Link>
-            <Link href="/register">
-              <Button>Open Real Account </Button>
+            <Link href="/Register">
+              <Button>Open </Button>
             </Link>
-            <div>
-            </div>
+
           </div>
         </div>
       </div>
-      );
+    </div>
+  );
 };
 
-      export default AccountTypes;
+export default AccountTypes;

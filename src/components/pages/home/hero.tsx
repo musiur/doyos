@@ -1,5 +1,6 @@
 import HeroSectionGraphic from "@/components/assets/home/herosection";
 import { Button } from "@/components/ui/button";
+import { Link } from "lucide-react";
 
 const HomeHero = () => {
   return (
@@ -20,9 +21,9 @@ const HomeHero = () => {
           </p>
         </div>
         <div className="flex justify-center min-[900px]:justify-start max-h-[60px]">
-          <Button variant="secondary">
+          <Link href="/register"> <Button variant="secondary">
             Open an Account
-          </Button>
+          </Button></Link>
         </div>
       </div>
       <HeroSectionGraphic className="hidden min-[900px]:flex" />
