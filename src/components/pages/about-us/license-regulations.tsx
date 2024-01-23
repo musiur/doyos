@@ -36,7 +36,7 @@ const LicenseRegulation = () => {
         imageLeft={false}
 
         buttonList={[
-          { id: 1, text: "Start Now", link: "/", variant: "secondary" },
+          { id: 1, text: "Start Now", link: "/try-free-demo", variant: "secondary" },
 
         ]}
       />

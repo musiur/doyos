@@ -81,8 +81,8 @@ const Mt5Android = () => {
             </div>
             <HowToGetStarted
                 buttonList={[
-                    { id: 1, text: "Open Demo Account", link: "/", variant: "default" },
-                    { id: 2, text: "Open Real Account", link: "/", variant: "secondary" },
+                    { id: 1, text: "Open Demo Account", link:"/try-free-demo", variant: "default" },
+                    { id: 2, text: "Open Real Account", link:"/register", variant: "secondary" },
                 ]} />
             {/* Interested Markets and Choose Platform */}
             <InterestedAndChoosePlatform />
