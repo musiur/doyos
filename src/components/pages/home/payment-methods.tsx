@@ -14,7 +14,7 @@ const PaymentMethods = () => {
             For more information on deposits, withdrawals and how to fund your
             trading account,{" "}
             <Link
-              href="/"
+              href="/register"
               className="text-primary font-bold hover:text-secondary"
             >
               Go here
