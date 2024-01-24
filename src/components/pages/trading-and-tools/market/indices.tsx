@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import FastClock from "@/components/assets/trading-tools/fast-clock";
 import Rockets from "@/components/assets/trading-tools/rockets";
 
@@ -83,7 +84,7 @@ const MarketIndices = () => {
         </h2>
         <div className="flex flex-col lg:flex-row items-center justify-start min-[1390px]:justify-between gap-10 pt-[90px]">
           <div className="w-full hidden min-[1390px]:flex">
-            <Image
+            <img
               src="/images/pages/trading-and-tools/indices-carousel.png "
               alt="why-choose-doyos"
               width={1000}
