@@ -86,7 +86,7 @@ const MarketIndices = () => {
           <div className="w-full hidden min-[1390px]:flex">
             <img
               src="/images/pages/trading-and-tools/indices-carousel.png "
-              alt="why-choose-doyos"
+              alt="why-traders-choose-doyos"
               width={1000}
               height={1000}
               className="max-w-[550px] mr-auto ml-auto md:ml-0 h-auto"
