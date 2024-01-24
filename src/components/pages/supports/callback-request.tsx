@@ -1,10 +1,10 @@
 "use client"
 import { Button } from '@/components/ui/button';
-import Link from 'next/Link';
 import Image from 'next/image';
 import React from 'react';
 import CountryCombobox from "@/components/ui/country-combobox";
 import { FormEvent } from "react";
+import Link from 'next/link';
 
 const CallBackRequest = () => {
     const handleOnSubmit = (event: FormEvent<HTMLFormElement>) => {
