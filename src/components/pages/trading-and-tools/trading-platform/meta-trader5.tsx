@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import AppleStore from "@/components/assets/online stores/apple-store";
 import GooglePlayStore from "@/components/assets/online stores/google-playstore";
 import MicrosoftStore from "@/components/assets/online stores/microsoft-store";
@@ -87,12 +88,11 @@ const MetaTrader5 = () => {
                 </h2>
                 <div className="flex flex-col lg:flex-row items-center justify-start min-[1390px]:justify-between gap-10 pt-[90px]">
                     <div className="w-full hidden min-[1390px]:flex">
-                        <Image
+                        <img
                             src="/images/pages/trading-and-tools/why-trade-forex.png "
                             alt="why-choose-doyos"
-                            width={1000}
-                            height={1000}
                             className="max-w-[550px] mr-auto ml-auto md:ml-0 h-auto"
+
                         />
                     </div>
                     <div className="w-full min-[1390px]:max-w-[700px]">

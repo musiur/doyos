@@ -33,7 +33,7 @@ const Spread = () => {
         ]}
         imageLeft={false}
         buttonList={[
-          { id: 1, text: "Start Trading", link: "/", variant: "secondary" },
+          { id: 1, text: "Start Trading", link: "/try-free-demo", variant: "secondary" },
         ]}
       />
 

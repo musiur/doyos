@@ -146,17 +146,17 @@ const HeadingLinks = [
       {
         id: 0,
         text: "MetaTrader 5",
-        link: "/trading-and-tools/meta-trader5",
+        link: "/trading-and-tools/trading-platform/meta-trader5",
       },
       {
         id: 1,
         text: "MT5 android",
-        link: "/trading-and-tools/mt5-android",
+        link: "/trading-and-tools/trading-platform/mt5-android",
       },
       {
         id: 2,
         text: "MT5 Mac/iOS",
-        link: "/trading-and-tools/mt5-ios",
+        link: "/trading-and-tools/trading-platform/mt5-ios",
       },
     ],
   },
@@ -202,26 +202,31 @@ const HeadingLinks = [
       },
       {
         id: 1,
+        text: "Doyos Basic Account",
+        link: "/trading-and-tools/accounts/basic",
+      },
+      {
+        id: 2,
         text: "Funding & Withdrawal",
         link: "/trading-and-tools/trading-conditions/funding-withdrawal",
       },
       {
-        id: 2,
+        id: 3,
         text: "Spread",
         link: "/trading-and-tools/trading-conditions/spread",
       },
       {
-        id: 3,
+        id: 4,
         text: "Swap free account",
         link: "/trading-and-tools/trading-conditions/swap-free-account",
       },
       {
-        id: 4,
+        id: 5,
         text: "Security of fund",
         link: "/trading-and-tools/trading-conditions/security-fund",
       },
       {
-        id: 5,
+        id: 6,
         text: "Trading conditions",
         link: "/trading-and-tools/trading-conditions/trading-conditions",
       },
@@ -236,11 +241,7 @@ const HeadingLinks = [
         text: "Our goal",
         link: "/about-us/our-goal",
       },
-      {
-        id: 1,
-        text: "Company news",
-        link: "/about-us/company-news",
-      },
+
       {
         id: 2,
         text: "License & regulations",
