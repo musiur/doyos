@@ -70,7 +70,6 @@ const Mt5Android = () => {
                         <img
                             src="/images/pages/trading-and-tools/crypto-currency.png "
                             alt="why-choose-doyos"
-
                             className="max-w-[550px] mr-auto ml-auto md:ml-0 h-auto"
                         />
                     </div>

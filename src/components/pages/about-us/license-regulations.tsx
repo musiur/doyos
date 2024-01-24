@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -103,11 +104,10 @@ const LicenseRegulation = () => {
         </h2>
         <div className="flex flex-col lg:flex-row items-center justify-start min-[1390px]:justify-between gap-10 pt-[90px]">
           <div className="w-full hidden min-[1390px]:flex">
-            <Image
+            <img
               src="/images/pages/trading-and-tools/indices-carousel-image.webp "
               alt="why-choose-doyos"
-              width={1000}
-              height={1000}
+
               className="max-w-[550px] mr-auto ml-auto md:ml-0 h-auto"
             />
           </div>
