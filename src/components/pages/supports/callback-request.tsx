@@ -1,6 +1,6 @@
 "use client"
 import { Button } from '@/components/ui/button';
-import { Link } from 'lucide-react';
+import Link from 'next/Link';
 import Image from 'next/image';
 import React from 'react';
 import CountryCombobox from "@/components/ui/country-combobox";
@@ -77,7 +77,9 @@ const CallBackRequest = () => {
             <div className="container  mb-[80px] bg-secondary h-[290px] rounded-[24px] flex flex-col md:flex-row items-center justify-around">
                 <h2 className='text-white'>Want to skip ahead?</h2>
 
-                <Button className='bg-white text-16px md:text-[24px] text-primary max-w-[200px] md:min-w-[300px] h-40px md:h-[70px] hover:bg-primary hover:text-white'>Open an Account</Button>
+                <Link href="/try-free-demo">
+                    <Button className='bg-white text-16px md:text-[24px] text-primary max-w-[200px] md:min-w-[300px] h-40px md:h-[70px] hover:bg-primary hover:text-white'>Open an Account</Button>
+                </Link>
 
             </div>
         </div>
