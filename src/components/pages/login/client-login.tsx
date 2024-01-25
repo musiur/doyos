@@ -33,7 +33,7 @@ const ClientLogin = () => {
                         <Link href="/forget-password">Forgot your password?</Link>
                     </p>
                     <Button type="submit" className="w-full" variant="secondary">Login</Button>
-                    <p className="text-center"> <span className="text-gray">Not a Client?</span> &nbsp; <span className="text-secondary underline hover:underline-offset-4"> <Link href="/partners">Become an IB</Link> </span></p>
+                    <p className="text-center"> <span className="text-gray">Not a Client?</span> &nbsp; <span className="text-secondary underline hover:underline-offset-4"> <Link href="/register">Sign Up Now</Link> </span></p>
                 </form>
                 <div className="right">
                     <Image

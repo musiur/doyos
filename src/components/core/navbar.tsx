@@ -32,6 +32,8 @@ import {
 import { cn } from "@/lib/utils";
 import { AlignRight } from "lucide-react";
 import BrandLogo from "../assets/home/brandlogo";
+import NavLogo from "../assets/home/nav-min-logo";
+
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -194,15 +196,15 @@ const Navbar = () => {
           <div className="flex items-center justify-end gap-[13px]">
 
             <Link href="/try-free-demo">
-              <Button className="bg-transparent max-h-[35px] md:max-h-[37px] text-primary border border-secondary me-[20px] md:me-[40px] text-[12px] md:text-[14px] hover:text-white hover:bg-primary/90">Try Free Demo</Button>
+              <Button className="bg-transparent max-h-[35px] md:max-h-[37px] text-primary border border-secondary me-[20px] md:me-[40px] text-[12px] md:text-[14px] hover:text-white hover:bg-primary/90 hidden md:block">Try Free Demo</Button>
             </Link>
 
-            <Link href="/register">
+            <Link className="block" href="/register">
               <Button>Register</Button>
             </Link>
 
             <DropdownMenu>
-              <DropdownMenuTrigger className="px-[15px] py-[6px] rounded-[5px] text-[14px] md:px-[25px] md:py-[8px] md:rounded-[10px] md:text-[16px] font-semibold md:font-bold bg-secondary hover:bg-secondary/90 text-white outline-none">
+              <DropdownMenuTrigger className="px-[15px] py-[6px] rounded-[5px] text-[14px] md:px-[25px] md:py-[8px] md:rounded-[10px] md:text-[16px] font-semibold md:font-bold bg-secondary hover:bg-secondary/90 text-white outline-none block">
                 Login
               </DropdownMenuTrigger>
               <DropdownMenuContent>
@@ -210,7 +212,7 @@ const Navbar = () => {
                 <DropdownMenuSeparator />
                 <Link href="/partner-login"> <DropdownMenuItem>Partner</DropdownMenuItem></Link>
                 <Link href="/client-login">
-                <DropdownMenuItem>Client</DropdownMenuItem>
+                  <DropdownMenuItem>Client</DropdownMenuItem>
                 </Link>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -220,8 +222,11 @@ const Navbar = () => {
               </SheetTrigger>
               <SheetContent>
                 <SheetHeader>
-                  <div className="mb-[30px]">
-                    <BrandLogo />
+                  <div className="mb-[30px] flex justify-between items-center">
+                    <Link href="/"> <NavLogo /> </Link>
+                    <Link href="/try-free-demo">
+                      <Button className="bg-transparent max-h-[35px]  text-primary border border-secondary me-[25px] text-[12px]  hover:text-white hover:bg-primary/90 ">Try Free Demo</Button>
+                    </Link>
                   </div>
                 </SheetHeader>
                 <div className="max-h-[80vh] overflow-auto">
@@ -264,7 +269,7 @@ const Navbar = () => {
                     </div>
                     <div className="grid grid-cols-1 gap-[20px]">
 
-                      <div className="flex flex-col gap-[6px] -mt-20 md:-mt-0">
+                      <div className="flex flex-col gap-[6px] md:-mt-0">
                         <h4 className="text-[16px] md:text-[20px] font-bold mb-[12px]">
                           Accounts
                         </h4>
@@ -274,7 +279,7 @@ const Navbar = () => {
                         <Link href="/accounts/funding-widthdrawal">Funding & Withdrawal</Link>
 
                       </div>
-                      <div className="flex flex-col gap-[6px] -mt-8 md:-mt-0">
+                      <div className="flex flex-col gap-[6px] -mt-44 md:-mt-0">
                         <h4 className="text-[16px] md:text-[20px] font-bold mb-[12px]">
                           About us
                         </h4>
@@ -284,16 +289,12 @@ const Navbar = () => {
                         <Link href="/about-us/legal-documents">Legal Documents</Link>
 
                         <Link href="/about-us/global-offices">Global Offices</Link>
+                        <Link href="/partners">Our Partners</Link>
                       </div>
-                      <div className="flex flex-col gap-[6px] -mt-16 md:-mt-0 font-bold lg:font-normal">
-                        <Link href="/partners" legacyBehavior passHref>
-                          Partners
-                        </Link>
-                        {/* <Link href="/supports" legacyBehavior passHref>
-                          Supports
-                        </Link> */}
-                      </div>
-                      <div className="flex flex-col gap-[6px] -mt-8 md:-mt-0">
+
+
+
+                      <div className="flex flex-col gap-[6px] -mt-44 md:-mt-0">
                         <h4 className="text-[16px] md:text-[20px] font-bold mb-[12px]">
                           Supports
                         </h4>
@@ -301,6 +302,8 @@ const Navbar = () => {
                         <Link href="/supports/call-request">Call Back Request</Link>
 
                       </div>
+
+
                     </div>
                   </div>
                 </div>

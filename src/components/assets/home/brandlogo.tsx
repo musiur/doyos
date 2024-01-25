@@ -4,7 +4,7 @@ const BrandLogo = () => {
   return (
     <>
 
-      <Image className=" md:max-w-[150px]" src="/images/logo.png" width={150} height={100} alt="logo" />
+      <Image className="min-[310px]:max-w-[100px] min-[600px]:max-w-[110px] md:max-w-[150px]" src="/images/logo.png" width={1000} height={1000} alt="Brand logo" />
 
     </>
     // <svg
@@ -25,6 +25,7 @@ const BrandLogo = () => {
     //     fill="#091E3B"
     //   />
     // </svg>
+
 
   );
 };

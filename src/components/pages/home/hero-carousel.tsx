@@ -67,9 +67,9 @@ const HomeHeroCarousel = () => {
                   </div>
                 </div>
 
-                <div className="hidden min-[900px]:flex w-full">
+                <div className="pt-5 md:pt-0 min-[900px]:flex w-full">
                   {slide.id === 1 ? (
-                    <HeroSectionGraphic className="hidden min-[900px]:flex" />
+                    <HeroSectionGraphic className=" pt-5 md:pt-0 min-[900px]:flex" />
                   ) : (
                     <Image
                       src={image}
