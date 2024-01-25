@@ -225,7 +225,7 @@ const Navbar = () => {
                   <div className="mb-[30px] flex justify-between items-center">
                     <Link href="/"> <NavLogo /> </Link>
                     <Link href="/try-free-demo">
-                      <Button className="bg-transparent max-h-[35px]  text-primary border border-secondary me-[25px] text-[12px]  hover:text-white hover:bg-primary/90 ">Try Free Demo</Button>
+                      <Button className="hover:bg-transparent max-h-[35px]  hover:text-primary border border-secondary me-[25px] text-[12px]  text-white bg-primary/90 ">Try Free Demo</Button>
                     </Link>
                   </div>
                 </SheetHeader>
