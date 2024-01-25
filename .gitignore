@@ -36,5 +36,3 @@ pnpm-lock.yaml
 *.tsbuildinfo
 next-env.d.ts
 
-package.json
-package-lock.json

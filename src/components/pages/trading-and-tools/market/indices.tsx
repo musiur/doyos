@@ -84,6 +84,7 @@ const MarketIndices = () => {
         </h2>
         <div className="flex flex-col lg:flex-row items-center justify-start min-[1390px]:justify-between gap-10 pt-[90px]">
           <div className="w-full hidden min-[1390px]:flex">
+            {/* issue */}
             <img
               src="/images/pages/trading-and-tools/why-trade-forex.png"
               alt="why-traders-choose-doyos"
