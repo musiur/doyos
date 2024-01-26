@@ -4,6 +4,7 @@ import HeroSectionGraphic from "@/components/assets/home/herosection";
 import { Button } from "@/components/ui/button";
 import clsx from "clsx";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { useElementSize } from "usehooks-ts";
 
@@ -32,7 +33,7 @@ const HomeHeroCarousel = () => {
 
   return (
     <section
-      className="section w-full overflow-hidden relative"
+      className="md:section w-full overflow-hidden relative"
       style={{ maxWidth: "100vw" }}
     >
       <div
@@ -46,37 +47,37 @@ const HomeHeroCarousel = () => {
               key={id}
               className="min-w-[100vw]"
             >
-              <div className="container grid grid-cols-1 min-[900px]:grid-cols-2 justify-center items-center">
-                <div className="flex flex-col gap-6 md:gap-10 xl:gap-16">
+              <div className="container grid grid-cols-1 min-[580px]:grid-cols-2 justify-center items-center">
+                <div className="flex flex-col mt-8 gap-6 md:gap-10 xl:gap-16">
                   <div className="flex flex-col justify-center gap-3 md:gap-6 xl:gap-10">
-                    <p className="text-[16px] lg:text-[20px] text-center min-[900px]:text-left">
+                    <p className="text-[16px] lg:text-[20px] text-center min-[580px]:text-left">
                       WELCOME! START GROWING YOUR TRADING TODAY
                     </p>
-                    <h1 className="text-center min-[900px]:text-left">
-                      <span className="text-secondary h1-span text-center min-[900px]:text-left">
+                    <h1 className="text-center min-[580px]:text-left">
+                      <span className="text-secondary text-[20px] md:text-[28px] text-center min-[580px]:text-left">
                         MetaTrader 5
                       </span>
                       <br /> Trading Platform
                     </h1>
-                    <p className="text-[16px] lg:text-[20px] text-center min-[900px]:text-left">
+                    <p className="text-[16px] lg:text-[20px] text-center min-[580px]:text-left">
                       Buy & Sell crypto futures / CFDs in MT5.
                     </p>
                   </div>
-                  <div className="flex justify-center min-[900px]:justify-start max-h-[60px]">
-                    <Button variant="secondary">Open an Account</Button>
+                  <div className="flex justify-center items-center min-[580px]:justify-start max-h-[20px] md:max-h-[60px] mb-3">
+                    <Link href="/register">  <Button variant="secondary">Open an Account</Button></Link>
                   </div>
                 </div>
 
-                <div className="pt-5 md:pt-0 min-[900px]:flex w-full">
+                <div className="pt-5 md:pt-0 min-[700px]:flex w-full">
                   {slide.id === 1 ? (
-                    <HeroSectionGraphic className=" pt-5 md:pt-0 min-[900px]:flex" />
+                    <HeroSectionGraphic className=" pt-5 md:pt-0 min-[700px]:flex" />
                   ) : (
                     <Image
                       src={image}
                       alt="image"
                       width={1000}
                       height={1000}
-                      className="w-auto h-full mx-auto max-h-[500px]"
+                      className="w-auto h-full mx-auto max-h-[200px] sm:max-h-[350px] md:max-h-[500px]"
                     />
                   )}
                 </div>

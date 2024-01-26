@@ -1,7 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { BadgeCheck } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const TradingPlatform = () => {
   return (
@@ -46,8 +46,9 @@ const TradingPlatform = () => {
             </li>
           </ul>
           <div className="flex flex-wrap items-center justify-start gap-[20px]">
-            <Button>Open Demo Account</Button>
-            <Button variant="secondary">Open Real Acccount</Button>
+            <Link href="/try-free-demo">  <Button>Open Demo Account</Button></Link>
+            <Link href="/register">  <Button variant="secondary">Open Real Acccount</Button></Link>
+
           </div>
         </div>
         <div className="flex items-center">
