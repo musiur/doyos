@@ -127,7 +127,9 @@ const BasicAccount = () => {
                 }}
 
             />
-            {/* Forex Graph Section -image */}
+            {/* <> API Should be Placed Here</> */}
+
+            {/* account type table -image */}
             <div className="container flex justify-center">
                 <Image
                     className="w-full"
@@ -137,6 +139,10 @@ const BasicAccount = () => {
                     height={10000}
                 />
             </div>
+
+            {/* due */}
+
+
 
             {/* why traders choose doyos carousol Starts */}
             <div className="section container">

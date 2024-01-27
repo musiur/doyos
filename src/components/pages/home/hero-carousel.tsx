@@ -33,7 +33,7 @@ const HomeHeroCarousel = () => {
 
   return (
     <section
-      className="md:section w-full overflow-hidden relative"
+      className="md:section md:py-[68px] w-full overflow-hidden relative"
       style={{ maxWidth: "100vw" }}
     >
       <div
@@ -47,14 +47,14 @@ const HomeHeroCarousel = () => {
               key={id}
               className="min-w-[100vw]"
             >
-              <div className="container grid grid-cols-1 min-[580px]:grid-cols-2 justify-center items-center">
-                <div className="flex flex-col mt-8 gap-6 md:gap-10 xl:gap-16">
+              <div className="container  grid grid-cols-1 min-[580px]:grid-cols-2 justify-center items-center">
+                <div className="flex flex-col mt-8 gap-6 md:gap-6">
                   <div className="flex flex-col justify-center gap-3 md:gap-6 xl:gap-10">
                     <p className="text-[16px] lg:text-[20px] text-center min-[580px]:text-left">
                       WELCOME! START GROWING YOUR TRADING TODAY
                     </p>
                     <h1 className="text-center min-[580px]:text-left">
-                      <span className="text-secondary text-[20px] md:text-[28px] text-center min-[580px]:text-left">
+                      <span className="text-secondary text-[20px] md:text-[64px] text-center min-[580px]:text-left">
                         MetaTrader 5
                       </span>
                       <br /> Trading Platform

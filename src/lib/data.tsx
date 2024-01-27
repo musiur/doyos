@@ -551,3 +551,53 @@ export const conditionsFAQ = {
     },
   ],
 };
+
+export const AccountTypes = {
+
+  "Mini": {
+    "spread": 1.3,
+    "minDeposit": 250,
+    "commission": "N/A",
+    "leverage": "1:500",
+    "stopOut": "20%",
+    "swapFree": "Allow",
+    "accManager": "No",
+    "wdFacilities": "24/5",
+    "minWithdrawal": 20,
+    "ea": "Yes",
+    "scalping": "Yes",
+    "vpn": "No",
+    "hedge": "Allow"
+  },
+  "Pro": {
+    "spread": 0,
+    "minDeposit": 2500,
+    "commission": 10,
+    "leverage": "1:500",
+    "stopOut": "20%",
+    "swapFree": "Allow",
+    "accManager": "Personal Acc Manager",
+    "wdFacilities": "24/5",
+    "minWithdrawal": 20,
+    "ea": "Yes",
+    "scalping": "Yes",
+    "vpn": "Yes (3 lot monthly)",
+    "hedge": "Allow"
+  },
+  "Ultimate": {
+    "spread": 0,
+    "minDeposit": 20000,
+    "commission": 6,
+    "leverage": "1:500",
+    "stopOut": "20%",
+    "swapFree": "Allow",
+    "accManager": "Personal VIP Assistance",
+    "wdFacilities": "24/7",
+    "minWithdrawal": 20,
+    "ea": "Yes",
+    "scalping": "Yes",
+    "vpn": "Yes (Free)",
+    "hedge": "Allow"
+  }
+}
+
