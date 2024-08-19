@@ -18,61 +18,85 @@ const LicenseRegulation = () => {
   const [squareRef, { width }] = useElementSize();
   return (
     <div>
-
       {/* hero section */}
       <MostPopularCard
         image="/images/pages/regulations/hero-img.png"
         heading={
           <>
-
             <span className="h2-span text-secondary">Regulations</span>
-
           </>
         }
         paragraphs={[
           <>
-            Licensed by FSC Mauritius and by the Seychelles FSA Authority, Doyos is a multi-regulated broker with over 10 years of industry-leading service in the financial markets, operating through a number of international offices across the globe
+            Licensed by FSC Mauritius and by the Seychelles FSA Authority, Doyos
+            is a multi-regulated broker with over 10 years of industry-leading
+            service in the financial markets, operating through a number of
+            international offices across the globe
           </>,
         ]}
         imageLeft={false}
-
         buttonList={[
-          { id: 1, text: "Start Now", link: "/try-free-demo", variant: "secondary" },
-
+          {
+            id: 1,
+            text: "Start Now",
+            link: "/try-free-demo",
+            variant: "secondary",
+          },
         ]}
       />
 
       {/* card section */}
       <section className="bg-[url('/images/pages/regulations/bg.png')] bg-cover bg-center min-h-[820px] flex items-center justify-center py-10">
-
         <div className="text-white container pb-[35px]">
-
-          <p className="text-white text-center text-[24px]" >
-            Since its inception, Doyos has committed to providing access to first-in-class trading and investing solutions through a transparent and multi-regulated environment. Adhering to the highest regulatory standards, Doyos implements a policy of full transparency to ensure traders receive a safe and secure trading experience. Committed to providing an exceptional trading experience backed by expert education, world-leading tools and platforms, and dedicated support, Doyos offers instant access to a wide range of CFD markets including forex, stocks, cryptocurrencies, indices, futures, and commodities.
+          <p className="text-white text-center text-[24px]">
+            Since its inception, Doyos has committed to providing access to
+            first-in-class trading and investing solutions through a transparent
+            and multi-regulated environment. Adhering to the highest regulatory
+            standards, Doyos implements a policy of full transparency to ensure
+            traders receive a safe and secure trading experience. Committed to
+            providing an exceptional trading experience backed by expert
+            education, world-leading tools and platforms, and dedicated support,
+            Doyos offers instant access to a wide range of CFD markets including
+            forex, stocks, cryptocurrencies, indices, futures, and commodities.
           </p>
 
           <div className="flex flex-wrap justify-center items-center py-[50px]  gap-[35px] md:gap-[70px] ">
-
-            <div className="flex items-center flex-col" >
-              <Image className="max-w-[250px]" src="/images/pages/regulations/reliable.png" width={1000} height={100} alt="reliable" />
+            <div className="flex items-center flex-col">
+              <Image
+                className="max-w-[250px]"
+                src="/images/pages/regulations/reliable.png"
+                width={1000}
+                height={100}
+                alt="reliable"
+              />
               <h2 className="text-white pt-2">Reliable</h2>
             </div>
-            <div className="flex items-center flex-col" >
-              <Image className="max-w-[250px]" src="/images/pages/regulations/regulated.png" width={1000} height={100} alt="reliable" />
+            <div className="flex items-center flex-col">
+              <Image
+                className="max-w-[250px]"
+                src="/images/pages/regulations/regulated.png"
+                width={1000}
+                height={100}
+                alt="reliable"
+              />
               <h2 className="text-white">Regulated</h2>
             </div>
-            <div className="flex items-center flex-col" >
-              <Image className="max-w-[250px]" src="/images/pages/regulations/renowned.png" width={1000} height={100} alt="renowned" />
+            <div className="flex items-center flex-col">
+              <Image
+                className="max-w-[250px]"
+                src="/images/pages/regulations/renowned.png"
+                width={1000}
+                height={100}
+                alt="renowned"
+              />
               <h2 className="text-white">Renowned</h2>
             </div>
           </div>
-
         </div>
-
       </section>
       <section className="container section grid grid-cols-1 sm:grid-cols-6 gap-10">
         <div className="flex items-center col-span-4" ref={squareRef}>
-          <LicenseCarousel width={width} />
+          <LicenseCarousel width={width || 0} />
         </div>
         <div className="flex flex-col justify-center gap-10 col-span-2">
           <Image
@@ -94,8 +118,6 @@ const LicenseRegulation = () => {
         <HowItWorks />
       </div>
 
-
-
       {/* why traders choose doyos carousol Starts */}
       <div className="section container">
         <h2>
@@ -107,7 +129,6 @@ const LicenseRegulation = () => {
             <img
               src="/images/pages/trading-and-tools/indices-carousel-image.webp "
               alt="why-choose-doyos"
-
               className="max-w-[550px] mr-auto ml-auto md:ml-0 h-auto"
             />
           </div>
